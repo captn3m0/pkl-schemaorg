@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DataType.pkl"
+/// A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see [XML
+/// schema for details](http://www.w3.org/TR/xmlschema-2/#time)).
+///
+/// See: <https://schema.org/Time>
+/// Model depth: 5
+open class Time extends DataType.DataType {
+    
+}

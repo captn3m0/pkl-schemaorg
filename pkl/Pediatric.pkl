@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that specializes in the care of infants, children
+/// and adolescents.
+///
+/// See: <https://schema.org/Pediatric>
+/// Model depth: 5
+open class Pediatric extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

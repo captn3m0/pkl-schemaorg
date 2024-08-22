@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DeliveryMethod.pkl"
+/// A DeliveryMethod in which an item is made available via locker.
+///
+/// See: <https://schema.org/LockerDelivery>
+/// Model depth: 5
+open class LockerDelivery extends DeliveryMethod.DeliveryMethod {
+    
+}

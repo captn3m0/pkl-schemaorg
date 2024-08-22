@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AssessAction.pkl"
+/// The act of expressing a preference from a set of options or a large or unbounded set of choices/options.
+///
+/// See: <https://schema.org/ChooseAction>
+/// Model depth: 4
+open class ChooseAction extends AssessAction.AssessAction {
+        
+    /// A sub property of object. The options subject to this action.
+    option: (Listing<String>|String)?
+        
+    /// A sub property of object. The options subject to this action.
+    actionOption: (Listing<String>|String)?
+    
+}

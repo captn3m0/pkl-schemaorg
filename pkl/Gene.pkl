@@ -1,0 +1,27 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BioChemEntity.pkl"
+/// A discrete unit of inheritance which affects one or more biological traits (Source:
+/// [https://en.wikipedia.org/wiki/Gene](https://en.wikipedia.org/wiki/Gene)).
+/// Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-specific
+/// RNA 21), A- (agouti genotype).
+///
+/// See: <https://schema.org/Gene>
+/// Model depth: 3
+open class Gene extends BioChemEntity.BioChemEntity {
+        
+    /// Another BioChemEntity encoded by this one.
+    encodesBioChemEntity: (Listing<String>|String)?
+        
+    /// Another gene which is a variation of this one.
+    alternativeOf: (Listing<Gene|String>|Gene|String)?
+        
+    /// A symbolic representation of a BioChemEntity. For example, a nucleotide sequence of
+    /// a Gene or an amino acid sequence of a Protein.
+    hasBioPolymerSequence: (Listing<String>|String)?
+        
+    /// Tissue, organ, biological sample, etc in which activity of this gene has been observed
+    /// experimentally. For example brain, digestive system.
+    expressedIn: (Listing<String>|String)?
+    
+}

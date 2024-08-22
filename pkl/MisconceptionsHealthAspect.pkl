@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content about common misconceptions and myths that are related to a topic.
+///
+/// See: <https://schema.org/MisconceptionsHealthAspect>
+/// Model depth: 5
+open class MisconceptionsHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PlayAction.pkl"
+/// The act of participating in performance arts.
+///
+/// See: <https://schema.org/PerformAction>
+/// Model depth: 4
+open class PerformAction extends PlayAction.PlayAction {
+        
+    /// A sub property of location. The entertainment business where the action occurred.
+    entertainmentBusiness: (Listing<String>|String)?
+    
+}

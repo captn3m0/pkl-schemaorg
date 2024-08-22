@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalProcedureType.pkl"
+/// A type of medical procedure that involves percutaneous techniques, where access to
+/// organs or tissue is achieved via needle-puncture of the skin. For example, catheter-based
+/// procedures like stent delivery.
+///
+/// See: <https://schema.org/PercutaneousProcedure>
+/// Model depth: 6
+open class PercutaneousProcedure extends MedicalProcedureType.MedicalProcedureType {
+    
+}

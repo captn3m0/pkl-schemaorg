@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrderStatus.pkl"
+/// OrderStatus representing cancellation of an order.
+///
+/// See: <https://schema.org/OrderCancelled>
+/// Model depth: 6
+open class OrderCancelled extends OrderStatus.OrderStatus {
+    
+}

@@ -1,0 +1,31 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Used to describe membership in a loyalty programs (e.g. "StarAliance"), traveler clubs
+/// (e.g. "AAA"), purchase clubs ("Safeway Club"), etc.
+///
+/// See: <https://schema.org/ProgramMembership>
+/// Model depth: 3
+open class ProgramMembership extends Intangible.Intangible {
+        
+    /// A unique identifier for the membership.
+    membershipNumber: (Listing<String>|String)?
+        
+    /// The organization (airline, travelers' club, etc.) the membership is made with.
+    hostingOrganization: (Listing<String>|String)?
+        
+    /// A member of this organization.
+    members: (Listing<String>|String)?
+        
+    /// The number of membership points earned by the member. If necessary, the unitText can
+    /// be used to express the units the points are issued in. (E.g. stars, miles, etc.)
+    membershipPointsEarned: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The program providing the membership.
+    programName: (Listing<String>|String)?
+        
+    /// A member of an Organization or a ProgramMembership. Organizations can be members of
+    /// organizations; ProgramMembership is typically for individuals.
+    member: (Listing<String>|String)?
+    
+}

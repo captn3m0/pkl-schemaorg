@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicineSystem.pkl"
+/// The conventional Western system of medicine, that aims to apply the best available evidence
+/// gained from the scientific method to clinical decision making. Also known as conventional
+/// or Western medicine.
+///
+/// See: <https://schema.org/WesternConventional>
+/// Model depth: 6
+open class WesternConventional extends MedicineSystem.MedicineSystem {
+    
+}

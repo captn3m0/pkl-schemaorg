@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A thesis or dissertation document submitted in support of candidature for an academic
+/// degree or professional qualification.
+///
+/// See: <https://schema.org/Thesis>
+/// Model depth: 3
+open class Thesis extends CreativeWork.CreativeWork {
+        
+    /// Qualification, candidature, degree, application that Thesis supports.
+    inSupportOf: (Listing<String>|String)?
+    
+}

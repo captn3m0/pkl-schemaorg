@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// Item is a pharmaceutical (e.g., a prescription or OTC drug) or a restricted medical device.
+///
+/// See: <https://schema.org/HealthcareConsideration>
+/// Model depth: 5
+open class HealthcareConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

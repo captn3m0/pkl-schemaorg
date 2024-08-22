@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Maximum hand girth (measured over the knuckles of the open right hand excluding thumb,
+/// fingers together). Used, for example, to fit gloves.
+///
+/// See: <https://schema.org/BodyMeasurementHand>
+/// Model depth: 6
+open class BodyMeasurementHand extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

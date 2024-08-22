@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CarUsageType.pkl"
+/// Indicates the usage of the vehicle as a rental car.
+///
+/// See: <https://schema.org/RentalVehicleUsage>
+/// Model depth: 5
+open class RentalVehicleUsage extends CarUsageType.CarUsageType {
+    
+}

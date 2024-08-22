@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Grant.pkl"
+/// A monetary grant.
+///
+/// See: <https://schema.org/MonetaryGrant>
+/// Model depth: 4
+open class MonetaryGrant extends Grant.Grant {
+        
+    /// The amount of money.
+    amount: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// A person or organization that supports (sponsors) something through some kind of financial
+    /// contribution.
+    funder: (Listing<String>|String)?
+    
+}

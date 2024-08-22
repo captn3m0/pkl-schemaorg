@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Text.pkl"
+/// Text representing an XPath (typically but not necessarily version 1.0).
+///
+/// See: <https://schema.org/XPathType>
+/// Model depth: 6
+open class XPathType extends Text.Text {
+    
+}

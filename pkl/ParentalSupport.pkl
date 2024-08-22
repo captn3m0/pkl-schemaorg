@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBenefitsType.pkl"
+/// ParentalSupport: this is a benefit for parental support.
+///
+/// See: <https://schema.org/ParentalSupport>
+/// Model depth: 5
+open class ParentalSupport extends GovernmentBenefitsType.GovernmentBenefitsType {
+    
+}

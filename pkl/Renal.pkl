@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that pertains to the study of the kidneys and its
+/// respective disease states.
+///
+/// See: <https://schema.org/Renal>
+/// Model depth: 6
+open class Renal extends MedicalSpecialty.MedicalSpecialty {
+    
+}

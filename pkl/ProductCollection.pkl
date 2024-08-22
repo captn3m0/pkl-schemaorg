@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Collection.pkl"
+import "Product.pkl"
+/// A set of products (either [[ProductGroup]]s or specific variants) that are listed together
+/// e.g. in an [[Offer]].
+///
+/// See: <https://schema.org/ProductCollection>
+/// Model depth: 3
+open class ProductCollection extends Collection.Collection Product.Product {
+        
+    /// This links to a node or nodes indicating the exact quantity of the products included in
+    /// an [[Offer]] or [[ProductCollection]].
+    includesObject: (Listing<String>|String)?
+    
+}

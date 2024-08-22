@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// A component of the human body circulatory system comprised of an intricate network of
+/// hollow tubes that transport blood throughout the entire body.
+///
+/// See: <https://schema.org/Vessel>
+/// Model depth: 4
+open class Vessel extends AnatomicalStructure.AnatomicalStructure {
+    
+}

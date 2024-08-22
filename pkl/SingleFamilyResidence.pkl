@@ -1,0 +1,21 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "House.pkl"
+/// Residence type: Single-family home.
+///
+/// See: <https://schema.org/SingleFamilyResidence>
+/// Model depth: 5
+open class SingleFamilyResidence extends House.House {
+        
+    /// The allowed total occupancy for the accommodation in persons (including infants etc).
+    /// For individual accommodations, this is not necessarily the legal maximum but defines
+    /// the permitted usage as per the contractual agreement (e.g. a double room used by a single
+    /// person). Typical unit code(s): C62 for person.
+    occupancy: (Listing<String>|String)?
+        
+    /// The number of rooms (excluding bathrooms and closets) of the accommodation or lodging
+    /// business. Typical unit code(s): ROM for room or C62 for no unit. The type of room can be
+    /// put in the unitText property of the QuantitativeValue.
+    numberOfRooms: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

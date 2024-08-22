@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnFeesEnumeration.pkl"
+/// Specifies that product returns must be paid for, and are the responsibility of, the customer.
+///
+/// See: <https://schema.org/ReturnFeesCustomerResponsibility>
+/// Model depth: 5
+open class ReturnFeesCustomerResponsibility extends ReturnFeesEnumeration.ReturnFeesEnumeration {
+    
+}

@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// An list item, e.g. a step in a checklist or how-to description.
+///
+/// See: <https://schema.org/ListItem>
+/// Model depth: 3
+open class ListItem extends Intangible.Intangible {
+        
+    /// An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').
+    item: (Listing<String>|String)?
+        
+    /// A link to the ListItem that follows the current one.
+    nextItem: (Listing<ListItem|String>|ListItem|String)?
+        
+    /// A link to the ListItem that precedes the current one.
+    previousItem: (Listing<ListItem|String>|ListItem|String)?
+        
+    /// The position of an item in a series or sequence of items.
+    position: (Listing<Int|String>|Int|String)?
+    
+}

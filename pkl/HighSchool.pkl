@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EducationalOrganization.pkl"
+/// A high school.
+///
+/// See: <https://schema.org/HighSchool>
+/// Model depth: 4
+open class HighSchool extends EducationalOrganization.EducationalOrganization {
+    
+}

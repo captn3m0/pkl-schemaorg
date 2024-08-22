@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Inside leg (measured between crotch and soles of feet). Used, for example, to fit pants.
+///
+/// See: <https://schema.org/BodyMeasurementInsideLeg>
+/// Model depth: 6
+open class BodyMeasurementInsideLeg extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

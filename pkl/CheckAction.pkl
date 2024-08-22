@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FindAction.pkl"
+/// An agent inspects, determines, investigates, inquires, or examines an object's accuracy,
+/// quality, condition, or state.
+///
+/// See: <https://schema.org/CheckAction>
+/// Model depth: 4
+open class CheckAction extends FindAction.FindAction {
+    
+}

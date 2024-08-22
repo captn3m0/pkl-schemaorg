@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalStudyStatus.pkl"
+/// Enrolling participants by invitation only.
+///
+/// See: <https://schema.org/EnrollingByInvitation>
+/// Model depth: 6
+open class EnrollingByInvitation extends MedicalStudyStatus.MedicalStudyStatus {
+    
+}

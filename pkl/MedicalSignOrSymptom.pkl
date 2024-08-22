@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalCondition.pkl"
+/// Any feature associated or not with a medical condition. In medicine a symptom is generally
+/// subjective while a sign is objective.
+///
+/// See: <https://schema.org/MedicalSignOrSymptom>
+/// Model depth: 4
+open class MedicalSignOrSymptom extends MedicalCondition.MedicalCondition {
+        
+    /// A possible treatment to address this condition, sign or symptom.
+    possibleTreatment: (Listing<String>|String)?
+    
+}

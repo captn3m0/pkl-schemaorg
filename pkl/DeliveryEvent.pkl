@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Event.pkl"
+/// An event involving the delivery of an item.
+///
+/// See: <https://schema.org/DeliveryEvent>
+/// Model depth: 3
+open class DeliveryEvent extends Event.Event {
+        
+    /// Password, PIN, or access code needed for delivery (e.g. from a locker).
+    accessCode: (Listing<String>|String)?
+        
+    /// After this date, the item will no longer be available for pickup.
+    availableThrough: (Listing<String>|String)?
+        
+    /// When the item is available for pickup from the store, locker, etc.
+    availableFrom: (Listing<String>|String)?
+        
+    /// Method used for delivery or shipping.
+    hasDeliveryMethod: (Listing<String>|String)?
+    
+}

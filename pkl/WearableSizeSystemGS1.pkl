@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeSystemEnumeration.pkl"
+/// GS1 (formerly NRF) size system for wearables.
+///
+/// See: <https://schema.org/WearableSizeSystemGS1>
+/// Model depth: 6
+open class WearableSizeSystemGS1 extends WearableSizeSystemEnumeration.WearableSizeSystemEnumeration {
+    
+}

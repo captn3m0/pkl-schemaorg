@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ControlAction.pkl"
+/// The act of starting or activating a device or application (e.g. starting a timer or turning
+/// on a flashlight).
+///
+/// See: <https://schema.org/ActivateAction>
+/// Model depth: 4
+open class ActivateAction extends ControlAction.ControlAction {
+    
+}

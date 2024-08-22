@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReservationStatusType.pkl"
+/// The status of a reservation on hold pending an update like credit card number or flight
+/// changes.
+///
+/// See: <https://schema.org/ReservationHold>
+/// Model depth: 6
+open class ReservationHold extends ReservationStatusType.ReservationStatusType {
+    
+}

@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that deals with the evaluation and initial treatment
+/// of medical conditions caused by trauma or sudden illness.
+///
+/// See: <https://schema.org/Emergency>
+/// Model depth: 5
+open class Emergency extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

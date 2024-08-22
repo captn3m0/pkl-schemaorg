@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalBusiness.pkl"
+import "MedicalOrganization.pkl"
+/// A pharmacy or drugstore.
+///
+/// See: <https://schema.org/Pharmacy>
+/// Model depth: 4
+open class Pharmacy extends MedicalBusiness.MedicalBusiness MedicalOrganization.MedicalOrganization {
+    
+}

@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that deals with benign and malignant tumors, including
+/// the study of their development, diagnosis, treatment and prevention.
+///
+/// See: <https://schema.org/Oncologic>
+/// Model depth: 5
+open class Oncologic extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

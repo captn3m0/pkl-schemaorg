@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicineSystem.pkl"
+/// A system of medicine that originated in India over thousands of years and that focuses
+/// on integrating and balancing the body, mind, and spirit.
+///
+/// See: <https://schema.org/Ayurvedic>
+/// Model depth: 6
+open class Ayurvedic extends MedicineSystem.MedicineSystem {
+    
+}

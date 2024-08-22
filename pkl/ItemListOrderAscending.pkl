@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ItemListOrderType.pkl"
+/// An ItemList ordered with lower values listed first.
+///
+/// See: <https://schema.org/ItemListOrderAscending>
+/// Model depth: 5
+open class ItemListOrderAscending extends ItemListOrderType.ItemListOrderType {
+    
+}

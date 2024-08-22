@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// A structured value representing the duration and scope of services that will be provided
+/// to a customer free of charge in case of a defect or malfunction of a product.
+///
+/// See: <https://schema.org/WarrantyPromise>
+/// Model depth: 4
+open class WarrantyPromise extends StructuredValue.StructuredValue {
+        
+    /// The scope of the warranty promise.
+    warrantyScope: (Listing<String>|String)?
+        
+    /// The duration of the warranty promise. Common unitCode values are ANN for year, MON for
+    /// months, or DAY for days.
+    durationOfWarranty: (Listing<String>|String)?
+    
+}

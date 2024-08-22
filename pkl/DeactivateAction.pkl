@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ControlAction.pkl"
+/// The act of stopping or deactivating a device or application (e.g. stopping a timer or
+/// turning off a flashlight).
+///
+/// See: <https://schema.org/DeactivateAction>
+/// Model depth: 4
+open class DeactivateAction extends ControlAction.ControlAction {
+    
+}

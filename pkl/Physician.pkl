@@ -1,0 +1,33 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalBusiness.pkl"
+import "MedicalOrganization.pkl"
+/// An individual physician or a physician's office considered as a [[MedicalOrganization]].
+///
+/// See: <https://schema.org/Physician>
+/// Model depth: 4
+open class Physician extends MedicalBusiness.MedicalBusiness MedicalOrganization.MedicalOrganization {
+        
+    /// A <a href="https://en.wikipedia.org/wiki/National_Provider_Identifier">National
+    /// Provider Identifier</a> (NPI) is a unique 10-digit identification number issued to
+    /// health care providers in the United States by the Centers for Medicare and Medicaid Services.
+    usNPI: (Listing<String>|String)?
+        
+    /// A hospital with which the physician or office is affiliated.
+    hospitalAffiliation: (Listing<String>|String)?
+        
+    /// A medical service available from this provider.
+    availableService: (Listing<String>|String)?
+        
+    /// A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html),
+    /// [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or
+    /// similar, with the property repeated for each applicable value. Ideally the taxonomy
+    /// should be identified, and both the textual label and formal code for the category should
+    /// be provided. Note: for historical reasons, any textual label and formal code provided
+    /// as a literal may be assumed to be from O*NET-SOC.
+    occupationalCategory: (Listing<String>|String)?
+        
+    /// A medical specialty of the provider.
+    medicalSpecialty: (Listing<String>|String)?
+    
+}

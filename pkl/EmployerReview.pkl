@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Review.pkl"
+/// An [[EmployerReview]] is a review of an [[Organization]] regarding its role as an employer,
+/// written by a current or former employee of that organization.
+///
+/// See: <https://schema.org/EmployerReview>
+/// Model depth: 4
+open class EmployerReview extends Review.Review {
+    
+}

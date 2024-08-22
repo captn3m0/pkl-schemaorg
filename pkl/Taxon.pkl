@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Thing.pkl"
+/// A set of organisms asserted to represent a natural cohesive biological unit.
+///
+/// See: <https://schema.org/Taxon>
+/// Model depth: 2
+open class Taxon extends Thing.Thing {
+        
+    /// A Defined Term contained in this term set.
+    hasDefinedTerm: (Listing<String>|String)?
+        
+    /// The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary
+    /// – typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs.
+    taxonRank: (Listing<URL|String>|URL|String)?
+        
+    /// Closest parent taxon of the taxon in question.
+    parentTaxon: (Listing<URL|String|Taxon>|URL|String|Taxon)?
+        
+    /// Closest child taxa of the taxon in question.
+    childTaxon: (Listing<URL|String|Taxon>|URL|String|Taxon)?
+    
+}

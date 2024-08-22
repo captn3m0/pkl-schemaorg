@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content about the benefits and advantages of usage or utilization of topic.
+///
+/// See: <https://schema.org/BenefitsHealthAspect>
+/// Model depth: 5
+open class BenefitsHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

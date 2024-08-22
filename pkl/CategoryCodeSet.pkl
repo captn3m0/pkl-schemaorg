@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DefinedTermSet.pkl"
+/// A set of Category Code values.
+///
+/// See: <https://schema.org/CategoryCodeSet>
+/// Model depth: 4
+open class CategoryCodeSet extends DefinedTermSet.DefinedTermSet {
+        
+    /// A Category code contained in this code set.
+    hasCategoryCode: (Listing<String>|String)?
+    
+}

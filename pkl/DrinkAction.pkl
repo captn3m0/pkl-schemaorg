@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ConsumeAction.pkl"
+/// The act of swallowing liquids.
+///
+/// See: <https://schema.org/DrinkAction>
+/// Model depth: 4
+open class DrinkAction extends ConsumeAction.ConsumeAction {
+    
+}

@@ -1,0 +1,30 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MusicPlaylist.pkl"
+/// A MusicRelease is a specific release of a music album.
+///
+/// See: <https://schema.org/MusicRelease>
+/// Model depth: 4
+open class MusicRelease extends MusicPlaylist.MusicPlaylist {
+        
+    /// The label that issued the release.
+    recordLabel: (Listing<String>|String)?
+        
+    /// The group the release is credited to if different than the byArtist. For example, Red
+    /// and Blue is credited to "Stefani Germanotta Band", but by Lady Gaga.
+    creditedTo: (Listing<String>|String)?
+        
+    /// The catalog number for the release.
+    catalogNumber: (Listing<String>|String)?
+        
+    /// The album this is a release of.
+    releaseOf: (Listing<String>|String)?
+        
+    /// The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
+    duration: (Listing<String>|String)?
+        
+    /// Format of this release (the type of recording media used, i.e. compact disc, digital
+    /// media, LP, etc.).
+    musicReleaseFormat: (Listing<String>|String)?
+    
+}

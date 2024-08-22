@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SizeGroupEnumeration.pkl"
+/// Enumerates common size groups (also known as "size types") for wearable products.
+///
+/// See: <https://schema.org/WearableSizeGroupEnumeration>
+/// Model depth: 5
+open class WearableSizeGroupEnumeration extends SizeGroupEnumeration.SizeGroupEnumeration {
+    
+}

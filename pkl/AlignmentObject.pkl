@@ -1,0 +1,29 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// An intangible item that describes an alignment between a learning resource and a node
+/// in an educational framework. Should not be used where the nature of the alignment can
+/// be described using a simple property, for example to express that a resource [[teaches]]
+/// or [[assesses]] a competency.
+///
+/// See: <https://schema.org/AlignmentObject>
+/// Model depth: 3
+open class AlignmentObject extends Intangible.Intangible {
+        
+    /// The framework to which the resource being described is aligned.
+    educationalFramework: (Listing<String>|String)?
+        
+    /// The name of a node in an established educational framework.
+    targetName: (Listing<String>|String)?
+        
+    /// A category of alignment between the learning resource and the framework node. Recommended
+    /// values include: 'requires', 'textComplexity', 'readingLevel', and 'educationalSubject'.
+    alignmentType: (Listing<String>|String)?
+        
+    /// The URL of a node in an established educational framework.
+    targetUrl: (Listing<URL|String>|URL|String)?
+        
+    /// The description of a node in an established educational framework.
+    targetDescription: (Listing<String>|String)?
+    
+}

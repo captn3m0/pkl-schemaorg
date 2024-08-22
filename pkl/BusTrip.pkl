@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Trip.pkl"
+/// A trip on a commercial bus line.
+///
+/// See: <https://schema.org/BusTrip>
+/// Model depth: 4
+open class BusTrip extends Trip.Trip {
+        
+    /// The stop or station from which the bus arrives.
+    arrivalBusStop: (Listing<String>|String)?
+        
+    /// The name of the bus (e.g. Bolt Express).
+    busName: (Listing<String>|String)?
+        
+    /// The unique identifier for the bus.
+    busNumber: (Listing<String>|String)?
+        
+    /// The stop or station from which the bus departs.
+    departureBusStop: (Listing<String>|String)?
+    
+}

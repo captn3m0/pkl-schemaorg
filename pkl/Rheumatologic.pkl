@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that deals with the study and treatment of rheumatic,
+/// autoimmune or joint diseases.
+///
+/// See: <https://schema.org/Rheumatologic>
+/// Model depth: 6
+open class Rheumatologic extends MedicalSpecialty.MedicalSpecialty {
+    
+}

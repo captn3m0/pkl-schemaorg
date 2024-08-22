@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ChooseAction.pkl"
+/// The act of expressing a preference from a fixed/finite/structured set of choices/options.
+///
+/// See: <https://schema.org/VoteAction>
+/// Model depth: 5
+open class VoteAction extends ChooseAction.ChooseAction {
+        
+    /// A sub property of object. The candidate subject of this action.
+    candidate: (Listing<String>|String)?
+    
+}

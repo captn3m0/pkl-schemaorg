@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumeration of considerations that make a product relevant or potentially restricted
+/// for adults only.
+///
+/// See: <https://schema.org/AdultOrientedEnumeration>
+/// Model depth: 4
+open class AdultOrientedEnumeration extends Enumeration.Enumeration {
+    
+}

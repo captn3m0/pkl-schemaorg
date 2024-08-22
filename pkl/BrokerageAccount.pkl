@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InvestmentOrDeposit.pkl"
+/// An account that allows an investor to deposit funds and place investment orders with
+/// a licensed broker or brokerage firm.
+///
+/// See: <https://schema.org/BrokerageAccount>
+/// Model depth: 6
+open class BrokerageAccount extends InvestmentOrDeposit.InvestmentOrDeposit {
+    
+}

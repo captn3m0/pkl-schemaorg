@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "QualitativeValue.pkl"
+/// A value indicating which roadwheels will receive torque.
+///
+/// See: <https://schema.org/DriveWheelConfigurationValue>
+/// Model depth: 5
+open class DriveWheelConfigurationValue extends QualitativeValue.QualitativeValue {
+    
+}

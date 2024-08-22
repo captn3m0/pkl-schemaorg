@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalProcedureType.pkl"
+/// A type of medical procedure that involves noninvasive techniques.
+///
+/// See: <https://schema.org/NoninvasiveProcedure>
+/// Model depth: 6
+open class NoninvasiveProcedure extends MedicalProcedureType.MedicalProcedureType {
+    
+}

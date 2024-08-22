@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A piece of sculpture.
+///
+/// See: <https://schema.org/Sculpture>
+/// Model depth: 3
+open class Sculpture extends CreativeWork.CreativeWork {
+    
+}

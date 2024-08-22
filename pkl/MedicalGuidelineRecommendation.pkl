@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalGuideline.pkl"
+/// A guideline recommendation that is regarded as efficacious and where quality of the
+/// data supporting the recommendation is sound.
+///
+/// See: <https://schema.org/MedicalGuidelineRecommendation>
+/// Model depth: 4
+open class MedicalGuidelineRecommendation extends MedicalGuideline.MedicalGuideline {
+        
+    /// Strength of the guideline's recommendation (e.g. 'class I').
+    recommendationStrength: (Listing<String>|String)?
+    
+}

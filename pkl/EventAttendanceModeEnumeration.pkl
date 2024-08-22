@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// An EventAttendanceModeEnumeration value is one of potentially several modes of organising
+/// an event, relating to whether it is online or offline.
+///
+/// See: <https://schema.org/EventAttendanceModeEnumeration>
+/// Model depth: 4
+open class EventAttendanceModeEnumeration extends Enumeration.Enumeration {
+    
+}

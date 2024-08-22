@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content about how, when, frequency and dosage of a topic.
+///
+/// See: <https://schema.org/UsageOrScheduleHealthAspect>
+/// Model depth: 5
+open class UsageOrScheduleHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

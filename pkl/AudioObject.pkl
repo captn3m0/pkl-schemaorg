@@ -1,0 +1,20 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MediaObject.pkl"
+/// An audio file.
+///
+/// See: <https://schema.org/AudioObject>
+/// Model depth: 4
+open class AudioObject extends MediaObject.MediaObject {
+        
+    /// The caption for this object. For downloadable machine formats (closed caption, subtitles
+    /// etc.) use MediaObject and indicate the [[encodingFormat]].
+    caption: (Listing<String>|String)?
+        
+    /// If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
+    transcript: (Listing<String>|String)?
+        
+    /// Represents textual captioning from a [[MediaObject]], e.g. text of a 'meme'.
+    embeddedTextCaption: (Listing<String>|String)?
+    
+}

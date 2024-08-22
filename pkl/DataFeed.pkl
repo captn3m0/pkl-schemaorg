@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Dataset.pkl"
+/// A single feed providing structured information about one or more entities or topics.
+///
+/// See: <https://schema.org/DataFeed>
+/// Model depth: 4
+open class DataFeed extends Dataset.Dataset {
+        
+    /// An item within a data feed. Data feeds may have many elements.
+    dataFeedElement: (Listing<String>|String)?
+    
+}

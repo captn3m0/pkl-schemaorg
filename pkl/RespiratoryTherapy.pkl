@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTherapy.pkl"
+import "MedicalSpecialty.pkl"
+/// The therapy that is concerned with the maintenance or improvement of respiratory function
+/// (as in patients with pulmonary disease).
+///
+/// See: <https://schema.org/RespiratoryTherapy>
+/// Model depth: 6
+open class RespiratoryTherapy extends MedicalTherapy.MedicalTherapy MedicalSpecialty.MedicalSpecialty {
+    
+}

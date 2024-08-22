@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugPregnancyCategory.pkl"
+/// A designation by the US FDA signifying that adequate and well-controlled studies have
+/// failed to demonstrate a risk to the fetus in the first trimester of pregnancy (and there
+/// is no evidence of risk in later trimesters).
+///
+/// See: <https://schema.org/FDAcategoryA>
+/// Model depth: 6
+open class FDAcategoryA extends DrugPregnancyCategory.DrugPregnancyCategory {
+    
+}

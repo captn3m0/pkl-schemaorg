@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// A place offering space for "Recreational Vehicles", Caravans, mobile homes and the
+/// like.
+///
+/// See: <https://schema.org/RVPark>
+/// Model depth: 4
+open class RVPark extends CivicStructure.CivicStructure {
+    
+}

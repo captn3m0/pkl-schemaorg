@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that pertains to diagnosis and treatment of disorders
+/// of blood and blood producing organs.
+///
+/// See: <https://schema.org/Hematologic>
+/// Model depth: 6
+open class Hematologic extends MedicalSpecialty.MedicalSpecialty {
+    
+}

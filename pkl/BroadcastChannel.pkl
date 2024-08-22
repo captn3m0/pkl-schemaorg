@@ -1,0 +1,31 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// A unique instance of a BroadcastService on a CableOrSatelliteService lineup.
+///
+/// See: <https://schema.org/BroadcastChannel>
+/// Model depth: 3
+open class BroadcastChannel extends Intangible.Intangible {
+        
+    /// The unique address by which the BroadcastService can be identified in a provider lineup.
+    /// In US, this is typically a number.
+    broadcastChannelId: (Listing<String>|String)?
+        
+    /// Genre of the creative work, broadcast channel or group.
+    genre: (Listing<URL|String>|URL|String)?
+        
+    /// The frequency used for over-the-air broadcasts. Numeric values or simple ranges, e.g.
+    /// 87-99. In addition a shortcut idiom is supported for frequencies of AM and FM radio channels,
+    /// e.g. "87 FM".
+    broadcastFrequency: (Listing<String>|String)?
+        
+    /// The BroadcastService offered on this channel.
+    providesBroadcastService: (Listing<String>|String)?
+        
+    /// The CableOrSatelliteService offering the channel.
+    inBroadcastLineup: (Listing<String>|String)?
+        
+    /// The type of service required to have access to the channel (e.g. Standard or Premium).
+    broadcastServiceTier: (Listing<String>|String)?
+    
+}

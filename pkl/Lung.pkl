@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalExam.pkl"
+/// Lung and respiratory system clinical examination.
+///
+/// See: <https://schema.org/Lung>
+/// Model depth: 5
+open class Lung extends PhysicalExam.PhysicalExam {
+    
+}

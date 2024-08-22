@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A travel agency.
+///
+/// See: <https://schema.org/TravelAgency>
+/// Model depth: 4
+open class TravelAgency extends LocalBusiness.LocalBusiness {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// A [[FAQPage]] is a [[WebPage]] presenting one or more "[Frequently asked questions](https://en.wikipedia.org/wiki/FAQ)"
+/// (see also [[QAPage]]).
+///
+/// See: <https://schema.org/FAQPage>
+/// Model depth: 4
+open class FAQPage extends WebPage.WebPage {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Store.pkl"
+/// A store that sells materials useful or necessary for various hobbies.
+///
+/// See: <https://schema.org/HobbyShop>
+/// Model depth: 5
+open class HobbyShop extends Store.Store {
+    
+}

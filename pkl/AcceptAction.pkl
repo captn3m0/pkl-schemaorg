@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AllocateAction.pkl"
+/// The act of committing to/adopting an object. Related actions: * [[RejectAction]]:
+/// The antonym of AcceptAction.
+///
+/// See: <https://schema.org/AcceptAction>
+/// Model depth: 5
+open class AcceptAction extends AllocateAction.AllocateAction {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "RefundTypeEnumeration.pkl"
+/// Specifies that a refund can be done as an exchange for the same product.
+///
+/// See: <https://schema.org/ExchangeRefund>
+/// Model depth: 5
+open class ExchangeRefund extends RefundTypeEnumeration.RefundTypeEnumeration {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Information about questions that may be asked, when to see a professional, measures
+/// before seeing a doctor or content about the first consultation.
+///
+/// See: <https://schema.org/SeeDoctorHealthAspect>
+/// Model depth: 5
+open class SeeDoctorHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

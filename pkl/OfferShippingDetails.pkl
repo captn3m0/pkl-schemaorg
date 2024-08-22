@@ -1,0 +1,56 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// OfferShippingDetails represents information about shipping destinations. Multiple
+/// of these entities can be used to represent different shipping rates for different destinations:
+/// One entity for Alaska/Hawaii. A different one for continental US. A different one for
+/// all France. Multiple of these entities can be used to represent different shipping costs
+/// and delivery times. Two entities that are identical but differ in rate and time: E.g.
+/// Cheaper and slower: $5 in 5-7 days or Fast and expensive: $15 in 1-2 days.
+///
+/// See: <https://schema.org/OfferShippingDetails>
+/// Model depth: 4
+open class OfferShippingDetails extends StructuredValue.StructuredValue {
+        
+    /// The total delay between the receipt of the order and the goods reaching the final customer.
+    deliveryTime: (Listing<String>|String)?
+        
+    /// indicates (possibly multiple) shipping destinations. These can be defined in several
+    /// ways, e.g. postalCode ranges.
+    shippingDestination: (Listing<String>|String)?
+        
+    /// Indicates the origin of a shipment, i.e. where it should be coming from.
+    shippingOrigin: (Listing<String>|String)?
+        
+    /// The depth of the item.
+    depth: (Listing<String>|String)?
+        
+    /// The height of the item.
+    height: (Listing<String>|String)?
+        
+    /// The width of the item.
+    width: (Listing<String>|String)?
+        
+    /// The shipping rate is the cost of shipping to the specified destination. Typically, the
+    /// maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.
+    shippingRate: (Listing<String>|String)?
+        
+    /// Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within
+    /// the context of a [[shippingSettingsLink]] cross-reference).
+    transitTimeLabel: (Listing<String>|String)?
+        
+    /// Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]] (within
+    /// the context of a [[shippingSettingsLink]] cross-reference).
+    shippingLabel: (Listing<String>|String)?
+        
+    /// Link to a page containing [[ShippingRateSettings]] and [[DeliveryTimeSettings]]
+    /// details.
+    shippingSettingsLink: (Listing<URL|String>|URL|String)?
+        
+    /// Indicates when shipping to a particular [[shippingDestination]] is not available.
+    doesNotShip: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// The weight of the product or person.
+    weight: (Listing<String>|String)?
+    
+}

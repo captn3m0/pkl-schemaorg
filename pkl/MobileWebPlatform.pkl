@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DigitalPlatformEnumeration.pkl"
+/// Represents the broad notion of 'mobile' browsers as a Web Platform.
+///
+/// See: <https://schema.org/MobileWebPlatform>
+/// Model depth: 5
+open class MobileWebPlatform extends DigitalPlatformEnumeration.DigitalPlatformEnumeration {
+    
+}

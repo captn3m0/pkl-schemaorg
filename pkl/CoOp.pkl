@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GamePlayMode.pkl"
+/// Play mode: CoOp. Co-operative games, where you play on the same team with friends.
+///
+/// See: <https://schema.org/CoOp>
+/// Model depth: 5
+open class CoOp extends GamePlayMode.GamePlayMode {
+    
+}

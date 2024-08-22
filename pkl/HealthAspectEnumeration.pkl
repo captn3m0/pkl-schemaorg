@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// HealthAspectEnumeration enumerates several aspects of health content online, each
+/// of which might be described using [[hasHealthAspect]] and [[HealthTopicContent]].
+///
+/// See: <https://schema.org/HealthAspectEnumeration>
+/// Model depth: 4
+open class HealthAspectEnumeration extends Enumeration.Enumeration {
+    
+}

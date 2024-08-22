@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrganizeAction.pkl"
+/// The act of registering to an organization/service without the guarantee to receive
+/// it. Related actions: * [[RegisterAction]]: Unlike RegisterAction, ApplyAction has
+/// no guarantees that the application will be accepted.
+///
+/// See: <https://schema.org/ApplyAction>
+/// Model depth: 4
+open class ApplyAction extends OrganizeAction.OrganizeAction {
+    
+}

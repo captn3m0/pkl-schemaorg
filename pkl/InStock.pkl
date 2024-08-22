@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ItemAvailability.pkl"
+/// Indicates that the item is in stock.
+///
+/// See: <https://schema.org/InStock>
+/// Model depth: 5
+open class InStock extends ItemAvailability.ItemAvailability {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PriceTypeEnumeration.pkl"
+/// Represents the invoice price of an offered product.
+///
+/// See: <https://schema.org/InvoicePrice>
+/// Model depth: 5
+open class InvoicePrice extends PriceTypeEnumeration.PriceTypeEnumeration {
+    
+}

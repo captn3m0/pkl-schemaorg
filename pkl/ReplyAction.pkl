@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CommunicateAction.pkl"
+/// The act of responding to a question/message asked/sent by the object. Related to [[AskAction]].
+/// Related actions: * [[AskAction]]: Appears generally as an origin of a ReplyAction.
+///
+/// See: <https://schema.org/ReplyAction>
+/// Model depth: 5
+open class ReplyAction extends CommunicateAction.CommunicateAction {
+        
+    /// A sub property of result. The Comment created or sent as a result of this action.
+    resultComment: (Listing<String>|String)?
+    
+}

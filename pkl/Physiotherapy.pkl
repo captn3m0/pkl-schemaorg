@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// The practice of treatment of disease, injury, or deformity by physical methods such
+/// as massage, heat treatment, and exercise rather than by drugs or surgery.
+///
+/// See: <https://schema.org/Physiotherapy>
+/// Model depth: 5
+open class Physiotherapy extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

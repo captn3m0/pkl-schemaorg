@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugPrescriptionStatus.pkl"
+/// The character of a medical substance, typically a medicine, of being available over
+/// the counter or not.
+///
+/// See: <https://schema.org/OTC>
+/// Model depth: 6
+open class OTC extends DrugPrescriptionStatus.DrugPrescriptionStatus {
+    
+}

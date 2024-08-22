@@ -1,0 +1,25 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a "weblog". Note
+/// that the individual posts ([[BlogPosting]]s) in a [[Blog]] are often colloquially
+/// referred to by the same term.
+///
+/// See: <https://schema.org/Blog>
+/// Model depth: 3
+open class Blog extends CreativeWork.CreativeWork {
+        
+    /// A posting that is part of this blog.
+    blogPost: (Listing<String>|String)?
+        
+    /// The International Standard Serial Number (ISSN) that identifies this serial publication.
+    /// You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)
+    /// for, this serial publication.
+    issn: (Listing<String>|String)?
+        
+    /// Indicates a post that is part of a [[Blog]]. Note that historically, what we term a "Blog"
+    /// was once known as a "weblog", and that what we term a "BlogPosting" is now often colloquially
+    /// referred to as a "blog".
+    blogPosts: (Listing<String>|String)?
+    
+}

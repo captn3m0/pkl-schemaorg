@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// A QAPage is a WebPage focussed on a specific Question and its Answer(s), e.g. in a question
+/// answering site or documenting Frequently Asked Questions (FAQs).
+///
+/// See: <https://schema.org/QAPage>
+/// Model depth: 4
+open class QAPage extends WebPage.WebPage {
+    
+}

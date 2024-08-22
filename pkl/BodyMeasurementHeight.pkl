@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Body height (measured between crown of head and soles of feet). Used, for example, to
+/// fit jackets.
+///
+/// See: <https://schema.org/BodyMeasurementHeight>
+/// Model depth: 6
+open class BodyMeasurementHeight extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

@@ -1,0 +1,60 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A review of an item - for example, of a restaurant, movie, or store.
+///
+/// See: <https://schema.org/Review>
+/// Model depth: 3
+open class Review extends CreativeWork.CreativeWork {
+        
+    /// An associated [[ClaimReview]], related by specific common content, topic or claim.
+    /// The expectation is that this property would be most typically used in cases where a single
+    /// activity is conducting both claim reviews and media reviews, in which case [[relatedMediaReview]]
+    /// would commonly be used on a [[ClaimReview]], while [[relatedClaimReview]] would be
+    /// used on [[MediaReview]].
+    associatedClaimReview: (Listing<Review|String>|Review|String)?
+        
+    /// The item that is being reviewed/rated.
+    itemReviewed: (Listing<String>|String)?
+        
+    /// Provides negative considerations regarding something, most typically in pro/con
+    /// lists for reviews (alongside [[positiveNotes]]). For symmetry In the case of a [[Review]],
+    /// the property describes the [[itemReviewed]] from the perspective of the review; in
+    /// the case of a [[Product]], the product itself is being described. Since product descriptions
+    /// tend to emphasise positive claims, it may be relatively unusual to find [[negativeNotes]]
+    /// used in this way. Nevertheless for the sake of symmetry, [[negativeNotes]] can be used
+    /// on [[Product]]. The property values can be expressed either as unstructured text (repeated
+    /// as necessary), or if ordered, as a list (in which case the most negative is at the beginning
+    /// of the list).
+    negativeNotes: (Listing<String>|String)?
+        
+    /// The rating given in this review. Note that reviews can themselves be rated. The ```reviewRating```
+    /// applies to rating given by the review. The [[aggregateRating]] property applies to
+    /// the review itself, as a creative work.
+    reviewRating: (Listing<String>|String)?
+        
+    /// An associated [[MediaReview]], related by specific common content, topic or claim.
+    /// The expectation is that this property would be most typically used in cases where a single
+    /// activity is conducting both claim reviews and media reviews, in which case [[relatedMediaReview]]
+    /// would commonly be used on a [[ClaimReview]], while [[relatedClaimReview]] would be
+    /// used on [[MediaReview]].
+    associatedMediaReview: (Listing<Review|String>|Review|String)?
+        
+    /// An associated [[Review]].
+    associatedReview: (Listing<Review|String>|Review|String)?
+        
+    /// The actual body of the review.
+    reviewBody: (Listing<String>|String)?
+        
+    /// Provides positive considerations regarding something, for example product highlights
+    /// or (alongside [[negativeNotes]]) pro/con lists for reviews. In the case of a [[Review]],
+    /// the property describes the [[itemReviewed]] from the perspective of the review; in
+    /// the case of a [[Product]], the product itself is being described. The property values
+    /// can be expressed either as unstructured text (repeated as necessary), or if ordered,
+    /// as a list (in which case the most positive is at the beginning of the list).
+    positiveNotes: (Listing<String>|String)?
+        
+    /// This Review or Rating is relevant to this part or facet of the itemReviewed.
+    reviewAspect: (Listing<String>|String)?
+    
+}

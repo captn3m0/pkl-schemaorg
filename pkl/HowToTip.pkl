@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ListItem.pkl"
+import "CreativeWork.pkl"
+/// An explanation in the instructions for how to achieve a result. It provides supplementary
+/// information about a technique, supply, author's preference, etc. It can explain what
+/// could be done, or what should not be done, but doesn't specify what should be done (see
+/// HowToDirection).
+///
+/// See: <https://schema.org/HowToTip>
+/// Model depth: 3
+open class HowToTip extends ListItem.ListItem CreativeWork.CreativeWork {
+    
+}

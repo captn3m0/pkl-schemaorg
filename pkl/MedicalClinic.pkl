@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalBusiness.pkl"
+import "MedicalOrganization.pkl"
+/// A facility, often associated with a hospital or medical school, that is devoted to the
+/// specific diagnosis and/or healthcare. Previously limited to outpatients but with
+/// evolution it may be open to inpatients as well.
+///
+/// See: <https://schema.org/MedicalClinic>
+/// Model depth: 4
+open class MedicalClinic extends MedicalBusiness.MedicalBusiness MedicalOrganization.MedicalOrganization {
+        
+    /// A medical service available from this provider.
+    availableService: (Listing<String>|String)?
+        
+    /// A medical specialty of the provider.
+    medicalSpecialty: (Listing<String>|String)?
+    
+}

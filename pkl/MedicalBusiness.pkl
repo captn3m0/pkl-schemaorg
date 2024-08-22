@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A particular physical or virtual business of an organization for medical purposes.
+/// Examples of MedicalBusiness include different businesses run by health professionals.
+///
+/// See: <https://schema.org/MedicalBusiness>
+/// Model depth: 4
+open class MedicalBusiness extends LocalBusiness.LocalBusiness {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// A page devoted to a single item, such as a particular product or hotel.
+///
+/// See: <https://schema.org/ItemPage>
+/// Model depth: 4
+open class ItemPage extends WebPage.WebPage {
+    
+}

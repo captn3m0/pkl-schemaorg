@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableMeasurementTypeEnumeration.pkl"
+/// Measurement of the hip section, for example of a skirt.
+///
+/// See: <https://schema.org/WearableMeasurementHips>
+/// Model depth: 6
+open class WearableMeasurementHips extends WearableMeasurementTypeEnumeration.WearableMeasurementTypeEnumeration {
+    
+}

@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// The anatomical location at which two or more bones make contact.
+///
+/// See: <https://schema.org/Joint>
+/// Model depth: 4
+open class Joint extends AnatomicalStructure.AnatomicalStructure {
+        
+    /// The biomechanical properties of the bone.
+    biomechnicalClass: (Listing<String>|String)?
+        
+    /// The degree of mobility the joint allows.
+    functionalClass: (Listing<String>|String)?
+        
+    /// The name given to how bone physically connects to each other.
+    structuralClass: (Listing<String>|String)?
+    
+}

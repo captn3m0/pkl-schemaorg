@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// A muscle is an anatomical structure consisting of a contractile form of tissue that animals
+/// use to effect movement.
+///
+/// See: <https://schema.org/Muscle>
+/// Model depth: 4
+open class Muscle extends AnatomicalStructure.AnatomicalStructure {
+        
+    /// The movement the muscle generates.
+    muscleAction: (Listing<String>|String)?
+        
+    /// The blood vessel that carries blood from the heart to the muscle.
+    bloodSupply: (Listing<String>|String)?
+        
+    /// The underlying innervation associated with the muscle.
+    nerve: (Listing<String>|String)?
+        
+    /// The muscle whose action counteracts the specified muscle.
+    antagonist: (Listing<Muscle|String>|Muscle|String)?
+        
+    /// The place of attachment of a muscle, or what the muscle moves.
+    insertion: (Listing<String>|String)?
+    
+}

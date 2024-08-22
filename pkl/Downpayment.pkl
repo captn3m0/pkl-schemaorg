@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PriceComponentTypeEnumeration.pkl"
+/// Represents the downpayment (up-front payment) price component of the total price for
+/// an offered product that has additional installment payments.
+///
+/// See: <https://schema.org/Downpayment>
+/// Model depth: 5
+open class Downpayment extends PriceComponentTypeEnumeration.PriceComponentTypeEnumeration {
+    
+}

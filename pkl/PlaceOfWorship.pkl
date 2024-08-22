@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// Place of worship, such as a church, synagogue, or mosque.
+///
+/// See: <https://schema.org/PlaceOfWorship>
+/// Model depth: 4
+open class PlaceOfWorship extends CivicStructure.CivicStructure {
+    
+}

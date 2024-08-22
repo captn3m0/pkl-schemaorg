@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "QualitativeValue.pkl"
+/// A type of bed. This is used for indicating the bed or beds available in an accommodation.
+///
+/// See: <https://schema.org/BedType>
+/// Model depth: 5
+open class BedType extends QualitativeValue.QualitativeValue {
+    
+}

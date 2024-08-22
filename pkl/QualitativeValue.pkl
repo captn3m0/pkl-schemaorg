@@ -1,0 +1,47 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// A predefined value for a product characteristic, e.g. the power cord plug type 'US' or
+/// the garment sizes 'S', 'M', 'L', and 'XL'.
+///
+/// See: <https://schema.org/QualitativeValue>
+/// Model depth: 4
+open class QualitativeValue extends Enumeration.Enumeration {
+        
+    /// This ordering relation for qualitative values indicates that the subject is equal to
+    /// the object.
+    equal: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+        
+    /// This ordering relation for qualitative values indicates that the subject is greater
+    /// than or equal to the object.
+    greaterOrEqual: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+        
+    /// This ordering relation for qualitative values indicates that the subject is not equal
+    /// to the object.
+    nonEqual: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+        
+    /// A property-value pair representing an additional characteristic of the entity, e.g.
+    /// a product feature or another characteristic for which there is no matching property
+    /// in schema.org. Note: Publishers should be aware that applications designed to use specific
+    /// schema.org properties (e.g. https://schema.org/width, https://schema.org/color,
+    /// https://schema.org/gtin13, ...) will typically expect such data to be provided using
+    /// those properties, rather than using the generic property/value mechanism.
+    additionalProperty: (Listing<String>|String)?
+        
+    /// This ordering relation for qualitative values indicates that the subject is lesser
+    /// than the object.
+    lesser: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+        
+    /// This ordering relation for qualitative values indicates that the subject is greater
+    /// than the object.
+    greater: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+        
+    /// A secondary value that provides additional information on the original value, e.g.
+    /// a reference temperature or a type of measurement.
+    valueReference: (Listing<String|QualitativeValue>|String|QualitativeValue)?
+        
+    /// This ordering relation for qualitative values indicates that the subject is lesser
+    /// than or equal to the object.
+    lesserOrEqual: (Listing<QualitativeValue|String>|QualitativeValue|String)?
+    
+}

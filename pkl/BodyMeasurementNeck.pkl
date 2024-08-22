@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Girth of neck. Used, for example, to fit shirts.
+///
+/// See: <https://schema.org/BodyMeasurementNeck>
+/// Model depth: 6
+open class BodyMeasurementNeck extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

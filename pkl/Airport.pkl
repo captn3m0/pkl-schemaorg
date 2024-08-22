@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// An airport.
+///
+/// See: <https://schema.org/Airport>
+/// Model depth: 4
+open class Airport extends CivicStructure.CivicStructure {
+        
+    /// ICAO identifier for an airport.
+    icaoCode: (Listing<String>|String)?
+        
+    /// IATA identifier for an airline or airport.
+    iataCode: (Listing<String>|String)?
+    
+}

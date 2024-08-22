@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreateAction.pkl"
+/// The act of authoring written creative content.
+///
+/// See: <https://schema.org/WriteAction>
+/// Model depth: 4
+open class WriteAction extends CreateAction.CreateAction {
+        
+    /// The language of the content or performance or used in an action. Please use one of the language
+    /// codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also
+    /// [[availableLanguage]].
+    inLanguage: (Listing<String>|String)?
+        
+    /// A sub property of instrument. The language used on this action.
+    language: (Listing<String>|String)?
+    
+}

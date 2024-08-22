@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HowToItem.pkl"
+/// A supply consumed when performing the instructions for how to achieve a result.
+///
+/// See: <https://schema.org/HowToSupply>
+/// Model depth: 5
+open class HowToSupply extends HowToItem.HowToItem {
+        
+    /// The estimated cost of the supply or supplies consumed when performing instructions.
+    estimatedCost: (Listing<String>|String)?
+    
+}

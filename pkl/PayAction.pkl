@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// An agent pays a price to a participant.
+///
+/// See: <https://schema.org/PayAction>
+/// Model depth: 4
+open class PayAction extends TradeAction.TradeAction {
+        
+    /// A sub property of participant. The participant who is at the receiving end of the action.
+    recipient: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalObservationalStudyDesign.pkl"
+/// An observational study design.
+///
+/// See: <https://schema.org/Observational>
+/// Model depth: 6
+open class Observational extends MedicalObservationalStudyDesign.MedicalObservationalStudyDesign {
+    
+}

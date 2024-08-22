@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicineSystem.pkl"
+/// A system of medicine focused on promoting the body's innate ability to heal itself.
+///
+/// See: <https://schema.org/Osteopathic>
+/// Model depth: 6
+open class Osteopathic extends MedicineSystem.MedicineSystem {
+    
+}

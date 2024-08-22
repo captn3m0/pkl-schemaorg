@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalIntangible.pkl"
+/// The legal availability status of a medical drug.
+///
+/// See: <https://schema.org/DrugLegalStatus>
+/// Model depth: 4
+open class DrugLegalStatus extends MedicalIntangible.MedicalIntangible {
+        
+    /// The location in which the status applies.
+    applicableLocation: (Listing<String>|String)?
+    
+}

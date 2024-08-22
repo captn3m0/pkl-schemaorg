@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Service.pkl"
+/// A food service, like breakfast, lunch, or dinner.
+///
+/// See: <https://schema.org/FoodService>
+/// Model depth: 4
+open class FoodService extends Service.Service {
+    
+}

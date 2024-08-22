@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CommunicateAction.pkl"
+/// The act of generating a comment about a subject.
+///
+/// See: <https://schema.org/CommentAction>
+/// Model depth: 5
+open class CommentAction extends CommunicateAction.CommunicateAction {
+        
+    /// A sub property of result. The Comment created or sent as a result of this action.
+    resultComment: (Listing<String>|String)?
+    
+}

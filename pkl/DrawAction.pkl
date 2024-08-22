@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreateAction.pkl"
+/// The act of producing a visual/graphical representation of an object, typically with
+/// a pen/pencil and paper as instruments.
+///
+/// See: <https://schema.org/DrawAction>
+/// Model depth: 4
+open class DrawAction extends CreateAction.CreateAction {
+    
+}

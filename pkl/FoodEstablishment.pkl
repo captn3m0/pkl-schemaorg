@@ -1,0 +1,29 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A food-related business.
+///
+/// See: <https://schema.org/FoodEstablishment>
+/// Model depth: 4
+open class FoodEstablishment extends LocalBusiness.LocalBusiness {
+        
+    /// Either the actual menu as a structured representation, as text, or a URL of the menu.
+    hasMenu: (Listing<URL|String>|URL|String)?
+        
+    /// An official rating for a lodging business or food establishment, e.g. from national
+    /// associations or standards bodies. Use the author property to indicate the rating organization,
+    /// e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).
+    starRating: (Listing<String>|String)?
+        
+    /// The cuisine of the restaurant.
+    servesCuisine: (Listing<String>|String)?
+        
+    /// Either the actual menu as a structured representation, as text, or a URL of the menu.
+    menu: (Listing<URL|String>|URL|String)?
+        
+    /// Indicates whether a FoodEstablishment accepts reservations. Values can be Boolean,
+    /// an URL at which reservations can be made or (for backwards compatibility) the strings
+    /// ```Yes``` or ```No```.
+    acceptsReservations: (Listing<URL|Boolean|String>|URL|Boolean|String)?
+    
+}

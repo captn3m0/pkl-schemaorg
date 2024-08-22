@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TransferAction.pkl"
+/// The act of providing an object under an agreement that it will be returned at a later date.
+/// Reciprocal of BorrowAction. Related actions: * [[BorrowAction]]: Reciprocal of LendAction.
+///
+/// See: <https://schema.org/LendAction>
+/// Model depth: 4
+open class LendAction extends TransferAction.TransferAction {
+        
+    /// A sub property of participant. The person that borrows the object being lent.
+    borrower: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Periodical.pkl"
+/// A sequential publication of comic stories under a unifying title, for example "The Amazing
+/// Spider-Man" or "Groo the Wanderer".
+///
+/// See: <https://schema.org/ComicSeries>
+/// Model depth: 5
+open class ComicSeries extends Periodical.Periodical {
+    
+}

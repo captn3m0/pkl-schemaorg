@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// An organization with archival holdings. An organization which keeps and preserves
+/// archival material and typically makes it accessible to the public.
+///
+/// See: <https://schema.org/ArchiveOrganization>
+/// Model depth: 4
+open class ArchiveOrganization extends LocalBusiness.LocalBusiness {
+        
+    /// Collection, [fonds](https://en.wikipedia.org/wiki/Fonds), or item held, kept
+    /// or maintained by an [[ArchiveOrganization]].
+    archiveHeld: (Listing<String>|String)?
+    
+}

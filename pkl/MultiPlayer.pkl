@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GamePlayMode.pkl"
+/// Play mode: MultiPlayer. Requiring or allowing multiple human players to play simultaneously.
+///
+/// See: <https://schema.org/MultiPlayer>
+/// Model depth: 5
+open class MultiPlayer extends GamePlayMode.GamePlayMode {
+    
+}

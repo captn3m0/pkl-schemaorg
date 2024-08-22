@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// A single item within a larger data feed.
+///
+/// See: <https://schema.org/DataFeedItem>
+/// Model depth: 3
+open class DataFeedItem extends Intangible.Intangible {
+        
+    /// The date on which the CreativeWork was most recently modified or when the item's entry
+    /// was modified within a DataFeed.
+    dateModified: (Listing<String|String>|String|String)?
+        
+    /// An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').
+    item: (Listing<String>|String)?
+        
+    /// The date on which the CreativeWork was created or the item was added to a DataFeed.
+    dateCreated: (Listing<String|String>|String|String)?
+        
+    /// The datetime the item was removed from the DataFeed.
+    dateDeleted: (Listing<String|String>|String|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalActivityCategory.pkl"
+/// Physical activity that is engaged to help maintain posture and balance.
+///
+/// See: <https://schema.org/Balance>
+/// Model depth: 5
+open class Balance extends PhysicalActivityCategory.PhysicalActivityCategory {
+    
+}

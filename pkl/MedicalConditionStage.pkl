@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalIntangible.pkl"
+/// A stage of a medical condition, such as 'Stage IIIa'.
+///
+/// See: <https://schema.org/MedicalConditionStage>
+/// Model depth: 4
+open class MedicalConditionStage extends MedicalIntangible.MedicalIntangible {
+        
+    /// The substage, e.g. 'a' for Stage IIIa.
+    subStageSuffix: (Listing<String>|String)?
+        
+    /// The stage represented as a number, e.g. 3.
+    stageAsNumber: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ConsumeAction.pkl"
+/// The act of applying an object to its intended purpose.
+///
+/// See: <https://schema.org/UseAction>
+/// Model depth: 4
+open class UseAction extends ConsumeAction.ConsumeAction {
+    
+}

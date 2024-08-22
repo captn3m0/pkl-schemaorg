@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EUEnergyEfficiencyEnumeration.pkl"
+/// Represents EU Energy Efficiency Class E as defined in EU energy labeling regulations.
+///
+/// See: <https://schema.org/EUEnergyEfficiencyCategoryE>
+/// Model depth: 6
+open class EUEnergyEfficiencyCategoryE extends EUEnergyEfficiencyEnumeration.EUEnergyEfficiencyEnumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FoodEstablishment.pkl"
+/// A bakery.
+///
+/// See: <https://schema.org/Bakery>
+/// Model depth: 5
+open class Bakery extends FoodEstablishment.FoodEstablishment {
+    
+}

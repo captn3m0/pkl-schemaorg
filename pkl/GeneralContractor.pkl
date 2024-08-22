@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HomeAndConstructionBusiness.pkl"
+/// A general contractor.
+///
+/// See: <https://schema.org/GeneralContractor>
+/// Model depth: 5
+open class GeneralContractor extends HomeAndConstructionBusiness.HomeAndConstructionBusiness {
+    
+}

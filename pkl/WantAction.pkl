@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReactAction.pkl"
+/// The act of expressing a desire about the object. An agent wants an object.
+///
+/// See: <https://schema.org/WantAction>
+/// Model depth: 5
+open class WantAction extends ReactAction.ReactAction {
+    
+}

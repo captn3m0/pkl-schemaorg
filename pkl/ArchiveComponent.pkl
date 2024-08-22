@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// An intangible type to be applied to any archive content, carrying with it a set of properties
+/// required to describe archival items and collections.
+///
+/// See: <https://schema.org/ArchiveComponent>
+/// Model depth: 3
+open class ArchiveComponent extends CreativeWork.CreativeWork {
+        
+    /// [[ArchiveOrganization]] that holds, keeps or maintains the [[ArchiveComponent]].
+    holdingArchive: (Listing<String>|String)?
+        
+    /// Current location of the item.
+    itemLocation: (Listing<String>|String)?
+    
+}

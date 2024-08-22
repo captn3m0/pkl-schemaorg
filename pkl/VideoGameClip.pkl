@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Clip.pkl"
+/// A short segment/part of a video game.
+///
+/// See: <https://schema.org/VideoGameClip>
+/// Model depth: 4
+open class VideoGameClip extends Clip.Clip {
+    
+}

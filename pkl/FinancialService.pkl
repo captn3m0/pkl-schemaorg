@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// Financial services business.
+///
+/// See: <https://schema.org/FinancialService>
+/// Model depth: 4
+open class FinancialService extends LocalBusiness.LocalBusiness {
+        
+    /// Description of fees, commissions, and other terms applied either to a class of financial
+    /// product, or by a financial service organization.
+    feesAndCommissionsSpecification: (Listing<URL|String>|URL|String)?
+    
+}

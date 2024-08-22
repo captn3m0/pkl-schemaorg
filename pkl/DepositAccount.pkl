@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InvestmentOrDeposit.pkl"
+import "BankAccount.pkl"
+/// A type of Bank Account with a main purpose of depositing funds to gain interest or other
+/// benefits.
+///
+/// See: <https://schema.org/DepositAccount>
+/// Model depth: 6
+open class DepositAccount extends InvestmentOrDeposit.InvestmentOrDeposit BankAccount.BankAccount {
+    
+}

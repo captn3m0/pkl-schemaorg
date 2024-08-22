@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// A diet restricted to certain foods or preparations for cultural, religious, health
+/// or lifestyle reasons.
+///
+/// See: <https://schema.org/RestrictedDiet>
+/// Model depth: 4
+open class RestrictedDiet extends Enumeration.Enumeration {
+    
+}

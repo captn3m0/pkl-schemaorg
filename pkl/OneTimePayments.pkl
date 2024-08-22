@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBenefitsType.pkl"
+/// OneTimePayments: this is a benefit for one-time payments for individuals.
+///
+/// See: <https://schema.org/OneTimePayments>
+/// Model depth: 5
+open class OneTimePayments extends GovernmentBenefitsType.GovernmentBenefitsType {
+    
+}

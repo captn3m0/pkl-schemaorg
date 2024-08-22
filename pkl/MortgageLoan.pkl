@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LoanOrCredit.pkl"
+/// A loan in which property or real estate is used as collateral. (A loan securitized against
+/// some real estate.)
+///
+/// See: <https://schema.org/MortgageLoan>
+/// Model depth: 6
+open class MortgageLoan extends LoanOrCredit.LoanOrCredit {
+        
+    /// Whether borrower is a resident of the jurisdiction where the property is located.
+    domiciledMortgage: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// Amount of mortgage mandate that can be converted into a proper mortgage at a later stage.
+    loanMortgageMandateAmount: (Listing<String>|String)?
+    
+}

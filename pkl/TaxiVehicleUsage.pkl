@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CarUsageType.pkl"
+/// Indicates the usage of the car as a taxi.
+///
+/// See: <https://schema.org/TaxiVehicleUsage>
+/// Model depth: 5
+open class TaxiVehicleUsage extends CarUsageType.CarUsageType {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content that discusses practical and policy aspects for getting access to specific
+/// kinds of healthcare (e.g. distribution mechanisms for vaccines).
+///
+/// See: <https://schema.org/GettingAccessHealthAspect>
+/// Model depth: 5
+open class GettingAccessHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

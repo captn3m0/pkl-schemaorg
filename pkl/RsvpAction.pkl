@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InformAction.pkl"
+/// The act of notifying an event organizer as to whether you expect to attend the event.
+///
+/// See: <https://schema.org/RsvpAction>
+/// Model depth: 6
+open class RsvpAction extends InformAction.InformAction {
+        
+    /// The response (yes, no, maybe) to the RSVP.
+    rsvpResponse: (Listing<String>|String)?
+        
+    /// If responding yes, the number of guests who will attend in addition to the invitee.
+    additionalNumberOfGuests: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// Comments, typically from users.
+    comment: (Listing<String>|String)?
+    
+}

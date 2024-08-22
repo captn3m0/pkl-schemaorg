@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Side effects that can be observed from the usage of the topic.
+///
+/// See: <https://schema.org/SideEffectsHealthAspect>
+/// Model depth: 5
+open class SideEffectsHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

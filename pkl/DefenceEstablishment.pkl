@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBuilding.pkl"
+/// A defence establishment, such as an army or navy base.
+///
+/// See: <https://schema.org/DefenceEstablishment>
+/// Model depth: 5
+open class DefenceEstablishment extends GovernmentBuilding.GovernmentBuilding {
+    
+}

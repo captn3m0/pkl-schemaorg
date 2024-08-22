@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// The act of taking money from a buyer in exchange for goods or services rendered. An agent
+/// sells an object, product, or service to a buyer for a price. Reciprocal of BuyAction.
+///
+/// See: <https://schema.org/SellAction>
+/// Model depth: 4
+open class SellAction extends TradeAction.TradeAction {
+        
+    /// The warranty promise(s) included in the offer.
+    warrantyPromise: (Listing<String>|String)?
+        
+    /// A sub property of participant. The participant/person/organization that bought the
+    /// object.
+    buyer: (Listing<String>|String)?
+    
+}

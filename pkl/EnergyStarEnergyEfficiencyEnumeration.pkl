@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EnergyEfficiencyEnumeration.pkl"
+/// Used to indicate whether a product is EnergyStar certified.
+///
+/// See: <https://schema.org/EnergyStarEnergyEfficiencyEnumeration>
+/// Model depth: 5
+open class EnergyStarEnergyEfficiencyEnumeration extends EnergyEfficiencyEnumeration.EnergyEfficiencyEnumeration {
+    
+}

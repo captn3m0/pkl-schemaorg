@@ -1,0 +1,21 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PropertyValue.pkl"
+/// Specifies a location feature by providing a structured value representing a feature
+/// of an accommodation as a property-value pair of varying degrees of formality.
+///
+/// See: <https://schema.org/LocationFeatureSpecification>
+/// Model depth: 5
+open class LocationFeatureSpecification extends PropertyValue.PropertyValue {
+        
+    /// The hours during which this service or contact is available.
+    hoursAvailable: (Listing<String>|String)?
+        
+    /// The date after when the item is not valid. For example the end of an offer, salary period,
+    /// or a period of opening hours.
+    validThrough: (Listing<String|String>|String|String)?
+        
+    /// The date when the item becomes valid.
+    validFrom: (Listing<String|String>|String|String)?
+    
+}

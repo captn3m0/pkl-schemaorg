@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CategoryCode.pkl"
+import "MedicalIntangible.pkl"
+/// A code for a medical entity.
+///
+/// See: <https://schema.org/MedicalCode>
+/// Model depth: 4
+open class MedicalCode extends CategoryCode.CategoryCode MedicalIntangible.MedicalIntangible {
+        
+    /// A short textual code that uniquely identifies the value.
+    codeValue: (Listing<String>|String)?
+        
+    /// The coding system, e.g. 'ICD-10'.
+    codingSystem: (Listing<String>|String)?
+    
+}

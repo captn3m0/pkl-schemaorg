@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that pertains to the study of the respiratory system
+/// and its respective disease states.
+///
+/// See: <https://schema.org/Pulmonary>
+/// Model depth: 6
+open class Pulmonary extends MedicalSpecialty.MedicalSpecialty {
+    
+}

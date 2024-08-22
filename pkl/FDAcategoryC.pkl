@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugPregnancyCategory.pkl"
+/// A designation by the US FDA signifying that animal reproduction studies have shown an
+/// adverse effect on the fetus and there are no adequate and well-controlled studies in
+/// humans, but potential benefits may warrant use of the drug in pregnant women despite
+/// potential risks.
+///
+/// See: <https://schema.org/FDAcategoryC>
+/// Model depth: 6
+open class FDAcategoryC extends DrugPregnancyCategory.DrugPregnancyCategory {
+    
+}

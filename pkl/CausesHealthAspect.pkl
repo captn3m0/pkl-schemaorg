@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Information about the causes and main actions that gave rise to the topic.
+///
+/// See: <https://schema.org/CausesHealthAspect>
+/// Model depth: 5
+open class CausesHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

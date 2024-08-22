@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// Web page type: Contact page.
+///
+/// See: <https://schema.org/ContactPage>
+/// Model depth: 4
+open class ContactPage extends WebPage.WebPage {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Quantity.pkl"
+/// Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of
+/// measure&gt;'. E.g., '7 kg'.
+///
+/// See: <https://schema.org/Mass>
+/// Model depth: 4
+open class Mass extends Quantity.Quantity {
+    
+}

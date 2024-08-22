@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Quantity.pkl"
+/// Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length
+/// unit of measure&gt;'. E.g., '7 ft'.
+///
+/// See: <https://schema.org/Distance>
+/// Model depth: 4
+open class Distance extends Quantity.Quantity {
+    
+}

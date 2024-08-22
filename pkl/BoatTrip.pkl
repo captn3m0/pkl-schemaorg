@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Trip.pkl"
+/// A trip on a commercial ferry line.
+///
+/// See: <https://schema.org/BoatTrip>
+/// Model depth: 4
+open class BoatTrip extends Trip.Trip {
+        
+    /// The terminal or port from which the boat departs.
+    departureBoatTerminal: (Listing<String>|String)?
+        
+    /// The terminal or port from which the boat arrives.
+    arrivalBoatTerminal: (Listing<String>|String)?
+    
+}

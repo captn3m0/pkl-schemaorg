@@ -1,0 +1,24 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// A structured value representing exchange rate.
+///
+/// See: <https://schema.org/ExchangeRateSpecification>
+/// Model depth: 4
+open class ExchangeRateSpecification extends StructuredValue.StructuredValue {
+        
+    /// The difference between the price at which a broker or other intermediary buys and sells
+    /// foreign currency.
+    exchangeRateSpread: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The currency in which the monetary amount is expressed. Use standard formats: [ISO 4217
+    /// currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. "USD"; [Ticker
+    /// symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies,
+    /// e.g. "BTC"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+    /// (LETS) and other currency types, e.g. "Ithaca HOUR".
+    currency: (Listing<String>|String)?
+        
+    /// The current price of a currency.
+    currentExchangeRate: (Listing<String>|String)?
+    
+}

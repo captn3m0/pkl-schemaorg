@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// A taxi stand.
+///
+/// See: <https://schema.org/TaxiStand>
+/// Model depth: 4
+open class TaxiStand extends CivicStructure.CivicStructure {
+    
+}

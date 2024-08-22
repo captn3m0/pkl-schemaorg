@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GameAvailabilityEnumeration.pkl"
+/// Indicates demo game availability, i.e. a somehow limited demonstration of the full
+/// game.
+///
+/// See: <https://schema.org/DemoGameAvailability>
+/// Model depth: 5
+open class DemoGameAvailability extends GameAvailabilityEnumeration.GameAvailabilityEnumeration {
+    
+}

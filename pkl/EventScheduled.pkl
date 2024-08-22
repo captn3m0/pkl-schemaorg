@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EventStatusType.pkl"
+/// The event is taking place or has taken place on the startDate as scheduled. Use of this
+/// value is optional, as it is assumed by default.
+///
+/// See: <https://schema.org/EventScheduled>
+/// Model depth: 6
+open class EventScheduled extends EventStatusType.EventStatusType {
+    
+}

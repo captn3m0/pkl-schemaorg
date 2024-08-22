@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BookFormatType.pkl"
+/// Book format: Paperback.
+///
+/// See: <https://schema.org/Paperback>
+/// Model depth: 5
+open class Paperback extends BookFormatType.BookFormatType {
+    
+}

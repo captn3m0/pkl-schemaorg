@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalRiskEstimator.pkl"
+/// A complex mathematical calculation requiring an online calculator, used to assess
+/// prognosis. Note: use the url property of Thing to record any URLs for online calculators.
+///
+/// See: <https://schema.org/MedicalRiskCalculator>
+/// Model depth: 4
+open class MedicalRiskCalculator extends MedicalRiskEstimator.MedicalRiskEstimator {
+    
+}

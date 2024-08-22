@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalExam.pkl"
+/// Neck assessment with clinical examination.
+///
+/// See: <https://schema.org/Neck>
+/// Model depth: 5
+open class Neck extends PhysicalExam.PhysicalExam {
+    
+}

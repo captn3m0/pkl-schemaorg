@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugPregnancyCategory.pkl"
+/// A designation by the US FDA signifying that animal reproduction studies have failed
+/// to demonstrate a risk to the fetus and there are no adequate and well-controlled studies
+/// in pregnant women.
+///
+/// See: <https://schema.org/FDAcategoryB>
+/// Model depth: 6
+open class FDAcategoryB extends DrugPregnancyCategory.DrugPregnancyCategory {
+    
+}

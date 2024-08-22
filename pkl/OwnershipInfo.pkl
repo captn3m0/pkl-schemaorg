@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// A structured value providing information about when a certain organization or person
+/// owned a certain product.
+///
+/// See: <https://schema.org/OwnershipInfo>
+/// Model depth: 4
+open class OwnershipInfo extends StructuredValue.StructuredValue {
+        
+    /// The product that this structured value is referring to.
+    typeOfGood: (Listing<String>|String)?
+        
+    /// The date and time of obtaining the product.
+    ownedFrom: (Listing<String>|String)?
+        
+    /// The date and time of giving up ownership on the product.
+    ownedThrough: (Listing<String>|String)?
+        
+    /// The organization or person from which the product was acquired.
+    acquiredFrom: (Listing<String>|String)?
+    
+}

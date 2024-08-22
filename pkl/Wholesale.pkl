@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugCostCategory.pkl"
+/// The drug's cost represents the wholesale acquisition cost of the drug.
+///
+/// See: <https://schema.org/Wholesale>
+/// Model depth: 6
+open class Wholesale extends DrugCostCategory.DrugCostCategory {
+    
+}

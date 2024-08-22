@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InfectiousAgentClass.pkl"
+/// Pathogenic bacteria that cause bacterial infection.
+///
+/// See: <https://schema.org/Bacteria>
+/// Model depth: 6
+open class Bacteria extends InfectiousAgentClass.InfectiousAgentClass {
+    
+}

@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Reservation.pkl"
+/// A group of multiple reservations with common values for all sub-reservations.
+///
+/// See: <https://schema.org/ReservationPackage>
+/// Model depth: 4
+open class ReservationPackage extends Reservation.Reservation {
+        
+    /// The individual reservations included in the package. Typically a repeated property.
+    subReservation: (Listing<String>|String)?
+    
+}

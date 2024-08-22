@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ItemListOrderType.pkl"
+/// An ItemList ordered with no explicit order.
+///
+/// See: <https://schema.org/ItemListUnordered>
+/// Model depth: 5
+open class ItemListUnordered extends ItemListOrderType.ItemListOrderType {
+    
+}

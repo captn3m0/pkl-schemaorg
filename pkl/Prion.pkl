@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InfectiousAgentClass.pkl"
+/// A prion is an infectious agent composed of protein in a misfolded form.
+///
+/// See: <https://schema.org/Prion>
+/// Model depth: 6
+open class Prion extends InfectiousAgentClass.InfectiousAgentClass {
+    
+}

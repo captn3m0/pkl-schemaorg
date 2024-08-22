@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Service.pkl"
+/// An application programming interface accessible over Web/Internet technologies.
+///
+/// See: <https://schema.org/WebAPI>
+/// Model depth: 4
+open class WebAPI extends Service.Service {
+        
+    /// Further documentation describing the Web API in more detail.
+    documentation: (Listing<URL|String>|URL|String)?
+    
+}

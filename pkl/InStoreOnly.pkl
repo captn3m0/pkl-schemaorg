@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ItemAvailability.pkl"
+/// Indicates that the item is available only at physical locations.
+///
+/// See: <https://schema.org/InStoreOnly>
+/// Model depth: 5
+open class InStoreOnly extends ItemAvailability.ItemAvailability {
+    
+}

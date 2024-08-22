@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Rating.pkl"
+/// The average rating based on multiple ratings or reviews.
+///
+/// See: <https://schema.org/AggregateRating>
+/// Model depth: 4
+open class AggregateRating extends Rating.Rating {
+        
+    /// The item that is being reviewed/rated.
+    itemReviewed: (Listing<String>|String)?
+        
+    /// The count of total number of ratings.
+    ratingCount: (Listing<Int|String>|Int|String)?
+        
+    /// The count of total number of reviews.
+    reviewCount: (Listing<Int|String>|Int|String)?
+    
+}

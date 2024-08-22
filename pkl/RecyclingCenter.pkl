@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A recycling center.
+///
+/// See: <https://schema.org/RecyclingCenter>
+/// Model depth: 4
+open class RecyclingCenter extends LocalBusiness.LocalBusiness {
+    
+}

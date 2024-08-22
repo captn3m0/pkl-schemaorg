@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InteractAction.pkl"
+/// An agent leaves an event / group with participants/friends at a location. Related actions:
+/// * [[JoinAction]]: The antonym of LeaveAction. * [[UnRegisterAction]]: Unlike UnRegisterAction,
+/// LeaveAction implies leaving a group/team of people rather than a service.
+///
+/// See: <https://schema.org/LeaveAction>
+/// Model depth: 4
+open class LeaveAction extends InteractAction.InteractAction {
+        
+    /// Upcoming or past event associated with this place, organization, or action.
+    event: (Listing<String>|String)?
+    
+}

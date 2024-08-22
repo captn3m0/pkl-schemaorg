@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that is concerned with the ear, nose and throat and
+/// their respective disease states.
+///
+/// See: <https://schema.org/Otolaryngologic>
+/// Model depth: 5
+open class Otolaryngologic extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

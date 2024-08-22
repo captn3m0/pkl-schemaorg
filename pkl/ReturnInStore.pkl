@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnMethodEnumeration.pkl"
+/// Specifies that product returns must be made in a store.
+///
+/// See: <https://schema.org/ReturnInStore>
+/// Model depth: 5
+open class ReturnInStore extends ReturnMethodEnumeration.ReturnMethodEnumeration {
+    
+}

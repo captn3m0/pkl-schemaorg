@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AchieveAction.pkl"
+/// The act of reaching a draw in a competitive activity.
+///
+/// See: <https://schema.org/TieAction>
+/// Model depth: 4
+open class TieAction extends AchieveAction.AchieveAction {
+    
+}

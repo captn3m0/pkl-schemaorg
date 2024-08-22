@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DriveWheelConfigurationValue.pkl"
+/// All-wheel Drive is a transmission layout where the engine drives all four wheels.
+///
+/// See: <https://schema.org/AllWheelDriveConfiguration>
+/// Model depth: 6
+open class AllWheelDriveConfiguration extends DriveWheelConfigurationValue.DriveWheelConfigurationValue {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FinancialService.pkl"
+/// Accountancy business. As a [[LocalBusiness]] it can be described as a [[provider]]
+/// of one or more [[Service]]\(s).
+///
+/// See: <https://schema.org/AccountingService>
+/// Model depth: 5
+open class AccountingService extends FinancialService.FinancialService {
+    
+}

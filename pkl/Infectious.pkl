@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// Something in medical science that pertains to infectious diseases, i.e. caused by bacterial,
+/// viral, fungal or parasitic infections.
+///
+/// See: <https://schema.org/Infectious>
+/// Model depth: 6
+open class Infectious extends MedicalSpecialty.MedicalSpecialty {
+    
+}

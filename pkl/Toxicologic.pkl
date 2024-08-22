@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that is concerned with poisons, their nature, effects
+/// and detection and involved in the treatment of poisoning.
+///
+/// See: <https://schema.org/Toxicologic>
+/// Model depth: 6
+open class Toxicologic extends MedicalSpecialty.MedicalSpecialty {
+    
+}

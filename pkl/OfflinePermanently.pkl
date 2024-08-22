@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GameServerStatus.pkl"
+/// Game server status: OfflinePermanently. Server is offline and not available.
+///
+/// See: <https://schema.org/OfflinePermanently>
+/// Model depth: 6
+open class OfflinePermanently extends GameServerStatus.GameServerStatus {
+    
+}

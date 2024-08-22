@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PeopleAudience.pkl"
+/// A set of characteristics describing parents, who can be interested in viewing some content.
+///
+/// See: <https://schema.org/ParentAudience>
+/// Model depth: 5
+open class ParentAudience extends PeopleAudience.PeopleAudience {
+        
+    /// Maximal age of the child.
+    childMaxAge: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// Minimal age of the child.
+    childMinAge: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

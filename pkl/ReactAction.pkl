@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AssessAction.pkl"
+/// The act of responding instinctively and emotionally to an object, expressing a sentiment.
+///
+/// See: <https://schema.org/ReactAction>
+/// Model depth: 4
+open class ReactAction extends AssessAction.AssessAction {
+    
+}

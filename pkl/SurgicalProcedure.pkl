@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalProcedure.pkl"
+/// A medical procedure involving an incision with instruments; performed for diagnose,
+/// or therapeutic purposes.
+///
+/// See: <https://schema.org/SurgicalProcedure>
+/// Model depth: 4
+open class SurgicalProcedure extends MedicalProcedure.MedicalProcedure {
+    
+}

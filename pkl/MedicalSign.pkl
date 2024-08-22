@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSignOrSymptom.pkl"
+/// Any physical manifestation of a person's medical condition discoverable by objective
+/// diagnostic tests or physical examination.
+///
+/// See: <https://schema.org/MedicalSign>
+/// Model depth: 5
+open class MedicalSign extends MedicalSignOrSymptom.MedicalSignOrSymptom {
+        
+    /// A diagnostic test that can identify this sign.
+    identifyingTest: (Listing<String>|String)?
+        
+    /// A physical examination that can identify this sign.
+    identifyingExam: (Listing<String>|String)?
+    
+}

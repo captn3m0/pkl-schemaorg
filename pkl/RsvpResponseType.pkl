@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// RsvpResponseType is an enumeration type whose instances represent responding to an
+/// RSVP request.
+///
+/// See: <https://schema.org/RsvpResponseType>
+/// Model depth: 4
+open class RsvpResponseType extends Enumeration.Enumeration {
+    
+}

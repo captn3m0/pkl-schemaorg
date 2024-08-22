@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DefinedTerm.pkl"
+/// A Category Code.
+///
+/// See: <https://schema.org/CategoryCode>
+/// Model depth: 4
+open class CategoryCode extends DefinedTerm.DefinedTerm {
+        
+    /// A short textual code that uniquely identifies the value.
+    codeValue: (Listing<String>|String)?
+        
+    /// A [[CategoryCodeSet]] that contains this category code.
+    inCodeSet: (Listing<URL|String>|URL|String)?
+    
+}

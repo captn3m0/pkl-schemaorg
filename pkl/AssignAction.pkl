@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AllocateAction.pkl"
+/// The act of allocating an action/event/task to some destination (someone or something).
+///
+/// See: <https://schema.org/AssignAction>
+/// Model depth: 5
+open class AssignAction extends AllocateAction.AllocateAction {
+    
+}

@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// The medical care by a physician, or other health-care professional, who is the patient's
+/// first contact with the health-care system and who may recommend a specialist if necessary.
+///
+/// See: <https://schema.org/PrimaryCare>
+/// Model depth: 5
+open class PrimaryCare extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

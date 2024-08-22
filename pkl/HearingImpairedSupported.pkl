@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ContactPointOption.pkl"
+/// Uses devices to support users with hearing impairments.
+///
+/// See: <https://schema.org/HearingImpairedSupported>
+/// Model depth: 5
+open class HearingImpairedSupported extends ContactPointOption.ContactPointOption {
+    
+}

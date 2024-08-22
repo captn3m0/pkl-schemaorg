@@ -1,0 +1,25 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Reservation.pkl"
+/// A reservation for air travel. Note: This type is for information about actual reservations,
+/// e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
+/// For offers of tickets, use [[Offer]].
+///
+/// See: <https://schema.org/FlightReservation>
+/// Model depth: 4
+open class FlightReservation extends Reservation.Reservation {
+        
+    /// The passenger's sequence number as assigned by the airline.
+    passengerSequenceNumber: (Listing<String>|String)?
+        
+    /// The type of security screening the passenger is subject to.
+    securityScreening: (Listing<String>|String)?
+        
+    /// The airline-specific indicator of boarding order / preference.
+    boardingGroup: (Listing<String>|String)?
+        
+    /// The priority status assigned to a passenger for security or boarding (e.g. FastTrack
+    /// or Priority).
+    passengerPriorityStatus: (Listing<String>|String)?
+    
+}

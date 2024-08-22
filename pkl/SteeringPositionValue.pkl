@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "QualitativeValue.pkl"
+/// A value indicating a steering position.
+///
+/// See: <https://schema.org/SteeringPositionValue>
+/// Model depth: 5
+open class SteeringPositionValue extends QualitativeValue.QualitativeValue {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CarUsageType.pkl"
+/// Indicates the usage of the vehicle for driving school.
+///
+/// See: <https://schema.org/DrivingSchoolVehicleUsage>
+/// Model depth: 5
+open class DrivingSchoolVehicleUsage extends CarUsageType.CarUsageType {
+    
+}

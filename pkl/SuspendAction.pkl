@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ControlAction.pkl"
+/// The act of momentarily pausing a device or application (e.g. pause music playback or
+/// pause a timer).
+///
+/// See: <https://schema.org/SuspendAction>
+/// Model depth: 4
+open class SuspendAction extends ControlAction.ControlAction {
+    
+}

@@ -1,0 +1,28 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UserInteraction.pkl"
+/// UserInteraction and its subtypes is an old way of talking about users interacting with
+/// pages. It is generally better to use [[Action]]-based vocabulary, alongside types
+/// such as [[Comment]].
+///
+/// See: <https://schema.org/UserComments>
+/// Model depth: 4
+open class UserComments extends UserInteraction.UserInteraction {
+        
+    /// The creator/author of this CreativeWork. This is the same as the Author property for
+    /// CreativeWork.
+    creator: (Listing<String>|String)?
+        
+    /// The URL at which a reply may be posted to the specified UserComment.
+    replyToUrl: (Listing<URL|String>|URL|String)?
+        
+    /// Specifies the CreativeWork associated with the UserComment.
+    discusses: (Listing<String>|String)?
+        
+    /// The text of the UserComment.
+    commentText: (Listing<String>|String)?
+        
+    /// The time at which the UserComment was made.
+    commentTime: (Listing<String|String>|String|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// An agent orders a (not yet released) object/product/service to be delivered/sent.
+///
+/// See: <https://schema.org/PreOrderAction>
+/// Model depth: 4
+open class PreOrderAction extends TradeAction.TradeAction {
+    
+}

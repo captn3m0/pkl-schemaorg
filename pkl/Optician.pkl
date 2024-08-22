@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalBusiness.pkl"
+/// A store that sells reading glasses and similar devices for improving vision.
+///
+/// See: <https://schema.org/Optician>
+/// Model depth: 5
+open class Optician extends MedicalBusiness.MedicalBusiness {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrderStatus.pkl"
+/// OrderStatus representing that an order has been returned.
+///
+/// See: <https://schema.org/OrderReturned>
+/// Model depth: 6
+open class OrderReturned extends OrderStatus.OrderStatus {
+    
+}

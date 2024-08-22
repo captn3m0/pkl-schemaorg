@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StatusEnumeration.pkl"
+/// Enumerated status values for Reservation.
+///
+/// See: <https://schema.org/ReservationStatusType>
+/// Model depth: 5
+open class ReservationStatusType extends StatusEnumeration.StatusEnumeration {
+    
+}

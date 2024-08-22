@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdministrativeArea.pkl"
+/// A state or province of a country.
+///
+/// See: <https://schema.org/State>
+/// Model depth: 4
+open class State extends AdministrativeArea.AdministrativeArea {
+    
+}

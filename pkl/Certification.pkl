@@ -1,0 +1,67 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A Certification is an official and authoritative statement about a subject, for example
+/// a product, service, person, or organization. A certification is typically issued by
+/// an indendent certification body, for example a professional organization or government.
+/// It formally attests certain characteristics about the subject, for example Organizations
+/// can be ISO certified, Food products can be certified Organic or Vegan, a Person can be
+/// a certified professional, a Place can be certified for food processing. There are certifications
+/// for many domains: regulatory, organizational, recycling, food, efficiency, educational,
+/// ecological, etc. A certification is a form of credential, as are accreditations and
+/// licenses. Mapped from the [gs1:CertificationDetails](https://www.gs1.org/voc/CertificationDetails)
+/// class in the GS1 Web Vocabulary.
+///
+/// See: <https://schema.org/Certification>
+/// Model depth: 3
+open class Certification extends CreativeWork.CreativeWork {
+        
+    /// The organization issuing the item, for example a [[Permit]], [[Ticket]], or [[Certification]].
+    issuedBy: (Listing<String>|String)?
+        
+    /// Date when a certification was last audited. See also [gs1:certificationAuditDate](https://www.gs1.org/voc/certificationAuditDate).
+    auditDate: (Listing<String|String>|String|String)?
+        
+    /// The geographic area where the item is valid. Applies for example to a [[Permit]], a [[Certification]],
+    /// or an [[EducationalOccupationalCredential]].
+    validIn: (Listing<String>|String)?
+        
+    /// A measurement of an item, For example, the inseam of pants, the wheel size of a bicycle,
+    /// the gauge of a screw, or the carbon footprint measured for certification by an authority.
+    /// Usually an exact measurement, but can also be a range of measurements for adjustable
+    /// products, for example belts and ski bindings.
+    hasMeasurement: (Listing<String>|String)?
+        
+    /// Date of first publication or broadcast. For example the date a [[CreativeWork]] was
+    /// broadcast or a [[Certification]] was issued.
+    datePublished: (Listing<String|String>|String|String)?
+        
+    /// The date when the item becomes valid.
+    validFrom: (Listing<String|String>|String|String)?
+        
+    /// Identifier of a certification instance (as registered with an independent certification
+    /// body). Typically this identifier can be used to consult and verify the certification
+    /// instance. See also [gs1:certificationIdentification](https://www.gs1.org/voc/certificationIdentification).
+    certificationIdentification: (Listing<String>|String)?
+        
+    /// Indicates the current status of a certification: active or inactive. See also [gs1:certificationStatus](https://www.gs1.org/voc/certificationStatus).
+    certificationStatus: (Listing<String>|String)?
+        
+    /// An associated logo.
+    logo: (Listing<URL|String>|URL|String)?
+        
+    /// Date the content expires and is no longer useful or available. For example a [[VideoObject]]
+    /// or [[NewsArticle]] whose availability or relevance is time-limited, a [[ClaimReview]]
+    /// fact check whose publisher wants to indicate that it may no longer be relevant (or helpful
+    /// to highlight) after some date, or a [[Certification]] the validity has expired.
+    expires: (Listing<String|String>|String|String)?
+        
+    /// Rating of a certification instance (as defined by an independent certification body).
+    /// Typically this rating can be used to rate the level to which the requirements of the certification
+    /// instance are fulfilled. See also [gs1:certificationValue](https://www.gs1.org/voc/certificationValue).
+    certificationRating: (Listing<String>|String)?
+        
+    /// The subject matter of the content.
+    about: (Listing<String>|String)?
+    
+}

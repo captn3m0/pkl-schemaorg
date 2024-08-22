@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEnumeration.pkl"
+/// Design models for observational medical studies. Enumerated type.
+///
+/// See: <https://schema.org/MedicalObservationalStudyDesign>
+/// Model depth: 5
+open class MedicalObservationalStudyDesign extends MedicalEnumeration.MedicalEnumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugCostCategory.pkl"
+/// The drug's cost represents the retail cost of the drug.
+///
+/// See: <https://schema.org/Retail>
+/// Model depth: 6
+open class Retail extends DrugCostCategory.DrugCostCategory {
+    
+}

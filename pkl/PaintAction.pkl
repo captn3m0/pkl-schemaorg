@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreateAction.pkl"
+/// The act of producing a painting, typically with paint and canvas as instruments.
+///
+/// See: <https://schema.org/PaintAction>
+/// Model depth: 4
+open class PaintAction extends CreateAction.CreateAction {
+    
+}

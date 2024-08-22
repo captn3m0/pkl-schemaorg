@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Maximum girth of head above the ears. Used, for example, to fit hats.
+///
+/// See: <https://schema.org/BodyMeasurementHead>
+/// Model depth: 6
+open class BodyMeasurementHead extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

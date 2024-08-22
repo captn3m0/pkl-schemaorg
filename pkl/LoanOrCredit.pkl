@@ -1,0 +1,47 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FinancialProduct.pkl"
+/// A financial product for the loaning of an amount of money, or line of credit, under agreed
+/// terms and charges.
+///
+/// See: <https://schema.org/LoanOrCredit>
+/// Model depth: 5
+open class LoanOrCredit extends FinancialProduct.FinancialProduct {
+        
+    /// Whether the terms for payment of interest can be renegotiated during the life of the loan.
+    renegotiableLoan: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// The amount of money.
+    amount: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The duration of the loan or credit agreement.
+    loanTerm: (Listing<String>|String)?
+        
+    /// The period of time after any due date that the borrower has to fulfil its obligations before
+    /// a default (failure to pay) is deemed to have occurred.
+    gracePeriod: (Listing<String>|String)?
+        
+    /// The currency in which the monetary amount is expressed. Use standard formats: [ISO 4217
+    /// currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. "USD"; [Ticker
+    /// symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies,
+    /// e.g. "BTC"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+    /// (LETS) and other currency types, e.g. "Ithaca HOUR".
+    currency: (Listing<String>|String)?
+        
+    /// The type of a loan or credit.
+    loanType: (Listing<URL|String>|URL|String)?
+        
+    /// A form of paying back money previously borrowed from a lender. Repayment usually takes
+    /// the form of periodic payments that normally include part principal plus interest in
+    /// each payment.
+    loanRepaymentForm: (Listing<String>|String)?
+        
+    /// Assets required to secure loan or credit repayments. It may take form of third party pledge,
+    /// goods, financial instruments (cash, securities, etc.)
+    requiredCollateral: (Listing<String>|String)?
+        
+    /// The only way you get the money back in the event of default is the security. Recourse is
+    /// where you still have the opportunity to go back to the borrower for the rest of the money.
+    recourseLoan: (Listing<Boolean|String>|Boolean|String)?
+    
+}

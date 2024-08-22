@@ -1,0 +1,38 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEntity.pkl"
+/// Any part of the human body, typically a component of an anatomical system. Organs, tissues,
+/// and cells are all anatomical structures.
+///
+/// See: <https://schema.org/AnatomicalStructure>
+/// Model depth: 3
+open class AnatomicalStructure extends MedicalEntity.MedicalEntity {
+        
+    /// Other anatomical structures to which this structure is connected.
+    connectedTo: (Listing<AnatomicalStructure|String>|AnatomicalStructure|String)?
+        
+    /// The anatomical or organ system that this structure is part of.
+    partOfSystem: (Listing<String>|String)?
+        
+    /// An image containing a diagram that illustrates the structure and/or its component substructures
+    /// and/or connections with other structures.
+    diagram: (Listing<String>|String)?
+        
+    /// Component (sub-)structure(s) that comprise this anatomical structure.
+    subStructure: (Listing<AnatomicalStructure|String>|AnatomicalStructure|String)?
+        
+    /// A medical therapy related to this anatomy.
+    relatedTherapy: (Listing<String>|String)?
+        
+    /// Location in the body of the anatomical structure.
+    bodyLocation: (Listing<String>|String)?
+        
+    /// A medical condition associated with this anatomy.
+    relatedCondition: (Listing<String>|String)?
+        
+    /// If applicable, a description of the pathophysiology associated with the anatomical
+    /// system, including potential abnormal changes in the mechanical, physical, and biochemical
+    /// functions of the system.
+    associatedPathophysiology: (Listing<String>|String)?
+    
+}

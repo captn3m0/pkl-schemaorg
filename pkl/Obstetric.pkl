@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that specializes in the care of women during the
+/// prenatal and postnatal care and with the delivery of the child.
+///
+/// See: <https://schema.org/Obstetric>
+/// Model depth: 5
+open class Obstetric extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

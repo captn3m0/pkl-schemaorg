@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AggregateRating.pkl"
+/// An aggregate rating of an Organization related to its role as an employer.
+///
+/// See: <https://schema.org/EmployerAggregateRating>
+/// Model depth: 5
+open class EmployerAggregateRating extends AggregateRating.AggregateRating {
+    
+}

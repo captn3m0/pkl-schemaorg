@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that pertains to study of anesthetics and their
+/// application.
+///
+/// See: <https://schema.org/Anesthesia>
+/// Model depth: 6
+open class Anesthesia extends MedicalSpecialty.MedicalSpecialty {
+    
+}

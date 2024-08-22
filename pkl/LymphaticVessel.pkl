@@ -1,0 +1,21 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Vessel.pkl"
+/// A type of blood vessel that specifically carries lymph fluid unidirectionally toward
+/// the heart.
+///
+/// See: <https://schema.org/LymphaticVessel>
+/// Model depth: 5
+open class LymphaticVessel extends Vessel.Vessel {
+        
+    /// The vasculature the lymphatic structure originates, or afferents, from.
+    originatesFrom: (Listing<String>|String)?
+        
+    /// The vasculature the lymphatic structure runs, or efferents, to.
+    runsTo: (Listing<String>|String)?
+        
+    /// The anatomical or organ system drained by this vessel; generally refers to a specific
+    /// part of an organ.
+    regionDrained: (Listing<String>|String)?
+    
+}

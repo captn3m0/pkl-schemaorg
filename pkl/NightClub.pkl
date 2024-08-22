@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EntertainmentBusiness.pkl"
+/// A nightclub or discotheque.
+///
+/// See: <https://schema.org/NightClub>
+/// Model depth: 5
+open class NightClub extends EntertainmentBusiness.EntertainmentBusiness {
+    
+}

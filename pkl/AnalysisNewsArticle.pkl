@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "NewsArticle.pkl"
+/// An AnalysisNewsArticle is a [[NewsArticle]] that, while based on factual reporting,
+/// incorporates the expertise of the author/producer, offering interpretations and
+/// conclusions.
+///
+/// See: <https://schema.org/AnalysisNewsArticle>
+/// Model depth: 5
+open class AnalysisNewsArticle extends NewsArticle.NewsArticle {
+    
+}

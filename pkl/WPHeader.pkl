@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPageElement.pkl"
+/// The header section of the page.
+///
+/// See: <https://schema.org/WPHeader>
+/// Model depth: 4
+open class WPHeader extends WebPageElement.WebPageElement {
+    
+}

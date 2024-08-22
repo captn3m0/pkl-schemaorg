@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Vehicle.pkl"
+/// A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.
+///
+/// See: <https://schema.org/Motorcycle>
+/// Model depth: 4
+open class Motorcycle extends Vehicle.Vehicle {
+    
+}

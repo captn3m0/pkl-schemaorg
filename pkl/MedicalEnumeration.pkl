@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerations related to health and the practice of medicine: A concept that is used to
+/// attribute a quality to another concept, as a qualifier, a collection of items or a listing
+/// of all of the elements of a set in medicine practice.
+///
+/// See: <https://schema.org/MedicalEnumeration>
+/// Model depth: 4
+open class MedicalEnumeration extends Enumeration.Enumeration {
+    
+}

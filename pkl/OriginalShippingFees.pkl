@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnFeesEnumeration.pkl"
+/// Specifies that the customer must pay the original shipping costs when returning a product.
+///
+/// See: <https://schema.org/OriginalShippingFees>
+/// Model depth: 5
+open class OriginalShippingFees extends ReturnFeesEnumeration.ReturnFeesEnumeration {
+    
+}

@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTest.pkl"
+/// Any medical imaging modality typically used for diagnostic purposes.
+///
+/// See: <https://schema.org/ImagingTest>
+/// Model depth: 4
+open class ImagingTest extends MedicalTest.MedicalTest {
+        
+    /// Imaging technique used.
+    imagingTechnique: (Listing<String>|String)?
+    
+}

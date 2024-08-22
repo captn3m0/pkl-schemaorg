@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EventAttendanceModeEnumeration.pkl"
+/// MixedEventAttendanceMode - an event that is conducted as a combination of both offline
+/// and online modes.
+///
+/// See: <https://schema.org/MixedEventAttendanceMode>
+/// Model depth: 5
+open class MixedEventAttendanceMode extends EventAttendanceModeEnumeration.EventAttendanceModeEnumeration {
+    
+}

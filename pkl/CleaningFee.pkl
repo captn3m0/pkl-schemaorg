@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PriceComponentTypeEnumeration.pkl"
+/// Represents the cleaning fee part of the total price for an offered product, for example
+/// a vacation rental.
+///
+/// See: <https://schema.org/CleaningFee>
+/// Model depth: 5
+open class CleaningFee extends PriceComponentTypeEnumeration.PriceComponentTypeEnumeration {
+    
+}

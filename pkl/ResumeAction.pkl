@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ControlAction.pkl"
+/// The act of resuming a device or application which was formerly paused (e.g. resume music
+/// playback or resume a timer).
+///
+/// See: <https://schema.org/ResumeAction>
+/// Model depth: 4
+open class ResumeAction extends ControlAction.ControlAction {
+    
+}

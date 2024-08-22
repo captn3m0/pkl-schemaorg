@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit501c18: Non-profit type referring to Employee Funded Pension Trust (created
+/// before 25 June 1959).
+///
+/// See: <https://schema.org/Nonprofit501c18>
+/// Model depth: 6
+open class Nonprofit501c18 extends USNonprofitType.USNonprofitType {
+    
+}

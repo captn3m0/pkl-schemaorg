@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ActionStatusType.pkl"
+/// A description of an action that is supported.
+///
+/// See: <https://schema.org/PotentialActionStatus>
+/// Model depth: 6
+open class PotentialActionStatus extends ActionStatusType.ActionStatusType {
+    
+}

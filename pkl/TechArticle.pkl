@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Article.pkl"
+/// A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting,
+/// specifications, etc.
+///
+/// See: <https://schema.org/TechArticle>
+/// Model depth: 4
+open class TechArticle extends Article.Article {
+        
+    /// Prerequisites needed to fulfill steps in article.
+    dependencies: (Listing<String>|String)?
+        
+    /// Proficiency needed for this content; expected values: 'Beginner', 'Expert'.
+    proficiencyLevel: (Listing<String>|String)?
+    
+}

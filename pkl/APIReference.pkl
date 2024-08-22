@@ -1,0 +1,25 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TechArticle.pkl"
+/// Reference documentation for application programming interfaces (APIs).
+///
+/// See: <https://schema.org/APIReference>
+/// Model depth: 5
+open class APIReference extends TechArticle.TechArticle {
+        
+    /// Associated product/technology version. E.g., .NET Framework 4.5.
+    assemblyVersion: (Listing<String>|String)?
+        
+    /// Indicates whether API is managed or unmanaged.
+    programmingModel: (Listing<String>|String)?
+        
+    /// Library file name, e.g., mscorlib.dll, system.web.dll.
+    assembly: (Listing<String>|String)?
+        
+    /// Library file name, e.g., mscorlib.dll, system.web.dll.
+    executableLibraryName: (Listing<String>|String)?
+        
+    /// Type of app development: phone, Metro style, desktop, XBox, etc.
+    targetPlatform: (Listing<String>|String)?
+    
+}

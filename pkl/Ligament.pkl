@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// A short band of tough, flexible, fibrous connective tissue that functions to connect
+/// multiple bones, cartilages, and structurally support joints.
+///
+/// See: <https://schema.org/Ligament>
+/// Model depth: 4
+open class Ligament extends AnatomicalStructure.AnatomicalStructure {
+    
+}

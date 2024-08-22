@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Event.pkl"
+/// Event type: Sports event.
+///
+/// See: <https://schema.org/SportsEvent>
+/// Model depth: 3
+open class SportsEvent extends Event.Event {
+        
+    /// The away team in a sports event.
+    awayTeam: (Listing<String>|String)?
+        
+    /// A type of sport (e.g. Baseball).
+    sport: (Listing<URL|String>|URL|String)?
+        
+    /// A competitor in a sports event.
+    competitor: (Listing<String>|String)?
+        
+    /// The home team in a sports event.
+    homeTeam: (Listing<String>|String)?
+    
+}

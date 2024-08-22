@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerated options related to a ContactPoint.
+///
+/// See: <https://schema.org/ContactPointOption>
+/// Model depth: 4
+open class ContactPointOption extends Enumeration.Enumeration {
+    
+}

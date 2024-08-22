@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Thing.pkl"
+/// A utility class that serves as the umbrella for a number of 'intangible' things such as
+/// quantities, structured values, etc.
+///
+/// See: <https://schema.org/Intangible>
+/// Model depth: 2
+open class Intangible extends Thing.Thing {
+    
+}

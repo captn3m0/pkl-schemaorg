@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PublicationEvent.pkl"
+/// An over the air or online broadcast event.
+///
+/// See: <https://schema.org/BroadcastEvent>
+/// Model depth: 4
+open class BroadcastEvent extends PublicationEvent.PublicationEvent {
+        
+    /// The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).
+    videoFormat: (Listing<String>|String)?
+        
+    /// The event being broadcast such as a sporting event or awards ceremony.
+    broadcastOfEvent: (Listing<String>|String)?
+        
+    /// True if the broadcast is of a live event.
+    isLiveBroadcast: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// Languages in which subtitles/captions are available, in [IETF BCP 47 standard format](http://tools.ietf.org/html/bcp47).
+    subtitleLanguage: (Listing<String>|String)?
+    
+}

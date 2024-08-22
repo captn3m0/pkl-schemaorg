@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InformAction.pkl"
+/// The act of notifying someone that a future event/action is going to happen as expected.
+/// Related actions: * [[CancelAction]]: The antonym of ConfirmAction.
+///
+/// See: <https://schema.org/ConfirmAction>
+/// Model depth: 6
+open class ConfirmAction extends InformAction.InformAction {
+    
+}

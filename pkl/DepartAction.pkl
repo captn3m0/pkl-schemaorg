@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MoveAction.pkl"
+/// The act of departing from a place. An agent departs from a fromLocation for a destination,
+/// optionally with participants.
+///
+/// See: <https://schema.org/DepartAction>
+/// Model depth: 4
+open class DepartAction extends MoveAction.MoveAction {
+    
+}

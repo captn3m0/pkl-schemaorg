@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// A type of boarding policy used by an airline.
+///
+/// See: <https://schema.org/BoardingPolicyType>
+/// Model depth: 4
+open class BoardingPolicyType extends Enumeration.Enumeration {
+    
+}

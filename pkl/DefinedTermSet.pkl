@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A set of defined terms, for example a set of categories or a classification scheme, a glossary,
+/// dictionary or enumeration.
+///
+/// See: <https://schema.org/DefinedTermSet>
+/// Model depth: 3
+open class DefinedTermSet extends CreativeWork.CreativeWork {
+        
+    /// A Defined Term contained in this term set.
+    hasDefinedTerm: (Listing<String>|String)?
+    
+}

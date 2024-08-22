@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableMeasurementTypeEnumeration.pkl"
+/// Measurement of the chest/bust section, for example of a suit.
+///
+/// See: <https://schema.org/WearableMeasurementChestOrBust>
+/// Model depth: 6
+open class WearableMeasurementChestOrBust extends WearableMeasurementTypeEnumeration.WearableMeasurementTypeEnumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdministrativeArea.pkl"
+/// A School District is an administrative area for the administration of schools.
+///
+/// See: <https://schema.org/SchoolDistrict>
+/// Model depth: 4
+open class SchoolDistrict extends AdministrativeArea.AdministrativeArea {
+    
+}

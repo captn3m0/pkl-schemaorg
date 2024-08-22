@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalIndication.pkl"
+/// An indication for a medical therapy that has been formally specified or approved by a
+/// regulatory body that regulates use of the therapy; for example, the US FDA approves indications
+/// for most drugs in the US.
+///
+/// See: <https://schema.org/ApprovedIndication>
+/// Model depth: 4
+open class ApprovedIndication extends MedicalIndication.MedicalIndication {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EventStatusType.pkl"
+/// Indicates that the event was changed to allow online participation. See [[eventAttendanceMode]]
+/// for specifics of whether it is now fully or partially online.
+///
+/// See: <https://schema.org/EventMovedOnline>
+/// Model depth: 6
+open class EventMovedOnline extends EventStatusType.EventStatusType {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBenefitsType.pkl"
+/// PaidLeave: this is a benefit for paid leave.
+///
+/// See: <https://schema.org/PaidLeave>
+/// Model depth: 5
+open class PaidLeave extends GovernmentBenefitsType.GovernmentBenefitsType {
+    
+}

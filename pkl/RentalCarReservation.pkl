@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Reservation.pkl"
+/// A reservation for a rental car. Note: This type is for information about actual reservations,
+/// e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
+///
+/// See: <https://schema.org/RentalCarReservation>
+/// Model depth: 4
+open class RentalCarReservation extends Reservation.Reservation {
+        
+    /// When a taxi will pick up a passenger or a rental car can be picked up.
+    pickupTime: (Listing<String>|String)?
+        
+    /// When a rental car can be dropped off.
+    dropoffTime: (Listing<String>|String)?
+        
+    /// Where a rental car can be dropped off.
+    dropoffLocation: (Listing<String>|String)?
+        
+    /// Where a taxi will pick up a passenger or a rental car can be picked up.
+    pickupLocation: (Listing<String>|String)?
+    
+}

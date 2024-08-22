@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MusicPlaylist.pkl"
+/// A collection of music tracks.
+///
+/// See: <https://schema.org/MusicAlbum>
+/// Model depth: 4
+open class MusicAlbum extends MusicPlaylist.MusicPlaylist {
+        
+    /// A release of this album.
+    albumRelease: (Listing<String>|String)?
+        
+    /// The artist that performed this album or recording.
+    byArtist: (Listing<String>|String)?
+        
+    /// The kind of release which this album is: single, EP or album.
+    albumReleaseType: (Listing<String>|String)?
+        
+    /// Classification of the album by its type of content: soundtrack, live album, studio album,
+    /// etc.
+    albumProductionType: (Listing<String>|String)?
+    
+}

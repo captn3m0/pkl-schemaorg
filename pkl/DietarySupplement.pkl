@@ -1,0 +1,50 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Substance.pkl"
+import "Product.pkl"
+/// A product taken by mouth that contains a dietary ingredient intended to supplement the
+/// diet. Dietary ingredients may include vitamins, minerals, herbs or other botanicals,
+/// amino acids, and substances such as enzymes, organ tissues, glandulars and metabolites.
+///
+/// See: <https://schema.org/DietarySupplement>
+/// Model depth: 3
+open class DietarySupplement extends Substance.Substance Product.Product {
+        
+    /// The specific biochemical interaction through which this drug or supplement produces
+    /// its pharmacological effect.
+    mechanismOfAction: (Listing<String>|String)?
+        
+    /// Characteristics of the population for which this is intended, or which typically uses
+    /// it, e.g. 'adults'.
+    targetPopulation: (Listing<String>|String)?
+        
+    /// Recommended intake of this supplement for a given population as defined by a specific
+    /// recommending authority.
+    recommendedIntake: (Listing<String>|String)?
+        
+    /// The drug or supplement's legal status, including any controlled substance schedules
+    /// that apply.
+    legalStatus: (Listing<String>|String)?
+        
+    /// True if this item's name is a proprietary/brand name (vs. generic name).
+    isProprietary: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// Any potential safety concern associated with the supplement. May include interactions
+    /// with other drugs and foods, pregnancy, breastfeeding, known adverse reactions, and
+    /// documented efficacy of the supplement.
+    safetyConsideration: (Listing<String>|String)?
+        
+    /// Recommended intake of this supplement for a given population as defined by a specific
+    /// recommending authority.
+    maximumIntake: (Listing<String>|String)?
+        
+    /// The generic name of this drug or supplement.
+    nonProprietaryName: (Listing<String>|String)?
+        
+    /// An active ingredient, typically chemical compounds and/or biologic substances.
+    activeIngredient: (Listing<String>|String)?
+        
+    /// Proprietary name given to the diet plan, typically by its originator or creator.
+    proprietaryName: (Listing<String>|String)?
+    
+}

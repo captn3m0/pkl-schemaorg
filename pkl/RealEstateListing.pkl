@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// A [[RealEstateListing]] is a listing that describes one or more real-estate [[Offer]]s
+/// (whose [[businessFunction]] is typically to lease out, or to sell). The [[RealEstateListing]]
+/// type itself represents the overall listing, as manifested in some [[WebPage]].
+///
+/// See: <https://schema.org/RealEstateListing>
+/// Model depth: 4
+open class RealEstateListing extends WebPage.WebPage {
+        
+    /// Publication date of an online listing.
+    datePosted: (Listing<String|String>|String|String)?
+        
+    /// Length of the lease for some [[Accommodation]], either particular to some [[Offer]]
+    /// or in some cases intrinsic to the property.
+    leaseLength: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,20 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Audience.pkl"
+/// A set of characteristics belonging to businesses, e.g. who compose an item's target
+/// audience.
+///
+/// See: <https://schema.org/BusinessAudience>
+/// Model depth: 4
+open class BusinessAudience extends Audience.Audience {
+        
+    /// The number of employees in an organization, e.g. business.
+    numberOfEmployees: (Listing<String>|String)?
+        
+    /// The size of the business in annual revenue.
+    yearlyRevenue: (Listing<String>|String)?
+        
+    /// The age of the business.
+    yearsInOperation: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A math solver which is capable of solving a subset of mathematical problems.
+///
+/// See: <https://schema.org/MathSolver>
+/// Model depth: 3
+open class MathSolver extends CreativeWork.CreativeWork {
+        
+    /// A mathematical expression (e.g. 'x^2-3x=0') that may be solved for a specific variable,
+    /// simplified, or transformed. This can take many formats, e.g. LaTeX, Ascii-Math, or
+    /// math as you would write with a keyboard.
+    mathExpression: (Listing<String>|String)?
+    
+}

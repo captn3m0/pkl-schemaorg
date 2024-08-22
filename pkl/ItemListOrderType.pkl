@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
+///
+/// See: <https://schema.org/ItemListOrderType>
+/// Model depth: 4
+open class ItemListOrderType extends Enumeration.Enumeration {
+    
+}

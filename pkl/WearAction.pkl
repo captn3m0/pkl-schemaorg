@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UseAction.pkl"
+/// The act of dressing oneself in clothing.
+///
+/// See: <https://schema.org/WearAction>
+/// Model depth: 5
+open class WearAction extends UseAction.UseAction {
+    
+}

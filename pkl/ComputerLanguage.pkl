@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// This type covers computer programming languages such as Scheme and Lisp, as well as other
+/// language-like computer representations. Natural languages are best represented
+/// with the [[Language]] type.
+///
+/// See: <https://schema.org/ComputerLanguage>
+/// Model depth: 3
+open class ComputerLanguage extends Intangible.Intangible {
+    
+}

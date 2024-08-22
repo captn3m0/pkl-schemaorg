@@ -1,0 +1,20 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GeoShape.pkl"
+/// A GeoCircle is a GeoShape representing a circular geographic area. As it is a GeoShape
+/// it provides the simple textual property 'circle', but also allows the combination of
+/// postalCode alongside geoRadius. The center of the circle can be indicated via the 'geoMidpoint'
+/// property, or more approximately using 'address', 'postalCode'.
+///
+/// See: <https://schema.org/GeoCircle>
+/// Model depth: 5
+open class GeoCircle extends GeoShape.GeoShape {
+        
+    /// Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.
+    geoMidpoint: (Listing<String>|String)?
+        
+    /// Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise
+    /// via Distance notation).
+    geoRadius: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

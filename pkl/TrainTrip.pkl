@@ -1,0 +1,28 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Trip.pkl"
+/// A trip on a commercial train line.
+///
+/// See: <https://schema.org/TrainTrip>
+/// Model depth: 4
+open class TrainTrip extends Trip.Trip {
+        
+    /// The unique identifier for the train.
+    trainNumber: (Listing<String>|String)?
+        
+    /// The name of the train (e.g. The Orient Express).
+    trainName: (Listing<String>|String)?
+        
+    /// The platform from which the train departs.
+    departurePlatform: (Listing<String>|String)?
+        
+    /// The station where the train trip ends.
+    arrivalStation: (Listing<String>|String)?
+        
+    /// The station from which the train departs.
+    departureStation: (Listing<String>|String)?
+        
+    /// The platform where the train arrives.
+    arrivalPlatform: (Listing<String>|String)?
+    
+}

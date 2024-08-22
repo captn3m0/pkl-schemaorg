@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ItemList.pkl"
+import "ListItem.pkl"
+import "CreativeWork.pkl"
+/// A step in the instructions for how to achieve a result. It is an ordered list with HowToDirection
+/// and/or HowToTip items.
+///
+/// See: <https://schema.org/HowToStep>
+/// Model depth: 3
+open class HowToStep extends ItemList.ItemList ListItem.ListItem CreativeWork.CreativeWork {
+    
+}

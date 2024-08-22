@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// Indicates a range of postal codes, usually defined as the set of valid codes between [[postalCodeBegin]]
+/// and [[postalCodeEnd]], inclusively.
+///
+/// See: <https://schema.org/PostalCodeRangeSpecification>
+/// Model depth: 4
+open class PostalCodeRangeSpecification extends StructuredValue.StructuredValue {
+        
+    /// First postal code in a range (included).
+    postalCodeBegin: (Listing<String>|String)?
+        
+    /// Last postal code in the range (included). Needs to be after [[postalCodeBegin]].
+    postalCodeEnd: (Listing<String>|String)?
+    
+}

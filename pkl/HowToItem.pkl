@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ListItem.pkl"
+/// An item used as either a tool or supply when performing the instructions for how to achieve
+/// a result.
+///
+/// See: <https://schema.org/HowToItem>
+/// Model depth: 4
+open class HowToItem extends ListItem.ListItem {
+        
+    /// The required quantity of the item(s).
+    requiredQuantity: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

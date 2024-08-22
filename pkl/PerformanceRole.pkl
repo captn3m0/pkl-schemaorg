@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Role.pkl"
+/// A PerformanceRole is a Role that some entity places with regard to a theatrical performance,
+/// e.g. in a Movie, TVSeries etc.
+///
+/// See: <https://schema.org/PerformanceRole>
+/// Model depth: 4
+open class PerformanceRole extends Role.Role {
+        
+    /// The name of a character played in some acting or performing role, i.e. in a PerformanceRole.
+    characterName: (Listing<String>|String)?
+    
+}

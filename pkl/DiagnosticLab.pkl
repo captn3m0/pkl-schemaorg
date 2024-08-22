@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalOrganization.pkl"
+/// A medical laboratory that offers on-site or off-site diagnostic services.
+///
+/// See: <https://schema.org/DiagnosticLab>
+/// Model depth: 4
+open class DiagnosticLab extends MedicalOrganization.MedicalOrganization {
+        
+    /// A diagnostic test or procedure offered by this lab.
+    availableTest: (Listing<String>|String)?
+    
+}

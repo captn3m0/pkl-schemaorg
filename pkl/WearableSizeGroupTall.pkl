@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeGroupEnumeration.pkl"
+/// Size group "Tall" for wearables.
+///
+/// See: <https://schema.org/WearableSizeGroupTall>
+/// Model depth: 6
+open class WearableSizeGroupTall extends WearableSizeGroupEnumeration.WearableSizeGroupEnumeration {
+    
+}

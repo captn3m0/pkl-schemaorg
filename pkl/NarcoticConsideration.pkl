@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// Item is a narcotic as defined by the [1961 UN convention](https://www.incb.org/incb/en/narcotic-drugs/Yellowlist/yellow-list.html),
+/// for example marijuana or heroin.
+///
+/// See: <https://schema.org/NarcoticConsideration>
+/// Model depth: 5
+open class NarcoticConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

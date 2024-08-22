@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReactAction.pkl"
+/// The act of expressing a consistency of opinion with the object. An agent agrees to/about
+/// an object (a proposition, topic or theme) with participants.
+///
+/// See: <https://schema.org/AgreeAction>
+/// Model depth: 5
+open class AgreeAction extends ReactAction.ReactAction {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StatusEnumeration.pkl"
+/// Enumerated status values for Order.
+///
+/// See: <https://schema.org/OrderStatus>
+/// Model depth: 5
+open class OrderStatus extends StatusEnumeration.StatusEnumeration {
+    
+}

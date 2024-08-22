@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DeliveryMethod.pkl"
+/// A DeliveryMethod in which an item is collected on site, e.g. in a store or at a box office.
+///
+/// See: <https://schema.org/OnSitePickup>
+/// Model depth: 5
+open class OnSitePickup extends DeliveryMethod.DeliveryMethod {
+    
+}

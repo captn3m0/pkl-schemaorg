@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Typical progression and happenings of life course of the topic.
+///
+/// See: <https://schema.org/PrognosisHealthAspect>
+/// Model depth: 5
+open class PrognosisHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

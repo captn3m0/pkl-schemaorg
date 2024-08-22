@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LifestyleModification.pkl"
+/// Any bodily activity that enhances or maintains physical fitness and overall health
+/// and wellness. Includes activity that is part of daily living and routine, structured
+/// exercise, and exercise prescribed as part of a medical treatment or recovery plan.
+///
+/// See: <https://schema.org/PhysicalActivity>
+/// Model depth: 4
+open class PhysicalActivity extends LifestyleModification.LifestyleModification {
+        
+    /// Changes in the normal mechanical, physical, and biochemical functions that are associated
+    /// with this activity or condition.
+    pathophysiology: (Listing<String>|String)?
+        
+    /// The anatomy of the underlying organ system or structures associated with this entity.
+    associatedAnatomy: (Listing<String>|String)?
+        
+    /// A category for the item. Greater signs or slashes can be used to informally indicate a
+    /// category hierarchy.
+    category: (Listing<URL|String>|URL|String)?
+        
+    /// The characteristics of associated patients, such as age, gender, race etc.
+    epidemiology: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnLabelSourceEnumeration.pkl"
+/// Specifies that a return label will be provided by the seller in the shipping box.
+///
+/// See: <https://schema.org/ReturnLabelInBox>
+/// Model depth: 5
+open class ReturnLabelInBox extends ReturnLabelSourceEnumeration.ReturnLabelSourceEnumeration {
+    
+}

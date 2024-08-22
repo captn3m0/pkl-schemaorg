@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSign.pkl"
+/// Vital signs are measures of various physiological functions in order to assess the most
+/// basic body functions.
+///
+/// See: <https://schema.org/VitalSign>
+/// Model depth: 6
+open class VitalSign extends MedicalSign.MedicalSign {
+    
+}

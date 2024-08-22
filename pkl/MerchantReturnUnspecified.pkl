@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MerchantReturnEnumeration.pkl"
+/// Specifies that a product return policy is not provided.
+///
+/// See: <https://schema.org/MerchantReturnUnspecified>
+/// Model depth: 5
+open class MerchantReturnUnspecified extends MerchantReturnEnumeration.MerchantReturnEnumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// An enumeration of several kinds of Map.
+///
+/// See: <https://schema.org/MapCategoryType>
+/// Model depth: 4
+open class MapCategoryType extends Enumeration.Enumeration {
+    
+}

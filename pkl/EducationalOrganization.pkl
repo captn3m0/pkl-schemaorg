@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+import "Organization.pkl"
+/// An educational organization.
+///
+/// See: <https://schema.org/EducationalOrganization>
+/// Model depth: 3
+open class EducationalOrganization extends CivicStructure.CivicStructure Organization.Organization {
+        
+    /// Alumni of an organization.
+    alumni: (Listing<String>|String)?
+    
+}

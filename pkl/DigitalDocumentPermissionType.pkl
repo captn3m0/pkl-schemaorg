@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// A type of permission which can be granted for accessing a digital document.
+///
+/// See: <https://schema.org/DigitalDocumentPermissionType>
+/// Model depth: 4
+open class DigitalDocumentPermissionType extends Enumeration.Enumeration {
+    
+}

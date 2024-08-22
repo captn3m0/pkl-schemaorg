@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// An enumeration of genders.
+///
+/// See: <https://schema.org/GenderType>
+/// Model depth: 4
+open class GenderType extends Enumeration.Enumeration {
+    
+}

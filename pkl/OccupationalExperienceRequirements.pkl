@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Indicates employment-related experience requirements, e.g. [[monthsOfExperience]].
+///
+/// See: <https://schema.org/OccupationalExperienceRequirements>
+/// Model depth: 3
+open class OccupationalExperienceRequirements extends Intangible.Intangible {
+        
+    /// Indicates the minimal number of months of experience required for a position.
+    monthsOfExperience: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Girth of hips (measured around the buttocks). Used, for example, to fit skirts.
+///
+/// See: <https://schema.org/BodyMeasurementHips>
+/// Model depth: 6
+open class BodyMeasurementHips extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// An order item is a line of an order. It includes the quantity and shipping details of a bought
+/// offer.
+///
+/// See: <https://schema.org/OrderItem>
+/// Model depth: 3
+open class OrderItem extends Intangible.Intangible {
+        
+    /// The item ordered.
+    orderedItem: (Listing<OrderItem|String>|OrderItem|String)?
+        
+    /// The current status of the order item.
+    orderItemStatus: (Listing<String>|String)?
+        
+    /// The delivery of the parcel related to this order or order item.
+    orderDelivery: (Listing<String>|String)?
+        
+    /// The identifier of the order item.
+    orderItemNumber: (Listing<String>|String)?
+        
+    /// The number of the item ordered. If the property is not set, assume the quantity is one.
+    orderQuantity: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

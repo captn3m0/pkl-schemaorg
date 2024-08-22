@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Format of this release (the type of recording media used, i.e. compact disc, digital
+/// media, LP, etc.).
+///
+/// See: <https://schema.org/MusicReleaseFormatType>
+/// Model depth: 4
+open class MusicReleaseFormatType extends Enumeration.Enumeration {
+    
+}

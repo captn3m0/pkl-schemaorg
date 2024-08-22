@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PaymentCard.pkl"
+import "LoanOrCredit.pkl"
+/// A card payment method of a particular brand or name. Used to mark up a particular payment
+/// method and/or the financial product/service that supplies the card account. Commonly
+/// used values: * http://purl.org/goodrelations/v1#AmericanExpress * http://purl.org/goodrelations/v1#DinersClub
+/// * http://purl.org/goodrelations/v1#Discover * http://purl.org/goodrelations/v1#JCB
+/// * http://purl.org/goodrelations/v1#MasterCard * http://purl.org/goodrelations/v1#VISA
+///
+/// See: <https://schema.org/CreditCard>
+/// Model depth: 6
+open class CreditCard extends PaymentCard.PaymentCard LoanOrCredit.LoanOrCredit {
+    
+}

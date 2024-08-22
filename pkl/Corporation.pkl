@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Organization.pkl"
+/// Organization: A business corporation.
+///
+/// See: <https://schema.org/Corporation>
+/// Model depth: 3
+open class Corporation extends Organization.Organization {
+        
+    /// The exchange traded instrument associated with a Corporation object. The tickerSymbol
+    /// is expressed as an exchange and an instrument name separated by a space character. For
+    /// the exchange component of the tickerSymbol attribute, we recommend using the controlled
+    /// vocabulary of Market Identifier Codes (MIC) specified in ISO 15022.
+    tickerSymbol: (Listing<String>|String)?
+    
+}

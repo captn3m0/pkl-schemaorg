@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PriceComponentTypeEnumeration.pkl"
+/// Represents the distance fee (e.g., price per km or mile) part of the total price for an
+/// offered product, for example a car rental.
+///
+/// See: <https://schema.org/DistanceFee>
+/// Model depth: 5
+open class DistanceFee extends PriceComponentTypeEnumeration.PriceComponentTypeEnumeration {
+    
+}

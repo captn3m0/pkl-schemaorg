@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EmergencyService.pkl"
+import "CivicStructure.pkl"
+import "MedicalOrganization.pkl"
+/// A hospital.
+///
+/// See: <https://schema.org/Hospital>
+/// Model depth: 4
+open class Hospital extends EmergencyService.EmergencyService CivicStructure.CivicStructure MedicalOrganization.MedicalOrganization {
+        
+    /// Indicates data describing a hospital, e.g. a CDC [[CDCPMDRecord]] or as some kind of
+    /// [[Dataset]].
+    healthcareReportingData: (Listing<String>|String)?
+        
+    /// A medical service available from this provider.
+    availableService: (Listing<String>|String)?
+        
+    /// A medical specialty of the provider.
+    medicalSpecialty: (Listing<String>|String)?
+    
+}

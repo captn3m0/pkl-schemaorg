@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalActivityCategory.pkl"
+/// Physical activity that is engaged in to improve muscle and bone strength. Also referred
+/// to as resistance training.
+///
+/// See: <https://schema.org/StrengthTraining>
+/// Model depth: 5
+open class StrengthTraining extends PhysicalActivityCategory.PhysicalActivityCategory {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EnergyEfficiencyEnumeration.pkl"
+/// Enumerates the EU energy efficiency classes A-G as well as A+, A++, and A+++ as defined
+/// in EU directive 2017/1369.
+///
+/// See: <https://schema.org/EUEnergyEfficiencyEnumeration>
+/// Model depth: 5
+open class EUEnergyEfficiencyEnumeration extends EnergyEfficiencyEnumeration.EnergyEfficiencyEnumeration {
+    
+}

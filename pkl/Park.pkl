@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// A park.
+///
+/// See: <https://schema.org/Park>
+/// Model depth: 4
+open class Park extends CivicStructure.CivicStructure {
+    
+}

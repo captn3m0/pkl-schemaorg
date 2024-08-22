@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Review.pkl"
+/// A review created by an end-user (e.g. consumer, purchaser, attendee etc.), in contrast
+/// with [[CriticReview]].
+///
+/// See: <https://schema.org/UserReview>
+/// Model depth: 4
+open class UserReview extends Review.Review {
+    
+}

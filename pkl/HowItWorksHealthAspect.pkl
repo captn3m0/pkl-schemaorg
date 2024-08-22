@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content that discusses and explains how a particular health-related topic works, e.g.
+/// in terms of mechanisms and underlying science.
+///
+/// See: <https://schema.org/HowItWorksHealthAspect>
+/// Model depth: 5
+open class HowItWorksHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

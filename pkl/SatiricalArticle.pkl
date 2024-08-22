@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Article.pkl"
+/// An [[Article]] whose content is primarily [[satirical]](https://en.wikipedia.org/wiki/Satire)
+/// in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not
+/// necessarily also a [[NewsArticle]]. [[ScholarlyArticle]]s are also sometimes satirized.
+///
+/// See: <https://schema.org/SatiricalArticle>
+/// Model depth: 4
+open class SatiricalArticle extends Article.Article {
+    
+}

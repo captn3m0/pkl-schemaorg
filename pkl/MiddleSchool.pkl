@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EducationalOrganization.pkl"
+/// A middle school (typically for children aged around 11-14, although this varies somewhat).
+///
+/// See: <https://schema.org/MiddleSchool>
+/// Model depth: 4
+open class MiddleSchool extends EducationalOrganization.EducationalOrganization {
+    
+}

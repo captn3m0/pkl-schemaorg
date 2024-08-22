@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// A web page that provides medical information.
+///
+/// See: <https://schema.org/MedicalWebPage>
+/// Model depth: 4
+open class MedicalWebPage extends WebPage.WebPage {
+        
+    /// An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment',
+    /// 'causes', 'prognosis', 'etiology', 'epidemiology', etc.
+    aspect: (Listing<String>|String)?
+        
+    /// Medical audience for page.
+    medicalAudience: (Listing<String>|String)?
+    
+}

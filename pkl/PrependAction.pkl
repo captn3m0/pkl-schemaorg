@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InsertAction.pkl"
+/// The act of inserting at the beginning if an ordered collection.
+///
+/// See: <https://schema.org/PrependAction>
+/// Model depth: 6
+open class PrependAction extends InsertAction.InsertAction {
+    
+}

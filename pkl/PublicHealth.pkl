@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// Branch of medicine that pertains to the health services to improve and protect community
+/// health, especially epidemiology, sanitation, immunization, and preventive medicine.
+///
+/// See: <https://schema.org/PublicHealth>
+/// Model depth: 5
+open class PublicHealth extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

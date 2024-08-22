@@ -1,0 +1,38 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// A means for accessing a service, e.g. a government office location, web site, or phone
+/// number.
+///
+/// See: <https://schema.org/ServiceChannel>
+/// Model depth: 3
+open class ServiceChannel extends Intangible.Intangible {
+        
+    /// The location (e.g. civic structure, local business, etc.) where a person can go to access
+    /// the service.
+    serviceLocation: (Listing<String>|String)?
+        
+    /// The service provided by this channel.
+    providesService: (Listing<String>|String)?
+        
+    /// The phone number to use to access the service.
+    servicePhone: (Listing<String>|String)?
+        
+    /// Estimated processing time for the service using this channel.
+    processingTime: (Listing<String>|String)?
+        
+    /// The number to access the service by text message.
+    serviceSmsNumber: (Listing<String>|String)?
+        
+    /// The website to access the service.
+    serviceUrl: (Listing<URL|String>|URL|String)?
+        
+    /// A language someone may use with or at the item, service or place. Please use one of the language
+    /// codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also
+    /// [[inLanguage]].
+    availableLanguage: (Listing<String>|String)?
+        
+    /// The address for accessing the service by mail.
+    servicePostalAddress: (Listing<String>|String)?
+    
+}

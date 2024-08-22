@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DataType.pkl"
+/// A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
+///
+/// See: <https://schema.org/Date>
+/// Model depth: 5
+open class Date extends DataType.DataType {
+    
+}

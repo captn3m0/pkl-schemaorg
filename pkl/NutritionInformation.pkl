@@ -1,0 +1,46 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// Nutritional information about the recipe.
+///
+/// See: <https://schema.org/NutritionInformation>
+/// Model depth: 4
+open class NutritionInformation extends StructuredValue.StructuredValue {
+        
+    /// The number of grams of protein.
+    proteinContent: (Listing<String>|String)?
+        
+    /// The number of grams of unsaturated fat.
+    unsaturatedFatContent: (Listing<String>|String)?
+        
+    /// The number of grams of carbohydrates.
+    carbohydrateContent: (Listing<String>|String)?
+        
+    /// The number of milligrams of cholesterol.
+    cholesterolContent: (Listing<String>|String)?
+        
+    /// The number of milligrams of sodium.
+    sodiumContent: (Listing<String>|String)?
+        
+    /// The number of grams of fat.
+    fatContent: (Listing<String>|String)?
+        
+    /// The number of calories.
+    calories: (Listing<String>|String)?
+        
+    /// The number of grams of fiber.
+    fiberContent: (Listing<String>|String)?
+        
+    /// The number of grams of saturated fat.
+    saturatedFatContent: (Listing<String>|String)?
+        
+    /// The serving size, in terms of the number of volume or mass.
+    servingSize: (Listing<String>|String)?
+        
+    /// The number of grams of sugar.
+    sugarContent: (Listing<String>|String)?
+        
+    /// The number of grams of trans fat.
+    transFatContent: (Listing<String>|String)?
+    
+}

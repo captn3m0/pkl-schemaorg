@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Resort.pkl"
+import "SportsActivityLocation.pkl"
+/// A ski resort.
+///
+/// See: <https://schema.org/SkiResort>
+/// Model depth: 5
+open class SkiResort extends Resort.Resort SportsActivityLocation.SportsActivityLocation {
+    
+}

@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A comment on an item - for example, a comment on a blog post. The comment's content is expressed
+/// via the [[text]] property, and its topic via [[about]], properties shared with all CreativeWorks.
+///
+/// See: <https://schema.org/Comment>
+/// Model depth: 3
+open class Comment extends CreativeWork.CreativeWork {
+        
+    /// The parent of a question, answer or item in general. Typically used for Q/A discussion
+    /// threads e.g. a chain of comments with the first comment being an [[Article]] or other
+    /// [[CreativeWork]]. See also [[comment]] which points from something to a comment about
+    /// it.
+    parentItem: (Listing<Comment|String>|Comment|String)?
+        
+    /// A CreativeWork such as an image, video, or audio clip shared as part of this posting.
+    sharedContent: (Listing<String>|String)?
+        
+    /// The number of upvotes this question, answer or comment has received from the community.
+    upvoteCount: (Listing<Int|String>|Int|String)?
+        
+    /// The number of downvotes this question, answer or comment has received from the community.
+    downvoteCount: (Listing<Int|String>|Int|String)?
+    
+}

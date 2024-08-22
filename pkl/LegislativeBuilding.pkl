@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBuilding.pkl"
+/// A legislative building&#x2014;for example, the state capitol.
+///
+/// See: <https://schema.org/LegislativeBuilding>
+/// Model depth: 5
+open class LegislativeBuilding extends GovernmentBuilding.GovernmentBuilding {
+    
+}

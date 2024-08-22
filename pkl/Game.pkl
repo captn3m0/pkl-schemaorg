@@ -1,0 +1,30 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// The Game type represents things which are games. These are typically rule-governed
+/// recreational activities, e.g. role-playing games in which players assume the role
+/// of characters in a fictional setting.
+///
+/// See: <https://schema.org/Game>
+/// Model depth: 3
+open class Game extends CreativeWork.CreativeWork {
+        
+    /// Indicate how many people can play this game (minimum, maximum, or range).
+    numberOfPlayers: (Listing<String>|String)?
+        
+    /// The task that a player-controlled character, or group of characters may complete in
+    /// order to gain a reward.
+    quest: (Listing<String>|String)?
+        
+    /// Real or fictional location of the game (or part of game).
+    gameLocation: (Listing<URL|String>|URL|String)?
+        
+    /// An item is an object within the game world that can be collected by a player or, occasionally,
+    /// a non-player character.
+    gameItem: (Listing<String>|String)?
+        
+    /// A piece of data that represents a particular aspect of a fictional character (skill,
+    /// power, character points, advantage, disadvantage).
+    characterAttribute: (Listing<String>|String)?
+    
+}

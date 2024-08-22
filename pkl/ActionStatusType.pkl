@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StatusEnumeration.pkl"
+/// The status of an Action.
+///
+/// See: <https://schema.org/ActionStatusType>
+/// Model depth: 5
+open class ActionStatusType extends StatusEnumeration.StatusEnumeration {
+    
+}

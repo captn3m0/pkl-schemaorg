@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SoftwareApplication.pkl"
+/// Web applications.
+///
+/// See: <https://schema.org/WebApplication>
+/// Model depth: 4
+open class WebApplication extends SoftwareApplication.SoftwareApplication {
+        
+    /// Specifies browser requirements in human-readable text. For example, 'requires HTML5
+    /// support'.
+    browserRequirements: (Listing<String>|String)?
+    
+}

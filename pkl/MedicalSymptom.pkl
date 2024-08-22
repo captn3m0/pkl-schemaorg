@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSignOrSymptom.pkl"
+/// Any complaint sensed and expressed by the patient (therefore defined as subjective)
+/// like stomachache, lower-back pain, or fatigue.
+///
+/// See: <https://schema.org/MedicalSymptom>
+/// Model depth: 5
+open class MedicalSymptom extends MedicalSignOrSymptom.MedicalSignOrSymptom {
+    
+}

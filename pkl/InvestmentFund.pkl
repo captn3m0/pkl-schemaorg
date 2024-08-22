@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InvestmentOrDeposit.pkl"
+/// A company or fund that gathers capital from a number of investors to create a pool of money
+/// that is then re-invested into stocks, bonds and other assets.
+///
+/// See: <https://schema.org/InvestmentFund>
+/// Model depth: 6
+open class InvestmentFund extends InvestmentOrDeposit.InvestmentOrDeposit {
+    
+}

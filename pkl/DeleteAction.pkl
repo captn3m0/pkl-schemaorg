@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UpdateAction.pkl"
+/// The act of editing a recipient by removing one of its objects.
+///
+/// See: <https://schema.org/DeleteAction>
+/// Model depth: 4
+open class DeleteAction extends UpdateAction.UpdateAction {
+    
+}

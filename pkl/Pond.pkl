@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyOfWater.pkl"
+/// A pond.
+///
+/// See: <https://schema.org/Pond>
+/// Model depth: 5
+open class Pond extends BodyOfWater.BodyOfWater {
+    
+}

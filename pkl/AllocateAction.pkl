@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrganizeAction.pkl"
+/// The act of organizing tasks/objects/events by associating resources to it.
+///
+/// See: <https://schema.org/AllocateAction>
+/// Model depth: 4
+open class AllocateAction extends OrganizeAction.OrganizeAction {
+    
+}

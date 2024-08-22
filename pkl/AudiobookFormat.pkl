@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BookFormatType.pkl"
+/// Book format: Audiobook. This is an enumerated value for use with the bookFormat property.
+/// There is also a type 'Audiobook' in the bib extension which includes Audiobook specific
+/// properties.
+///
+/// See: <https://schema.org/AudiobookFormat>
+/// Model depth: 5
+open class AudiobookFormat extends BookFormatType.BookFormatType {
+    
+}

@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Physician.pkl"
+/// An individual medical practitioner. For their official address use [[address]], for
+/// affiliations to hospitals use [[hospitalAffiliation]]. The [[practicesAt]] property
+/// can be used to indicate [[MedicalOrganization]] hospitals, clinics, pharmacies etc.
+/// where this physician practices.
+///
+/// See: <https://schema.org/IndividualPhysician>
+/// Model depth: 5
+open class IndividualPhysician extends Physician.Physician {
+        
+    /// A [[MedicalOrganization]] where the [[IndividualPhysician]] practices.
+    practicesAt: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DrugPregnancyCategory.pkl"
+/// A designation that the drug in question has not been assigned a pregnancy category designation
+/// by the US FDA.
+///
+/// See: <https://schema.org/FDAnotEvaluated>
+/// Model depth: 6
+open class FDAnotEvaluated extends DrugPregnancyCategory.DrugPregnancyCategory {
+    
+}

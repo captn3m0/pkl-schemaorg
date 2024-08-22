@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalIntangible.pkl"
+/// A specific strength in which a medical drug is available in a specific country.
+///
+/// See: <https://schema.org/DrugStrength>
+/// Model depth: 4
+open class DrugStrength extends MedicalIntangible.MedicalIntangible {
+        
+    /// Recommended intake of this supplement for a given population as defined by a specific
+    /// recommending authority.
+    maximumIntake: (Listing<String>|String)?
+        
+    /// The value of an active ingredient's strength, e.g. 325.
+    strengthValue: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// An active ingredient, typically chemical compounds and/or biologic substances.
+    activeIngredient: (Listing<String>|String)?
+        
+    /// The units of an active ingredient's strength, e.g. mg.
+    strengthUnit: (Listing<String>|String)?
+        
+    /// The location in which the strength is available.
+    availableIn: (Listing<String>|String)?
+    
+}

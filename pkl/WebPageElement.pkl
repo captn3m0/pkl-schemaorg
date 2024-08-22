@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A web page element, like a table or an image.
+///
+/// See: <https://schema.org/WebPageElement>
+/// Model depth: 3
+open class WebPageElement extends CreativeWork.CreativeWork {
+        
+    /// A CSS selector, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In the
+    /// latter case, multiple matches within a page can constitute a single conceptual "Web
+    /// page element".
+    cssSelector: (Listing<String>|String)?
+        
+    /// An XPath, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In the latter
+    /// case, multiple matches within a page can constitute a single conceptual "Web page element".
+    xpath: (Listing<String>|String)?
+    
+}

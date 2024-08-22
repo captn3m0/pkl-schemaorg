@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A specific branch of medical science that pertains to the health care of women, particularly
+/// in the diagnosis and treatment of disorders affecting the female reproductive system.
+///
+/// See: <https://schema.org/Gynecologic>
+/// Model depth: 5
+open class Gynecologic extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

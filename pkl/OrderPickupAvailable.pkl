@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrderStatus.pkl"
+/// OrderStatus representing availability of an order for pickup.
+///
+/// See: <https://schema.org/OrderPickupAvailable>
+/// Model depth: 6
+open class OrderPickupAvailable extends OrderStatus.OrderStatus {
+    
+}

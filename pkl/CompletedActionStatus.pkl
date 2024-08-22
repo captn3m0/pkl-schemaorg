@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ActionStatusType.pkl"
+/// An action that has already taken place.
+///
+/// See: <https://schema.org/CompletedActionStatus>
+/// Model depth: 6
+open class CompletedActionStatus extends ActionStatusType.ActionStatusType {
+    
+}

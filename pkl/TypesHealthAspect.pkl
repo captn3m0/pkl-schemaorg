@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Categorization and other types related to a topic.
+///
+/// See: <https://schema.org/TypesHealthAspect>
+/// Model depth: 5
+open class TypesHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

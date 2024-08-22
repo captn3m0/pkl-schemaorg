@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreateAction.pkl"
+/// The act of producing/preparing food.
+///
+/// See: <https://schema.org/CookAction>
+/// Model depth: 4
+open class CookAction extends CreateAction.CreateAction {
+        
+    /// A sub property of location. The specific food event where the action occurred.
+    foodEvent: (Listing<String>|String)?
+        
+    /// A sub property of location. The specific food establishment where the action occurred.
+    foodEstablishment: (Listing<String>|String)?
+        
+    /// A sub property of instrument. The recipe/instructions used to perform the action.
+    recipe: (Listing<String>|String)?
+    
+}

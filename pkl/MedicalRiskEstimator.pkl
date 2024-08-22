@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEntity.pkl"
+/// Any rule set or interactive tool for estimating the risk of developing a complication
+/// or condition.
+///
+/// See: <https://schema.org/MedicalRiskEstimator>
+/// Model depth: 3
+open class MedicalRiskEstimator extends MedicalEntity.MedicalEntity {
+        
+    /// A modifiable or non-modifiable risk factor included in the calculation, e.g. age, coexisting
+    /// condition.
+    includedRiskFactor: (Listing<String>|String)?
+        
+    /// The condition, complication, or symptom whose risk is being estimated.
+    estimatesRiskOf: (Listing<String>|String)?
+    
+}

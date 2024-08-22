@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Store.pkl"
+/// A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits.
+///
+/// See: <https://schema.org/LiquorStore>
+/// Model depth: 5
+open class LiquorStore extends Store.Store {
+    
+}

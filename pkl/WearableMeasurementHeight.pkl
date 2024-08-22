@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableMeasurementTypeEnumeration.pkl"
+/// Measurement of the height, for example the heel height of a shoe.
+///
+/// See: <https://schema.org/WearableMeasurementHeight>
+/// Model depth: 6
+open class WearableMeasurementHeight extends WearableMeasurementTypeEnumeration.WearableMeasurementTypeEnumeration {
+    
+}

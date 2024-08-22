@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SportsActivityLocation.pkl"
+/// A public swimming pool.
+///
+/// See: <https://schema.org/PublicSwimmingPool>
+/// Model depth: 5
+open class PublicSwimmingPool extends SportsActivityLocation.SportsActivityLocation {
+    
+}

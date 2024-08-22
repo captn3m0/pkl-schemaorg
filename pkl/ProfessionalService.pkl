@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// Original definition: "provider of professional services." The general [[ProfessionalService]]
+/// type for local businesses was deprecated due to confusion with [[Service]]. For reference,
+/// the types that it included were: [[Dentist]], [[AccountingService]], [[Attorney]],
+/// [[Notary]], as well as types for several kinds of [[HomeAndConstructionBusiness]]:
+/// [[Electrician]], [[GeneralContractor]], [[HousePainter]], [[Locksmith]], [[Plumber]],
+/// [[RoofingContractor]]. [[LegalService]] was introduced as a more inclusive supertype
+/// of [[Attorney]].
+///
+/// See: <https://schema.org/ProfessionalService>
+/// Model depth: 4
+open class ProfessionalService extends LocalBusiness.LocalBusiness {
+    
+}

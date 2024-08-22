@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A collection or bound volume of maps, charts, plates or tables, physical or in media form
+/// illustrating any subject.
+///
+/// See: <https://schema.org/Atlas>
+/// Model depth: 3
+open class Atlas extends CreativeWork.CreativeWork {
+    
+}

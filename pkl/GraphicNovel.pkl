@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BookFormatType.pkl"
+/// Book format: GraphicNovel. May represent a bound collection of ComicIssue instances.
+///
+/// See: <https://schema.org/GraphicNovel>
+/// Model depth: 5
+open class GraphicNovel extends BookFormatType.BookFormatType {
+    
+}

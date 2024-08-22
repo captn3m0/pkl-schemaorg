@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEnumeration.pkl"
+import "MedicalProcedure.pkl"
+/// A type of physical examination of a patient performed by a physician.
+///
+/// See: <https://schema.org/PhysicalExam>
+/// Model depth: 4
+open class PhysicalExam extends MedicalEnumeration.MedicalEnumeration MedicalProcedure.MedicalProcedure {
+    
+}

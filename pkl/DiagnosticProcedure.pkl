@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalProcedure.pkl"
+/// A medical procedure intended primarily for diagnostic, as opposed to therapeutic,
+/// purposes.
+///
+/// See: <https://schema.org/DiagnosticProcedure>
+/// Model depth: 4
+open class DiagnosticProcedure extends MedicalProcedure.MedicalProcedure {
+    
+}

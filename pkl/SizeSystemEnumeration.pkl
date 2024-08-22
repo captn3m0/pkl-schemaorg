@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerates common size systems for different categories of products, for example "EN-13402"
+/// or "UK" for wearables or "Imperial" for screws.
+///
+/// See: <https://schema.org/SizeSystemEnumeration>
+/// Model depth: 4
+open class SizeSystemEnumeration extends Enumeration.Enumeration {
+    
+}

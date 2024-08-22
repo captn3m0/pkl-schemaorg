@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UKNonprofitType.pkl"
+/// LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that
+/// is limited by guarantee (UK).
+///
+/// See: <https://schema.org/LimitedByGuaranteeCharity>
+/// Model depth: 6
+open class LimitedByGuaranteeCharity extends UKNonprofitType.UKNonprofitType {
+    
+}

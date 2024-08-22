@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AchieveAction.pkl"
+/// The act of achieving victory in a competitive activity.
+///
+/// See: <https://schema.org/WinAction>
+/// Model depth: 4
+open class WinAction extends AchieveAction.AchieveAction {
+        
+    /// A sub property of participant. The loser of the action.
+    loser: (Listing<String>|String)?
+    
+}

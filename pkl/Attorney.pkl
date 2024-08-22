@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LegalService.pkl"
+/// Professional service: Attorney. This type is deprecated - [[LegalService]] is more
+/// inclusive and less ambiguous.
+///
+/// See: <https://schema.org/Attorney>
+/// Model depth: 5
+open class Attorney extends LegalService.LegalService {
+    
+}

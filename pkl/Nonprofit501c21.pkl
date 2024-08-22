@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit501c21: Non-profit type referring to Black Lung Benefit Trusts.
+///
+/// See: <https://schema.org/Nonprofit501c21>
+/// Model depth: 6
+open class Nonprofit501c21 extends USNonprofitType.USNonprofitType {
+    
+}

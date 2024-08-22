@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAndBeautyBusiness.pkl"
+/// A hair salon.
+///
+/// See: <https://schema.org/HairSalon>
+/// Model depth: 5
+open class HairSalon extends HealthAndBeautyBusiness.HealthAndBeautyBusiness {
+    
+}

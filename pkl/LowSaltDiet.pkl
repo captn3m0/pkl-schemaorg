@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "RestrictedDiet.pkl"
+/// A diet focused on reduced sodium intake.
+///
+/// See: <https://schema.org/LowSaltDiet>
+/// Model depth: 5
+open class LowSaltDiet extends RestrictedDiet.RestrictedDiet {
+    
+}

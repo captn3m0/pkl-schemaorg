@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// The act of giving money voluntarily to a beneficiary in recognition of services rendered.
+///
+/// See: <https://schema.org/TipAction>
+/// Model depth: 4
+open class TipAction extends TradeAction.TradeAction {
+        
+    /// A sub property of participant. The participant who is at the receiving end of the action.
+    recipient: (Listing<String>|String)?
+    
+}

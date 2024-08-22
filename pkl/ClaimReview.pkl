@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Review.pkl"
+/// A fact-checking review of claims made (or reported) in some creative work (referenced
+/// via itemReviewed).
+///
+/// See: <https://schema.org/ClaimReview>
+/// Model depth: 4
+open class ClaimReview extends Review.Review {
+        
+    /// A short summary of the specific claims reviewed in a ClaimReview.
+    claimReviewed: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalImagingTechnique.pkl"
+import "MedicalSpecialty.pkl"
+/// Radiography is an imaging technique that uses electromagnetic radiation other than
+/// visible light, especially X-rays, to view the internal structure of a non-uniformly
+/// composed and opaque object such as the human body.
+///
+/// See: <https://schema.org/Radiography>
+/// Model depth: 6
+open class Radiography extends MedicalImagingTechnique.MedicalImagingTechnique MedicalSpecialty.MedicalSpecialty {
+    
+}

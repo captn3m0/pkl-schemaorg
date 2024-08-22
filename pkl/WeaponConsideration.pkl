@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// The item is intended to induce bodily harm, for example guns, mace, combat knives, brass
+/// knuckles, nail or other bombs, and spears.
+///
+/// See: <https://schema.org/WeaponConsideration>
+/// Model depth: 5
+open class WeaponConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

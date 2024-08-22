@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SteeringPositionValue.pkl"
+/// The steering position is on the right side of the vehicle (viewed from the main direction
+/// of driving).
+///
+/// See: <https://schema.org/RightHandDriving>
+/// Model depth: 6
+open class RightHandDriving extends SteeringPositionValue.SteeringPositionValue {
+    
+}

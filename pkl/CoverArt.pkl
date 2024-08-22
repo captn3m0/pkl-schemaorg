@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "VisualArtwork.pkl"
+/// The artwork on the outer surface of a CreativeWork.
+///
+/// See: <https://schema.org/CoverArt>
+/// Model depth: 4
+open class CoverArt extends VisualArtwork.VisualArtwork {
+    
+}

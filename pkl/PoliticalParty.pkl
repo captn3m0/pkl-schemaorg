@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Organization.pkl"
+/// Organization: Political Party.
+///
+/// See: <https://schema.org/PoliticalParty>
+/// Model depth: 3
+open class PoliticalParty extends Organization.Organization {
+    
+}

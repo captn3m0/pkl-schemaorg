@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Overview of the content. Contains a summarized view of the topic with the most relevant
+/// information for an introduction.
+///
+/// See: <https://schema.org/OverviewHealthAspect>
+/// Model depth: 5
+open class OverviewHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

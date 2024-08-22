@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AssessAction.pkl"
+/// The act of producing a balanced opinion about the object for an audience. An agent reviews
+/// an object with participants resulting in a review.
+///
+/// See: <https://schema.org/ReviewAction>
+/// Model depth: 4
+open class ReviewAction extends AssessAction.AssessAction {
+        
+    /// A sub property of result. The review that resulted in the performing of the action.
+    resultReview: (Listing<String>|String)?
+    
+}

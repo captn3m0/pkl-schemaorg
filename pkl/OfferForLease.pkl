@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Offer.pkl"
+/// An [[OfferForLease]] in Schema.org represents an [[Offer]] to lease out something,
+/// i.e. an [[Offer]] whose [[businessFunction]] is [lease out](http://purl.org/goodrelations/v1#LeaseOut.).
+/// See [Good Relations](https://en.wikipedia.org/wiki/GoodRelations) for background
+/// on the underlying concepts.
+///
+/// See: <https://schema.org/OfferForLease>
+/// Model depth: 4
+open class OfferForLease extends Offer.Offer {
+    
+}

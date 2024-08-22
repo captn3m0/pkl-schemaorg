@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit501c2: Non-profit type referring to Title-holding Corporations for Exempt
+/// Organizations.
+///
+/// See: <https://schema.org/Nonprofit501c2>
+/// Model depth: 6
+open class Nonprofit501c2 extends USNonprofitType.USNonprofitType {
+    
+}

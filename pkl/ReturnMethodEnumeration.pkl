@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerates several types of product return methods.
+///
+/// See: <https://schema.org/ReturnMethodEnumeration>
+/// Model depth: 4
+open class ReturnMethodEnumeration extends Enumeration.Enumeration {
+    
+}

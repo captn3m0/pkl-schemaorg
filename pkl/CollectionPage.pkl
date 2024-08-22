@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPage.pkl"
+/// Web page type: Collection page.
+///
+/// See: <https://schema.org/CollectionPage>
+/// Model depth: 4
+open class CollectionPage extends WebPage.WebPage {
+    
+}

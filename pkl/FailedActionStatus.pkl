@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ActionStatusType.pkl"
+/// An action that failed to complete. The action's error property and the HTTP return code
+/// contain more information about the failure.
+///
+/// See: <https://schema.org/FailedActionStatus>
+/// Model depth: 6
+open class FailedActionStatus extends ActionStatusType.ActionStatusType {
+    
+}

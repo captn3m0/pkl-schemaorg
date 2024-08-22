@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OfferItemCondition.pkl"
+/// Indicates that the item is damaged.
+///
+/// See: <https://schema.org/DamagedCondition>
+/// Model depth: 5
+open class DamagedCondition extends OfferItemCondition.OfferItemCondition {
+    
+}

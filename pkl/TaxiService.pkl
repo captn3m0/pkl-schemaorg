@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Service.pkl"
+/// A service for a vehicle for hire with a driver for local travel. Fares are usually calculated
+/// based on distance traveled.
+///
+/// See: <https://schema.org/TaxiService>
+/// Model depth: 4
+open class TaxiService extends Service.Service {
+    
+}

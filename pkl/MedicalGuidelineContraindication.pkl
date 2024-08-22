@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalGuideline.pkl"
+/// A guideline contraindication that designates a process as harmful and where quality
+/// of the data supporting the contraindication is sound.
+///
+/// See: <https://schema.org/MedicalGuidelineContraindication>
+/// Model depth: 4
+open class MedicalGuidelineContraindication extends MedicalGuideline.MedicalGuideline {
+    
+}

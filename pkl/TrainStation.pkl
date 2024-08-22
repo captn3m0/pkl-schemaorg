@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// A train station.
+///
+/// See: <https://schema.org/TrainStation>
+/// Model depth: 4
+open class TrainStation extends CivicStructure.CivicStructure {
+    
+}

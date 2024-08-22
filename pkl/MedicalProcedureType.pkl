@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEnumeration.pkl"
+/// An enumeration that describes different types of medical procedures.
+///
+/// See: <https://schema.org/MedicalProcedureType>
+/// Model depth: 5
+open class MedicalProcedureType extends MedicalEnumeration.MedicalEnumeration {
+    
+}

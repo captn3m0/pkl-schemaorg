@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EUEnergyEfficiencyEnumeration.pkl"
+/// Represents EU Energy Efficiency Class G as defined in EU energy labeling regulations.
+///
+/// See: <https://schema.org/EUEnergyEfficiencyCategoryG>
+/// Model depth: 6
+open class EUEnergyEfficiencyCategoryG extends EUEnergyEfficiencyEnumeration.EUEnergyEfficiencyEnumeration {
+    
+}

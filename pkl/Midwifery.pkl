@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// A nurse-like health profession that deals with pregnancy, childbirth, and the postpartum
+/// period (including care of the newborn), besides sexual and reproductive health of women
+/// throughout their lives.
+///
+/// See: <https://schema.org/Midwifery>
+/// Model depth: 5
+open class Midwifery extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

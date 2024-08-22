@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalExam.pkl"
+/// Musculoskeletal system clinical examination.
+///
+/// See: <https://schema.org/MusculoskeletalExam>
+/// Model depth: 5
+open class MusculoskeletalExam extends PhysicalExam.PhysicalExam {
+    
+}

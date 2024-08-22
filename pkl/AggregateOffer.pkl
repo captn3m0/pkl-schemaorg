@@ -1,0 +1,37 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Offer.pkl"
+/// When a single product is associated with multiple offers (for example, the same pair
+/// of shoes is offered by different merchants), then AggregateOffer can be used. Note:
+/// AggregateOffers are normally expected to associate multiple offers that all share
+/// the same defined [[businessFunction]] value, or default to http://purl.org/goodrelations/v1#Sell
+/// if businessFunction is not explicitly defined.
+///
+/// See: <https://schema.org/AggregateOffer>
+/// Model depth: 4
+open class AggregateOffer extends Offer.Offer {
+        
+    /// The lowest price of all offers available. Usage guidelines: * Use values from 0123456789
+    /// (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
+    /// similar Unicode symbols. * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to
+    /// indicate a decimal point. Avoid using these symbols as a readability separator.
+    lowPrice: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// An offer to provide this item&#x2014;for example, an offer to sell a product, rent the
+    /// DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]]
+    /// to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can
+    /// also be used to describe a [[Demand]]. While this property is listed as expected on a number
+    /// of common types, it can be used in others. In that case, using a second type, such as Product
+    /// or a subtype of Product, can clarify the nature of the offer.
+    offers: (Listing<String>|String)?
+        
+    /// The highest price of all offers available. Usage guidelines: * Use values from 0123456789
+    /// (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
+    /// similar Unicode symbols. * Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to
+    /// indicate a decimal point. Avoid using these symbols as a readability separator.
+    highPrice: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The number of offers for the product.
+    offerCount: (Listing<Int|String>|Int|String)?
+    
+}

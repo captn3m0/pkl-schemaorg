@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "RadioChannel.pkl"
+/// A radio channel that uses AM.
+///
+/// See: <https://schema.org/AMRadioChannel>
+/// Model depth: 5
+open class AMRadioChannel extends RadioChannel.RadioChannel {
+    
+}

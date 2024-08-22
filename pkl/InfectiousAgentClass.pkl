@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEnumeration.pkl"
+/// Classes of agents or pathogens that transmit infectious diseases. Enumerated type.
+///
+/// See: <https://schema.org/InfectiousAgentClass>
+/// Model depth: 5
+open class InfectiousAgentClass extends MedicalEnumeration.MedicalEnumeration {
+    
+}

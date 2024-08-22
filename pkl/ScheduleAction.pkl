@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PlanAction.pkl"
+/// Scheduling future actions, events, or tasks. Related actions: * [[ReserveAction]]:
+/// Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task,
+/// etc) towards a time slot / spatial allocation.
+///
+/// See: <https://schema.org/ScheduleAction>
+/// Model depth: 5
+open class ScheduleAction extends PlanAction.PlanAction {
+    
+}

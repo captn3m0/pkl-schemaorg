@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// The item is suitable only for adults, without indicating why. Due to widespread use of
+/// "adult" as a euphemism for "sexual", many such items are likely suited also for the SexualContentConsideration
+/// code.
+///
+/// See: <https://schema.org/UnclassifiedAdultConsideration>
+/// Model depth: 5
+open class UnclassifiedAdultConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

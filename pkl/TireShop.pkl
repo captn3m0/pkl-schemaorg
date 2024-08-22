@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Store.pkl"
+/// A tire shop.
+///
+/// See: <https://schema.org/TireShop>
+/// Model depth: 5
+open class TireShop extends Store.Store {
+    
+}

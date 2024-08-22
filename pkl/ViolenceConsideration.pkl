@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// Item shows or promotes violence.
+///
+/// See: <https://schema.org/ViolenceConsideration>
+/// Model depth: 5
+open class ViolenceConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

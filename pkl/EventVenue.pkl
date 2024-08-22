@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// An event venue.
+///
+/// See: <https://schema.org/EventVenue>
+/// Model depth: 4
+open class EventVenue extends CivicStructure.CivicStructure {
+    
+}

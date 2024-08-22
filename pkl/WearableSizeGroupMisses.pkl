@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeGroupEnumeration.pkl"
+/// Size group "Misses" (also known as "Missy") for wearables.
+///
+/// See: <https://schema.org/WearableSizeGroupMisses>
+/// Model depth: 6
+open class WearableSizeGroupMisses extends WearableSizeGroupEnumeration.WearableSizeGroupEnumeration {
+    
+}

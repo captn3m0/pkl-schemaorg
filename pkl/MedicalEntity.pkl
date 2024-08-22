@@ -1,0 +1,39 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Thing.pkl"
+/// The most generic type of entity related to health and the practice of medicine.
+///
+/// See: <https://schema.org/MedicalEntity>
+/// Model depth: 2
+open class MedicalEntity extends Thing.Thing {
+        
+    /// A medical code for the entity, taken from a controlled vocabulary or ontology such as
+    /// ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc.
+    code: (Listing<String>|String)?
+        
+    /// The drug or supplement's legal status, including any controlled substance schedules
+    /// that apply.
+    legalStatus: (Listing<String>|String)?
+        
+    /// A [[Grant]] that directly or indirectly provide funding or sponsorship for this item.
+    /// See also [[ownershipFundingInfo]].
+    funding: (Listing<String>|String)?
+        
+    /// If applicable, the organization that officially recognizes this entity as part of its
+    /// endorsed system of medicine.
+    recognizingAuthority: (Listing<String>|String)?
+        
+    /// A medical guideline related to this entity.
+    guideline: (Listing<String>|String)?
+        
+    /// If applicable, a medical specialty in which this entity is relevant.
+    relevantSpecialty: (Listing<String>|String)?
+        
+    /// A medical study or trial related to this entity.
+    study: (Listing<String>|String)?
+        
+    /// The system of medicine that includes this MedicalEntity, for example 'evidence-based',
+    /// 'homeopathic', 'chiropractic', etc.
+    medicineSystem: (Listing<String>|String)?
+    
+}

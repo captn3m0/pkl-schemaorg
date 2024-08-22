@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ConsumeAction.pkl"
+/// The act of playing a video game.
+///
+/// See: <https://schema.org/PlayGameAction>
+/// Model depth: 4
+open class PlayGameAction extends ConsumeAction.ConsumeAction {
+        
+    /// Indicates the availability type of the game content associated with this action, such
+    /// as whether it is a full version or a demo.
+    gameAvailabilityType: (Listing<String>|String)?
+    
+}

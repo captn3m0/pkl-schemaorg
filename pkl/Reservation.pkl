@@ -1,0 +1,66 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Describes a reservation for travel, dining or an event. Some reservations require tickets.
+/// Note: This type is for information about actual reservations, e.g. in confirmation
+/// emails or HTML pages with individual confirmations of reservations. For offers of tickets,
+/// restaurant reservations, flights, or rental cars, use [[Offer]].
+///
+/// See: <https://schema.org/Reservation>
+/// Model depth: 3
+open class Reservation extends Intangible.Intangible {
+        
+    /// The thing -- flight, event, restaurant, etc. being reserved.
+    reservationFor: (Listing<String>|String)?
+        
+    /// Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the
+    /// reservation.
+    programMembershipUsed: (Listing<String>|String)?
+        
+    /// The total price for the reservation or ticket, including applicable taxes, shipping,
+    /// etc. Usage guidelines: * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030)
+    /// to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols. * Use
+    /// '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid
+    /// using these symbols as a readability separator.
+    totalPrice: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The date and time the reservation was modified.
+    modifiedTime: (Listing<String>|String)?
+        
+    /// The current status of the reservation.
+    reservationStatus: (Listing<String>|String)?
+        
+    /// A unique identifier for the reservation.
+    reservationId: (Listing<String>|String)?
+        
+    /// The currency of the price, or a price component when attached to [[PriceSpecification]]
+    /// and its subtypes. Use standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217),
+    /// e.g. "USD"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies)
+    /// for cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+    /// (LETS) and other currency types, e.g. "Ithaca HOUR".
+    priceCurrency: (Listing<String>|String)?
+        
+    /// An entity that arranges for an exchange between a buyer and a seller. In most cases a broker
+    /// never acquires or releases ownership of a product or service involved in an exchange.
+    /// If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms
+    /// are preferred.
+    broker: (Listing<String>|String)?
+        
+    /// The service provider, service operator, or service performer; the goods producer.
+    /// Another party (a seller) may offer those services or goods on behalf of the provider.
+    /// A provider may also serve as the seller.
+    provider: (Listing<String>|String)?
+        
+    /// The date and time the reservation was booked.
+    bookingTime: (Listing<String>|String)?
+        
+    /// The person or organization the reservation or ticket is for.
+    underName: (Listing<String>|String)?
+        
+    /// A ticket associated with the reservation.
+    reservedTicket: (Listing<String>|String)?
+        
+    /// 'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.
+    bookingAgent: (Listing<String>|String)?
+    
+}

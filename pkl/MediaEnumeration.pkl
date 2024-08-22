@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// MediaEnumeration enumerations are lists of codes, labels etc. useful for describing
+/// media objects. They may be reflections of externally developed lists, or created at
+/// schema.org, or a combination.
+///
+/// See: <https://schema.org/MediaEnumeration>
+/// Model depth: 4
+open class MediaEnumeration extends Enumeration.Enumeration {
+    
+}

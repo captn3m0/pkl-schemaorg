@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerates energy efficiency levels (also known as "classes" or "ratings") and certifications
+/// that are part of several international energy efficiency standards.
+///
+/// See: <https://schema.org/EnergyEfficiencyEnumeration>
+/// Model depth: 4
+open class EnergyEfficiencyEnumeration extends Enumeration.Enumeration {
+    
+}

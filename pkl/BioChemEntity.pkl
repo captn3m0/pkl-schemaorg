@@ -1,0 +1,57 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Thing.pkl"
+/// Any biological, chemical, or biochemical thing. For example: a protein; a gene; a chemical;
+/// a synthetic chemical.
+///
+/// See: <https://schema.org/BioChemEntity>
+/// Model depth: 2
+open class BioChemEntity extends Thing.Thing {
+        
+    /// Indicates a BioChemEntity that (in some sense) has this BioChemEntity as a part.
+    hasBioChemEntityPart: (Listing<BioChemEntity|String>|BioChemEntity|String)?
+        
+    /// A [[Grant]] that directly or indirectly provide funding or sponsorship for this item.
+    /// See also [[ownershipFundingInfo]].
+    funding: (Listing<String>|String)?
+        
+    /// Indicates a BioChemEntity that is (in some sense) a part of this BioChemEntity.
+    isPartOfBioChemEntity: (Listing<BioChemEntity|String>|BioChemEntity|String)?
+        
+    /// A BioChemEntity that is known to interact with this item.
+    bioChemInteraction: (Listing<BioChemEntity|String>|BioChemEntity|String)?
+        
+    /// Another BioChemEntity encoding by this one.
+    isEncodedByBioChemEntity: (Listing<String>|String)?
+        
+    /// Subcellular location where this BioChemEntity is located; please use PropertyValue
+    /// if you want to include any evidence.
+    isLocatedInSubcellularLocation: (Listing<URL|String>|URL|String)?
+        
+    /// Disease associated to this BioChemEntity. Such disease can be a MedicalCondition or
+    /// a URL. If you want to add an evidence supporting the association, please use PropertyValue.
+    associatedDisease: (Listing<URL|String>|URL|String)?
+        
+    /// Biological process this BioChemEntity is involved in; please use PropertyValue if
+    /// you want to include any evidence.
+    isInvolvedInBiologicalProcess: (Listing<URL|String>|URL|String)?
+        
+    /// A common representation such as a protein sequence or chemical structure for this entity.
+    /// For images use schema.org/image.
+    hasRepresentation: (Listing<URL|String>|URL|String)?
+        
+    /// A role played by the BioChemEntity within a biological context.
+    biologicalRole: (Listing<String>|String)?
+        
+    /// A similar BioChemEntity, e.g., obtained by fingerprint similarity algorithms.
+    bioChemSimilarity: (Listing<BioChemEntity|String>|BioChemEntity|String)?
+        
+    /// Molecular function performed by this BioChemEntity; please use PropertyValue if you
+    /// want to include any evidence.
+    hasMolecularFunction: (Listing<URL|String>|URL|String)?
+        
+    /// The taxonomic grouping of the organism that expresses, encodes, or in some way related
+    /// to the BioChemEntity.
+    taxonomicRange: (Listing<URL|String>|URL|String)?
+    
+}

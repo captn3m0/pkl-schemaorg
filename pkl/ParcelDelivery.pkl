@@ -1,0 +1,49 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// The delivery of a parcel either via the postal service or a commercial service.
+///
+/// See: <https://schema.org/ParcelDelivery>
+/// Model depth: 3
+open class ParcelDelivery extends Intangible.Intangible {
+        
+    /// The overall order the items in this delivery were included in.
+    partOfOrder: (Listing<String>|String)?
+        
+    /// 'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.
+    carrier: (Listing<String>|String)?
+        
+    /// New entry added as the package passes through each leg of its journey (from shipment to
+    /// final delivery).
+    deliveryStatus: (Listing<String>|String)?
+        
+    /// The service provider, service operator, or service performer; the goods producer.
+    /// Another party (a seller) may offer those services or goods on behalf of the provider.
+    /// A provider may also serve as the seller.
+    provider: (Listing<String>|String)?
+        
+    /// Shipper's address.
+    originAddress: (Listing<String>|String)?
+        
+    /// Item(s) being shipped.
+    itemShipped: (Listing<String>|String)?
+        
+    /// Tracking url for the parcel delivery.
+    trackingUrl: (Listing<URL|String>|URL|String)?
+        
+    /// The latest date the package may arrive.
+    expectedArrivalUntil: (Listing<String|String>|String|String)?
+        
+    /// Destination address.
+    deliveryAddress: (Listing<String>|String)?
+        
+    /// Shipper tracking number.
+    trackingNumber: (Listing<String>|String)?
+        
+    /// The earliest date the package may arrive.
+    expectedArrivalFrom: (Listing<String|String>|String|String)?
+        
+    /// Method used for delivery or shipping.
+    hasDeliveryMethod: (Listing<String>|String)?
+    
+}

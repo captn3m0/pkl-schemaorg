@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableMeasurementTypeEnumeration.pkl"
+/// Represents the length, for example of a dress.
+///
+/// See: <https://schema.org/WearableMeasurementLength>
+/// Model depth: 6
+open class WearableMeasurementLength extends WearableMeasurementTypeEnumeration.WearableMeasurementTypeEnumeration {
+    
+}

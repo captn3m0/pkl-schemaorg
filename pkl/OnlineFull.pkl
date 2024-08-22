@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GameServerStatus.pkl"
+/// Game server status: OnlineFull. Server is online but unavailable. The maximum number
+/// of players has reached.
+///
+/// See: <https://schema.org/OnlineFull>
+/// Model depth: 6
+open class OnlineFull extends GameServerStatus.GameServerStatus {
+    
+}

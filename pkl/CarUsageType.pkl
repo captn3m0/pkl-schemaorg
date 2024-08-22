@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// A value indicating a special usage of a car, e.g. commercial rental, driving school,
+/// or as a taxi.
+///
+/// See: <https://schema.org/CarUsageType>
+/// Model depth: 4
+open class CarUsageType extends Enumeration.Enumeration {
+    
+}

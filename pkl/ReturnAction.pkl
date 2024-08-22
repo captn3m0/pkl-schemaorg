@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TransferAction.pkl"
+/// The act of returning to the origin that which was previously received (concrete objects)
+/// or taken (ownership).
+///
+/// See: <https://schema.org/ReturnAction>
+/// Model depth: 4
+open class ReturnAction extends TransferAction.TransferAction {
+        
+    /// A sub property of participant. The participant who is at the receiving end of the action.
+    recipient: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SizeSystemEnumeration.pkl"
+/// Imperial size system.
+///
+/// See: <https://schema.org/SizeSystemImperial>
+/// Model depth: 5
+open class SizeSystemImperial extends SizeSystemEnumeration.SizeSystemEnumeration {
+    
+}

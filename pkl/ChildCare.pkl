@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A Childcare center.
+///
+/// See: <https://schema.org/ChildCare>
+/// Model depth: 4
+open class ChildCare extends LocalBusiness.LocalBusiness {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LodgingBusiness.pkl"
+/// A motel. <br /><br /> See also the <a href="/docs/hotels.html">dedicated document
+/// on the use of schema.org for marking up hotels and other forms of accommodations</a>.
+///
+/// See: <https://schema.org/Motel>
+/// Model depth: 5
+open class Motel extends LodgingBusiness.LodgingBusiness {
+    
+}

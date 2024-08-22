@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTest.pkl"
+/// A medical test performed on a sample of a patient's blood.
+///
+/// See: <https://schema.org/BloodTest>
+/// Model depth: 4
+open class BloodTest extends MedicalTest.MedicalTest {
+    
+}

@@ -1,0 +1,26 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PaymentMethod.pkl"
+import "FinancialProduct.pkl"
+/// A payment method using a credit, debit, store or other card to associate the payment with
+/// an account.
+///
+/// See: <https://schema.org/PaymentCard>
+/// Model depth: 5
+open class PaymentCard extends PaymentMethod.PaymentMethod FinancialProduct.FinancialProduct {
+        
+    /// A floor limit is the amount of money above which credit card transactions must be authorized.
+    floorLimit: (Listing<String>|String)?
+        
+    /// A secure method for consumers to purchase products or services via debit, credit or smartcards
+    /// by using RFID or NFC technology.
+    contactlessPayment: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// The minimum payment is the lowest amount of money that one is required to pay on a credit
+    /// card statement each month.
+    monthlyMinimumRepaymentAmount: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// A cardholder benefit that pays the cardholder a small percentage of their net expenditures.
+    cashBack: (Listing<Int|Float|Boolean|String>|Int|Float|Boolean|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LearningResource.pkl"
+/// Quiz: A test of knowledge, skills and abilities.
+///
+/// See: <https://schema.org/Quiz>
+/// Model depth: 4
+open class Quiz extends LearningResource.LearningResource {
+    
+}

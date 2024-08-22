@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "NonprofitType.pkl"
+/// UKNonprofitType: Non-profit organization type originating from the United Kingdom.
+///
+/// See: <https://schema.org/UKNonprofitType>
+/// Model depth: 5
+open class UKNonprofitType extends NonprofitType.NonprofitType {
+    
+}

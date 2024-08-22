@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TransferAction.pkl"
+/// The act of transferring money from one place to another place. This may occur electronically
+/// or physically.
+///
+/// See: <https://schema.org/MoneyTransfer>
+/// Model depth: 4
+open class MoneyTransfer extends TransferAction.TransferAction {
+        
+    /// The amount of money.
+    amount: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// A bank or bank’s branch, financial institution or international financial institution
+    /// operating the beneficiary’s bank account or releasing funds for the beneficiary.
+    beneficiaryBank: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Physician.pkl"
+/// A doctor's office or clinic.
+///
+/// See: <https://schema.org/PhysiciansOffice>
+/// Model depth: 5
+open class PhysiciansOffice extends Physician.Physician {
+    
+}

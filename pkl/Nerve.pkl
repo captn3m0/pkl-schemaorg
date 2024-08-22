@@ -1,0 +1,24 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// A common pathway for the electrochemical nerve impulses that are transmitted along
+/// each of the axons.
+///
+/// See: <https://schema.org/Nerve>
+/// Model depth: 4
+open class Nerve extends AnatomicalStructure.AnatomicalStructure {
+        
+    /// The neurological pathway extension that inputs and sends information to the brain or
+    /// spinal cord.
+    sensoryUnit: (Listing<String>|String)?
+        
+    /// The branches that delineate from the nerve bundle. Not to be confused with [[branchOf]].
+    branch: (Listing<String>|String)?
+        
+    /// The neurological pathway extension that involves muscle control.
+    nerveMotor: (Listing<String>|String)?
+        
+    /// The neurological pathway that originates the neurons.
+    sourcedFrom: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// A specific branch of medical science that pertains to treating diseases, injuries and
+/// deformities by manual and instrumental means.
+///
+/// See: <https://schema.org/Surgical>
+/// Model depth: 6
+open class Surgical extends MedicalSpecialty.MedicalSpecialty {
+    
+}

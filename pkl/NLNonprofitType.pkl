@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "NonprofitType.pkl"
+/// NLNonprofitType: Non-profit organization type originating from the Netherlands.
+///
+/// See: <https://schema.org/NLNonprofitType>
+/// Model depth: 5
+open class NLNonprofitType extends NonprofitType.NonprofitType {
+    
+}

@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// The act of an agent relocating to a place. Related actions: * [[TransferAction]]: Unlike
+/// TransferAction, the subject of the move is a living Person or Organization rather than
+/// an inanimate object.
+///
+/// See: <https://schema.org/MoveAction>
+/// Model depth: 3
+open class MoveAction extends Action.Action {
+        
+    /// A sub property of location. The original location of the object or the agent before the
+    /// action.
+    fromLocation: (Listing<String>|String)?
+        
+    /// A sub property of location. The final location of the object or the agent after the action.
+    toLocation: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Enumerates several kinds of product return refund types.
+///
+/// See: <https://schema.org/RefundTypeEnumeration>
+/// Model depth: 4
+open class RefundTypeEnumeration extends Enumeration.Enumeration {
+    
+}

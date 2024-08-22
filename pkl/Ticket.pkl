@@ -1,0 +1,42 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Used to describe a ticket to an event, a flight, a bus ride, etc.
+///
+/// See: <https://schema.org/Ticket>
+/// Model depth: 3
+open class Ticket extends Intangible.Intangible {
+        
+    /// The unique identifier for the ticket.
+    ticketNumber: (Listing<String>|String)?
+        
+    /// The organization issuing the item, for example a [[Permit]], [[Ticket]], or [[Certification]].
+    issuedBy: (Listing<String>|String)?
+        
+    /// The seat associated with the ticket.
+    ticketedSeat: (Listing<String>|String)?
+        
+    /// The total price for the reservation or ticket, including applicable taxes, shipping,
+    /// etc. Usage guidelines: * Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030)
+    /// to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols. * Use
+    /// '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid
+    /// using these symbols as a readability separator.
+    totalPrice: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// Reference to an asset (e.g., Barcode, QR code image or PDF) usable for entrance.
+    ticketToken: (Listing<URL|String>|URL|String)?
+        
+    /// The date the ticket was issued.
+    dateIssued: (Listing<String|String>|String|String)?
+        
+    /// The currency of the price, or a price component when attached to [[PriceSpecification]]
+    /// and its subtypes. Use standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217),
+    /// e.g. "USD"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies)
+    /// for cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+    /// (LETS) and other currency types, e.g. "Ithaca HOUR".
+    priceCurrency: (Listing<String>|String)?
+        
+    /// The person or organization the reservation or ticket is for.
+    underName: (Listing<String>|String)?
+    
+}

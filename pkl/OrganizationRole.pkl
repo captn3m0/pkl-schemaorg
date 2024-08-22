@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Role.pkl"
+/// A subclass of Role used to describe roles within organizations.
+///
+/// See: <https://schema.org/OrganizationRole>
+/// Model depth: 4
+open class OrganizationRole extends Role.Role {
+        
+    /// A number associated with a role in an organization, for example, the number on an athlete's
+    /// jersey.
+    numberedPosition: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

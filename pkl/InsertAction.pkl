@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AddAction.pkl"
+/// The act of adding at a specific location in an ordered collection.
+///
+/// See: <https://schema.org/InsertAction>
+/// Model depth: 5
+open class InsertAction extends AddAction.AddAction {
+        
+    /// A sub property of location. The final location of the object or the agent after the action.
+    toLocation: (Listing<String>|String)?
+    
+}

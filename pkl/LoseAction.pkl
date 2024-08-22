@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AchieveAction.pkl"
+/// The act of being defeated in a competitive activity.
+///
+/// See: <https://schema.org/LoseAction>
+/// Model depth: 4
+open class LoseAction extends AchieveAction.AchieveAction {
+        
+    /// A sub property of participant. The winner of the action.
+    winner: (Listing<String>|String)?
+    
+}

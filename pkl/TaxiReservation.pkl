@@ -1,0 +1,21 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Reservation.pkl"
+/// A reservation for a taxi. Note: This type is for information about actual reservations,
+/// e.g. in confirmation emails or HTML pages with individual confirmations of reservations.
+/// For offers of tickets, use [[Offer]].
+///
+/// See: <https://schema.org/TaxiReservation>
+/// Model depth: 4
+open class TaxiReservation extends Reservation.Reservation {
+        
+    /// When a taxi will pick up a passenger or a rental car can be picked up.
+    pickupTime: (Listing<String>|String)?
+        
+    /// Number of people the reservation should accommodate.
+    partySize: (Listing<Int|String>|Int|String)?
+        
+    /// Where a taxi will pick up a passenger or a rental car can be picked up.
+    pickupLocation: (Listing<String>|String)?
+    
+}

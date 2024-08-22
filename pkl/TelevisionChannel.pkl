@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BroadcastChannel.pkl"
+/// A unique instance of a television BroadcastService on a CableOrSatelliteService lineup.
+///
+/// See: <https://schema.org/TelevisionChannel>
+/// Model depth: 4
+open class TelevisionChannel extends BroadcastChannel.BroadcastChannel {
+    
+}

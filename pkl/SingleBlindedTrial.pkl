@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTrialDesign.pkl"
+/// A trial design in which the researcher knows which treatment the patient was randomly
+/// assigned to but the patient does not.
+///
+/// See: <https://schema.org/SingleBlindedTrial>
+/// Model depth: 6
+open class SingleBlindedTrial extends MedicalTrialDesign.MedicalTrialDesign {
+    
+}

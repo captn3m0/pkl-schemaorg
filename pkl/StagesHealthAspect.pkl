@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Stages that can be observed from a topic.
+///
+/// See: <https://schema.org/StagesHealthAspect>
+/// Model depth: 5
+open class StagesHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

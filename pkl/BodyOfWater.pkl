@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Landform.pkl"
+/// A body of water, such as a sea, ocean, or lake.
+///
+/// See: <https://schema.org/BodyOfWater>
+/// Model depth: 4
+open class BodyOfWater extends Landform.Landform {
+    
+}

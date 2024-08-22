@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PeopleAudience.pkl"
+import "Audience.pkl"
+/// Target audiences for medical web pages.
+///
+/// See: <https://schema.org/MedicalAudience>
+/// Model depth: 4
+open class MedicalAudience extends PeopleAudience.PeopleAudience Audience.Audience {
+    
+}

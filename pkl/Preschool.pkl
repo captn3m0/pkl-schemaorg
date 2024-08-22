@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EducationalOrganization.pkl"
+/// A preschool.
+///
+/// See: <https://schema.org/Preschool>
+/// Model depth: 4
+open class Preschool extends EducationalOrganization.EducationalOrganization {
+    
+}

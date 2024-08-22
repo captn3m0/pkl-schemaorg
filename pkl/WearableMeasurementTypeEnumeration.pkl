@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MeasurementTypeEnumeration.pkl"
+/// Enumerates common types of measurement for wearables products.
+///
+/// See: <https://schema.org/WearableMeasurementTypeEnumeration>
+/// Model depth: 5
+open class WearableMeasurementTypeEnumeration extends MeasurementTypeEnumeration.MeasurementTypeEnumeration {
+    
+}

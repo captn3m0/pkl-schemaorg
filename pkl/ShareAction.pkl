@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CommunicateAction.pkl"
+/// The act of distributing content to people for their amusement or edification.
+///
+/// See: <https://schema.org/ShareAction>
+/// Model depth: 5
+open class ShareAction extends CommunicateAction.CommunicateAction {
+    
+}

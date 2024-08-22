@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// This is the [[Action]] of navigating to a specific [[startOffset]] timestamp within
+/// a [[VideoObject]], typically represented with a URL template structure.
+///
+/// See: <https://schema.org/SeekToAction>
+/// Model depth: 3
+open class SeekToAction extends Action.Action {
+        
+    /// The start time of the clip expressed as the number of seconds from the beginning of the
+    /// work.
+    startOffset: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

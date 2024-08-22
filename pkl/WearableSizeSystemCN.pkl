@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeSystemEnumeration.pkl"
+/// Chinese size system for wearables.
+///
+/// See: <https://schema.org/WearableSizeSystemCN>
+/// Model depth: 6
+open class WearableSizeSystemCN extends WearableSizeSystemEnumeration.WearableSizeSystemEnumeration {
+    
+}

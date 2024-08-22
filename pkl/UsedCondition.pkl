@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OfferItemCondition.pkl"
+/// Indicates that the item is used.
+///
+/// See: <https://schema.org/UsedCondition>
+/// Model depth: 5
+open class UsedCondition extends OfferItemCondition.OfferItemCondition {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWorkSeason.pkl"
+/// A single season of a podcast. Many podcasts do not break down into separate seasons. In
+/// that case, PodcastSeries should be used.
+///
+/// See: <https://schema.org/PodcastSeason>
+/// Model depth: 4
+open class PodcastSeason extends CreativeWorkSeason.CreativeWorkSeason {
+    
+}

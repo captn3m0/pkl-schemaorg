@@ -1,0 +1,84 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// An order is a confirmation of a transaction (a receipt), which can contain multiple line
+/// items, each represented by an Offer that has been accepted by the customer.
+///
+/// See: <https://schema.org/Order>
+/// Model depth: 3
+open class Order extends Intangible.Intangible {
+        
+    /// A number that confirms the given order or payment has been received.
+    confirmationNumber: (Listing<String>|String)?
+        
+    /// The item ordered.
+    orderedItem: (Listing<String>|String)?
+        
+    /// Date order was placed.
+    orderDate: (Listing<String|String>|String|String)?
+        
+    /// Any discount applied (to an Order).
+    discount: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// An identifier for the method of payment used (e.g. the last 4 digits of the credit card).
+    paymentMethodId: (Listing<String>|String)?
+        
+    /// Code used to redeem a discount.
+    discountCode: (Listing<String>|String)?
+        
+    /// 'merchant' is an out-dated term for 'seller'.
+    merchant: (Listing<String>|String)?
+        
+    /// The date that payment is due.
+    paymentDue: (Listing<String>|String)?
+        
+    /// The billing address for the order.
+    billingAddress: (Listing<String>|String)?
+        
+    /// The current status of the order.
+    orderStatus: (Listing<String>|String)?
+        
+    /// An entity which offers (sells / leases / lends / loans) the services / goods. A seller may
+    /// also be a provider.
+    seller: (Listing<String>|String)?
+        
+    /// The name of the credit card or other method of payment for the order.
+    paymentMethod: (Listing<String>|String)?
+        
+    /// An entity that arranges for an exchange between a buyer and a seller. In most cases a broker
+    /// never acquires or releases ownership of a product or service involved in an exchange.
+    /// If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms
+    /// are preferred.
+    broker: (Listing<String>|String)?
+        
+    /// The offer(s) -- e.g., product, quantity and price combinations -- included in the order.
+    acceptedOffer: (Listing<String>|String)?
+        
+    /// Indicates whether the offer was accepted as a gift for someone other than the buyer.
+    isGift: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// The order is being paid as part of the referenced Invoice.
+    partOfInvoice: (Listing<String>|String)?
+        
+    /// The delivery of the parcel related to this order or order item.
+    orderDelivery: (Listing<String>|String)?
+        
+    /// The URL for sending a payment.
+    paymentUrl: (Listing<URL|String>|URL|String)?
+        
+    /// Party placing the order or paying the invoice.
+    customer: (Listing<String>|String)?
+        
+    /// The date that payment is due.
+    paymentDueDate: (Listing<String|String>|String|String)?
+        
+    /// The currency of the discount. Use standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217),
+    /// e.g. "USD"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies)
+    /// for cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+    /// (LETS) and other currency types, e.g. "Ithaca HOUR".
+    discountCurrency: (Listing<String>|String)?
+        
+    /// The identifier of the transaction.
+    orderNumber: (Listing<String>|String)?
+    
+}

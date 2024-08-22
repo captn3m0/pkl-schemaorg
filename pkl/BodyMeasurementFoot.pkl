@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyMeasurementTypeEnumeration.pkl"
+/// Foot length (measured between end of the most prominent toe and the most prominent part
+/// of the heel). Used, for example, to measure socks.
+///
+/// See: <https://schema.org/BodyMeasurementFoot>
+/// Model depth: 6
+open class BodyMeasurementFoot extends BodyMeasurementTypeEnumeration.BodyMeasurementTypeEnumeration {
+    
+}

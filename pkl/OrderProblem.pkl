@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrderStatus.pkl"
+/// OrderStatus representing that there is a problem with the order.
+///
+/// See: <https://schema.org/OrderProblem>
+/// Model depth: 6
+open class OrderProblem extends OrderStatus.OrderStatus {
+    
+}

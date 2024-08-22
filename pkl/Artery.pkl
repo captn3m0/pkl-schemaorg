@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Vessel.pkl"
+/// A type of blood vessel that specifically carries blood away from the heart.
+///
+/// See: <https://schema.org/Artery>
+/// Model depth: 5
+open class Artery extends Vessel.Vessel {
+        
+    /// The branches that comprise the arterial structure.
+    arterialBranch: (Listing<String>|String)?
+        
+    /// The area to which the artery supplies blood.
+    supplyTo: (Listing<String>|String)?
+    
+}

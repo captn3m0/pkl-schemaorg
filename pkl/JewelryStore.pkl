@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Store.pkl"
+/// A jewelry store.
+///
+/// See: <https://schema.org/JewelryStore>
+/// Model depth: 5
+open class JewelryStore extends Store.Store {
+    
+}

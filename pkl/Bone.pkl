@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AnatomicalStructure.pkl"
+/// Rigid connective tissue that comprises up the skeletal structure of the human body.
+///
+/// See: <https://schema.org/Bone>
+/// Model depth: 4
+open class Bone extends AnatomicalStructure.AnatomicalStructure {
+    
+}

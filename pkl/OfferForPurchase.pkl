@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Offer.pkl"
+/// An [[OfferForPurchase]] in Schema.org represents an [[Offer]] to sell something,
+/// i.e. an [[Offer]] whose [[businessFunction]] is [sell](http://purl.org/goodrelations/v1#Sell.).
+/// See [Good Relations](https://en.wikipedia.org/wiki/GoodRelations) for background
+/// on the underlying concepts.
+///
+/// See: <https://schema.org/OfferForPurchase>
+/// Model depth: 4
+open class OfferForPurchase extends Offer.Offer {
+    
+}

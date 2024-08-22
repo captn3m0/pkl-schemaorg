@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MediaObject.pkl"
+/// A text file. The text can be unformatted or contain markup, html, etc.
+///
+/// See: <https://schema.org/TextObject>
+/// Model depth: 4
+open class TextObject extends MediaObject.MediaObject {
+    
+}

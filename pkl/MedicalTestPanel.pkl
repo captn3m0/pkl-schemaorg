@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTest.pkl"
+/// Any collection of tests commonly ordered together.
+///
+/// See: <https://schema.org/MedicalTestPanel>
+/// Model depth: 4
+open class MedicalTestPanel extends MedicalTest.MedicalTest {
+        
+    /// A component test of the panel.
+    subTest: (Listing<String>|String)?
+    
+}

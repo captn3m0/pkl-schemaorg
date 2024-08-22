@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Vehicle.pkl"
+/// A motorized bicycle is a bicycle with an attached motor used to power the vehicle, or to
+/// assist with pedaling.
+///
+/// See: <https://schema.org/MotorizedBicycle>
+/// Model depth: 4
+open class MotorizedBicycle extends Vehicle.Vehicle {
+    
+}

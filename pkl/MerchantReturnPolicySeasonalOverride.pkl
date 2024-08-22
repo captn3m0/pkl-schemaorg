@@ -1,0 +1,41 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// A seasonal override of a return policy, for example used for holidays.
+///
+/// See: <https://schema.org/MerchantReturnPolicySeasonalOverride>
+/// Model depth: 3
+open class MerchantReturnPolicySeasonalOverride extends Intangible.Intangible {
+        
+    /// The type of return fees for purchased products (for any return reason).
+    returnFees: (Listing<String>|String)?
+        
+    /// The type of return method offered, specified from an enumeration.
+    returnMethod: (Listing<String>|String)?
+        
+    /// The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).
+    endDate: (Listing<String|String>|String|String)?
+        
+    /// Specifies either a fixed return date or the number of days (from the delivery date) that
+    /// a product can be returned. Used when the [[returnPolicyCategory]] property is specified
+    /// as [[MerchantReturnFiniteReturnWindow]].
+    merchantReturnDays: (Listing<Int|String|String>|Int|String|String)?
+        
+    /// Amount of shipping costs for product returns (for any reason). Applicable when property
+    /// [[returnFees]] equals [[ReturnShippingFees]].
+    returnShippingFeesAmount: (Listing<String>|String)?
+        
+    /// Specifies an applicable return policy (from an enumeration).
+    returnPolicyCategory: (Listing<String>|String)?
+        
+    /// The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).
+    startDate: (Listing<String|String>|String|String)?
+        
+    /// A refund type, from an enumerated list.
+    refundType: (Listing<String>|String)?
+        
+    /// Use [[MonetaryAmount]] to specify a fixed restocking fee for product returns, or use
+    /// [[Number]] to specify a percentage of the product price paid by the customer.
+    restockingFee: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

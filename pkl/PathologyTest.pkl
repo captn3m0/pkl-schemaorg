@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTest.pkl"
+/// A medical test performed by a laboratory that typically involves examination of a tissue
+/// sample by a pathologist.
+///
+/// See: <https://schema.org/PathologyTest>
+/// Model depth: 4
+open class PathologyTest extends MedicalTest.MedicalTest {
+        
+    /// The type of tissue sample required for the test.
+    tissueSample: (Listing<String>|String)?
+    
+}

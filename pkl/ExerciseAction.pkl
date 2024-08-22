@@ -1,0 +1,52 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PlayAction.pkl"
+/// The act of participating in exertive activity for the purposes of improving health and
+/// fitness.
+///
+/// See: <https://schema.org/ExerciseAction>
+/// Model depth: 4
+open class ExerciseAction extends PlayAction.PlayAction {
+        
+    /// A sub property of instrument. The diet used in this action.
+    diet: (Listing<String>|String)?
+        
+    /// A sub property of location. The sports activity location where this action occurred.
+    sportsActivityLocation: (Listing<String>|String)?
+        
+    /// A sub property of location. The course where this action was taken.
+    exerciseCourse: (Listing<String>|String)?
+        
+    /// A sub property of instrument. The diet used in this action.
+    exerciseRelatedDiet: (Listing<String>|String)?
+        
+    /// Type(s) of exercise or activity, such as strength training, flexibility training,
+    /// aerobics, cardiac rehabilitation, etc.
+    exerciseType: (Listing<String>|String)?
+        
+    /// A sub property of location. The sports event where this action occurred.
+    sportsEvent: (Listing<String>|String)?
+        
+    /// The distance travelled, e.g. exercising or travelling.
+    distance: (Listing<String>|String)?
+        
+    /// A sub property of location. The course where this action was taken.
+    course: (Listing<String>|String)?
+        
+    /// A sub property of instrument. The exercise plan used on this action.
+    exercisePlan: (Listing<String>|String)?
+        
+    /// A sub property of location. The original location of the object or the agent before the
+    /// action.
+    fromLocation: (Listing<String>|String)?
+        
+    /// A sub property of participant. The opponent on this action.
+    opponent: (Listing<String>|String)?
+        
+    /// A sub property of location. The final location of the object or the agent after the action.
+    toLocation: (Listing<String>|String)?
+        
+    /// A sub property of participant. The sports team that participated on this action.
+    sportsTeam: (Listing<String>|String)?
+    
+}

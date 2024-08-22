@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BroadcastService.pkl"
+/// A delivery service through which radio content is provided via broadcast over the air
+/// or online.
+///
+/// See: <https://schema.org/RadioBroadcastService>
+/// Model depth: 5
+open class RadioBroadcastService extends BroadcastService.BroadcastService {
+    
+}

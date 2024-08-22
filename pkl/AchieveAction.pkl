@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// The act of accomplishing something via previous efforts. It is an instantaneous action
+/// rather than an ongoing process.
+///
+/// See: <https://schema.org/AchieveAction>
+/// Model depth: 3
+open class AchieveAction extends Action.Action {
+    
+}

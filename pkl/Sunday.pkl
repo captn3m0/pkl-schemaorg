@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DayOfWeek.pkl"
+/// The day of the week between Saturday and Monday.
+///
+/// See: <https://schema.org/Sunday>
+/// Model depth: 5
+open class Sunday extends DayOfWeek.DayOfWeek {
+    
+}

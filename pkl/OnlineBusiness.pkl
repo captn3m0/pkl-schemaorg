@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Organization.pkl"
+/// A particular online business, either standalone or the online part of a broader organization.
+/// Examples include an eCommerce site, an online travel booking site, an online learning
+/// site, an online logistics and shipping provider, an online (virtual) doctor, etc.
+///
+/// See: <https://schema.org/OnlineBusiness>
+/// Model depth: 3
+open class OnlineBusiness extends Organization.Organization {
+    
+}

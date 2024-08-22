@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GameServerStatus.pkl"
+/// Game server status: Online. Server is available.
+///
+/// See: <https://schema.org/Online>
+/// Model depth: 6
+open class Online extends GameServerStatus.GameServerStatus {
+    
+}

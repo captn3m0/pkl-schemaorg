@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeGroupEnumeration.pkl"
+/// Size group "Girls" for wearables.
+///
+/// See: <https://schema.org/WearableSizeGroupGirls>
+/// Model depth: 6
+open class WearableSizeGroupGirls extends WearableSizeGroupEnumeration.WearableSizeGroupEnumeration {
+    
+}

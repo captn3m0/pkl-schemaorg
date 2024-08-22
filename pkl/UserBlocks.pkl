@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UserInteraction.pkl"
+/// UserInteraction and its subtypes is an old way of talking about users interacting with
+/// pages. It is generally better to use [[Action]]-based vocabulary, alongside types
+/// such as [[Comment]].
+///
+/// See: <https://schema.org/UserBlocks>
+/// Model depth: 4
+open class UserBlocks extends UserInteraction.UserInteraction {
+    
+}

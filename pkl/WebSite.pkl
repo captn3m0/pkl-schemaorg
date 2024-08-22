@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A WebSite is a set of related web pages and other items typically served from a single web
+/// domain and accessible via URLs.
+///
+/// See: <https://schema.org/WebSite>
+/// Model depth: 3
+open class WebSite extends CreativeWork.CreativeWork {
+        
+    /// The International Standard Serial Number (ISSN) that identifies this serial publication.
+    /// You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L)
+    /// for, this serial publication.
+    issn: (Listing<String>|String)?
+    
+}

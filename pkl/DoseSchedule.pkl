@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalIntangible.pkl"
+/// A specific dosing schedule for a drug or supplement.
+///
+/// See: <https://schema.org/DoseSchedule>
+/// Model depth: 4
+open class DoseSchedule extends MedicalIntangible.MedicalIntangible {
+        
+    /// Characteristics of the population for which this is intended, or which typically uses
+    /// it, e.g. 'adults'.
+    targetPopulation: (Listing<String>|String)?
+        
+    /// The unit of the dose, e.g. 'mg'.
+    doseUnit: (Listing<String>|String)?
+        
+    /// The value of the dose, e.g. 500.
+    doseValue: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// How often the dose is taken, e.g. 'daily'.
+    frequency: (Listing<String>|String)?
+    
+}

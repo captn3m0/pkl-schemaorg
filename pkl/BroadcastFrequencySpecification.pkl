@@ -1,0 +1,19 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// The frequency in MHz and the modulation used for a particular BroadcastService.
+///
+/// See: <https://schema.org/BroadcastFrequencySpecification>
+/// Model depth: 3
+open class BroadcastFrequencySpecification extends Intangible.Intangible {
+        
+    /// The subchannel used for the broadcast.
+    broadcastSubChannel: (Listing<String>|String)?
+        
+    /// The modulation (e.g. FM, AM, etc) used by a particular broadcast service.
+    broadcastSignalModulation: (Listing<String>|String)?
+        
+    /// The frequency in MHz for a particular broadcast.
+    broadcastFrequencyValue: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

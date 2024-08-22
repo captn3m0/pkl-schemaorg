@@ -1,0 +1,18 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// The act of giving money in return for temporary use, but not ownership, of an object such
+/// as a vehicle or property. For example, an agent rents a property from a landlord in exchange
+/// for a periodic payment.
+///
+/// See: <https://schema.org/RentAction>
+/// Model depth: 4
+open class RentAction extends TradeAction.TradeAction {
+        
+    /// A sub property of participant. The owner of the real estate property.
+    landlord: (Listing<String>|String)?
+        
+    /// A sub property of participant. The real estate agent involved in the action.
+    realEstateAgent: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalAudienceType.pkl"
+/// Medical clinicians, including practicing physicians and other medical professionals
+/// involved in clinical practice.
+///
+/// See: <https://schema.org/Clinician>
+/// Model depth: 6
+open class Clinician extends MedicalAudienceType.MedicalAudienceType {
+    
+}

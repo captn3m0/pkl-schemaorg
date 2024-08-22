@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Comment.pkl"
+/// A [[comment]] that corrects [[CreativeWork]].
+///
+/// See: <https://schema.org/CorrectionComment>
+/// Model depth: 4
+open class CorrectionComment extends Comment.Comment {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EntertainmentBusiness.pkl"
+/// A comedy club.
+///
+/// See: <https://schema.org/ComedyClub>
+/// Model depth: 5
+open class ComedyClub extends EntertainmentBusiness.EntertainmentBusiness {
+    
+}

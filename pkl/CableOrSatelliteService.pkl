@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Service.pkl"
+/// A service which provides access to media programming like TV or radio. Access may be via
+/// cable or satellite.
+///
+/// See: <https://schema.org/CableOrSatelliteService>
+/// Model depth: 4
+open class CableOrSatelliteService extends Service.Service {
+    
+}

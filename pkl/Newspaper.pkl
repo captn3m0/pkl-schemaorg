@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Periodical.pkl"
+/// A publication containing information about varied topics that are pertinent to general
+/// information, a geographic area, or a specific subject matter (i.e. business, culture,
+/// education). Often published daily.
+///
+/// See: <https://schema.org/Newspaper>
+/// Model depth: 5
+open class Newspaper extends Periodical.Periodical {
+    
+}

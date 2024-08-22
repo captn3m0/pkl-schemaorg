@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalAudienceType.pkl"
+/// Medical researchers.
+///
+/// See: <https://schema.org/MedicalResearcher>
+/// Model depth: 6
+open class MedicalResearcher extends MedicalAudienceType.MedicalAudienceType {
+    
+}

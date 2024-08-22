@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// The scientific study and treatment of defects, disorders, and malfunctions of speech
+/// and voice, as stuttering, lisping, or lalling, and of language disturbances, as aphasia
+/// or delayed language acquisition.
+///
+/// See: <https://schema.org/SpeechPathology>
+/// Model depth: 6
+open class SpeechPathology extends MedicalSpecialty.MedicalSpecialty {
+    
+}

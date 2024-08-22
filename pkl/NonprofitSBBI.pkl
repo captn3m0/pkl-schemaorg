@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "NLNonprofitType.pkl"
+/// NonprofitSBBI: Non-profit type referring to a Social Interest Promoting Institution
+/// (NL).
+///
+/// See: <https://schema.org/NonprofitSBBI>
+/// Model depth: 6
+open class NonprofitSBBI extends NLNonprofitType.NLNonprofitType {
+    
+}

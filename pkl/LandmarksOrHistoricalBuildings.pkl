@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Place.pkl"
+/// An historical landmark or building.
+///
+/// See: <https://schema.org/LandmarksOrHistoricalBuildings>
+/// Model depth: 3
+open class LandmarksOrHistoricalBuildings extends Place.Place {
+    
+}

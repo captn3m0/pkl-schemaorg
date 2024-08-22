@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FoodEstablishment.pkl"
+/// A fast-food restaurant.
+///
+/// See: <https://schema.org/FastFoodRestaurant>
+/// Model depth: 5
+open class FastFoodRestaurant extends FoodEstablishment.FoodEstablishment {
+    
+}

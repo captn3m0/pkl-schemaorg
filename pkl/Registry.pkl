@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalObservationalStudyDesign.pkl"
+/// A registry-based study design.
+///
+/// See: <https://schema.org/Registry>
+/// Model depth: 6
+open class Registry extends MedicalObservationalStudyDesign.MedicalObservationalStudyDesign {
+    
+}

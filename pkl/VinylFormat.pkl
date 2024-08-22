@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MusicReleaseFormatType.pkl"
+/// VinylFormat.
+///
+/// See: <https://schema.org/VinylFormat>
+/// Model depth: 5
+open class VinylFormat extends MusicReleaseFormatType.MusicReleaseFormatType {
+    
+}

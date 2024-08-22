@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EmergencyService.pkl"
+import "CivicStructure.pkl"
+/// A police station.
+///
+/// See: <https://schema.org/PoliceStation>
+/// Model depth: 4
+open class PoliceStation extends EmergencyService.EmergencyService CivicStructure.CivicStructure {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnLabelSourceEnumeration.pkl"
+/// Indicated that a return label must be downloaded and printed by the customer.
+///
+/// See: <https://schema.org/ReturnLabelDownloadAndPrint>
+/// Model depth: 5
+open class ReturnLabelDownloadAndPrint extends ReturnLabelSourceEnumeration.ReturnLabelSourceEnumeration {
+    
+}

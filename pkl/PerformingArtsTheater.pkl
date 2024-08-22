@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CivicStructure.pkl"
+/// A theater or other performing art center.
+///
+/// See: <https://schema.org/PerformingArtsTheater>
+/// Model depth: 4
+open class PerformingArtsTheater extends CivicStructure.CivicStructure {
+    
+}

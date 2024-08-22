@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "TradeAction.pkl"
+/// An agent quotes/estimates/appraises an object/product/service with a price at a location/store.
+///
+/// See: <https://schema.org/QuoteAction>
+/// Model depth: 4
+open class QuoteAction extends TradeAction.TradeAction {
+    
+}

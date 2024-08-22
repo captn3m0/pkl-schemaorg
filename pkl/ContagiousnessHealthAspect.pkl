@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content about contagion mechanisms and contagiousness information over the topic.
+///
+/// See: <https://schema.org/ContagiousnessHealthAspect>
+/// Model depth: 5
+open class ContagiousnessHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

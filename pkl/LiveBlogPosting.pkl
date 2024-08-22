@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BlogPosting.pkl"
+/// A [[LiveBlogPosting]] is a [[BlogPosting]] intended to provide a rolling textual coverage
+/// of an ongoing event through continuous updates.
+///
+/// See: <https://schema.org/LiveBlogPosting>
+/// Model depth: 6
+open class LiveBlogPosting extends BlogPosting.BlogPosting {
+        
+    /// The time when the live blog will stop covering the Event. Note that coverage may continue
+    /// after the Event concludes.
+    coverageEndTime: (Listing<String>|String)?
+        
+    /// The time when the live blog will begin covering the Event. Note that coverage may begin
+    /// before the Event's start time. The LiveBlogPosting may also be created before coverage
+    /// begins.
+    coverageStartTime: (Listing<String>|String)?
+        
+    /// An update to the LiveBlog.
+    liveBlogUpdate: (Listing<String>|String)?
+    
+}

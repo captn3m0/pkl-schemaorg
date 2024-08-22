@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CommunicateAction.pkl"
+/// The act of asking someone to attend an event. Reciprocal of RsvpAction.
+///
+/// See: <https://schema.org/InviteAction>
+/// Model depth: 5
+open class InviteAction extends CommunicateAction.CommunicateAction {
+        
+    /// Upcoming or past event associated with this place, organization, or action.
+    event: (Listing<String>|String)?
+    
+}

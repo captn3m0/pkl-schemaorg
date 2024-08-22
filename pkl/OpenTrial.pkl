@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTrialDesign.pkl"
+/// A trial design in which the researcher knows the full details of the treatment, and so
+/// does the patient.
+///
+/// See: <https://schema.org/OpenTrial>
+/// Model depth: 6
+open class OpenTrial extends MedicalTrialDesign.MedicalTrialDesign {
+    
+}

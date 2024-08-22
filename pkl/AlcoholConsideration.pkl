@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AdultOrientedEnumeration.pkl"
+/// Item contains alcohol or promotes alcohol consumption.
+///
+/// See: <https://schema.org/AlcoholConsideration>
+/// Model depth: 5
+open class AlcoholConsideration extends AdultOrientedEnumeration.AdultOrientedEnumeration {
+    
+}

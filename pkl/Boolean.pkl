@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DataType.pkl"
+/// Boolean: True or False.
+///
+/// See: <https://schema.org/Boolean>
+/// Model depth: 5
+open class Boolean extends DataType.DataType {
+    
+}

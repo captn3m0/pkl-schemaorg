@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LearningResource.pkl"
+/// A syllabus that describes the material covered in a course, often with several such sections
+/// per [[Course]] so that a distinct [[timeRequired]] can be provided for that section
+/// of the [[Course]].
+///
+/// See: <https://schema.org/Syllabus>
+/// Model depth: 4
+open class Syllabus extends LearningResource.LearningResource {
+    
+}

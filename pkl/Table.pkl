@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WebPageElement.pkl"
+/// A table on a Web page.
+///
+/// See: <https://schema.org/Table>
+/// Model depth: 4
+open class Table extends WebPageElement.WebPageElement {
+    
+}

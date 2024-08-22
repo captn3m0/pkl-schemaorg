@@ -1,0 +1,25 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEntity.pkl"
+/// Any medical test, typically performed for diagnostic purposes.
+///
+/// See: <https://schema.org/MedicalTest>
+/// Model depth: 3
+open class MedicalTest extends MedicalEntity.MedicalEntity {
+        
+    /// A sign detected by the test.
+    signDetected: (Listing<String>|String)?
+        
+    /// Range of acceptable values for a typical patient, when applicable.
+    normalRange: (Listing<String>|String)?
+        
+    /// Drugs that affect the test's results.
+    affectedBy: (Listing<String>|String)?
+        
+    /// Device used to perform the test.
+    usesDevice: (Listing<String>|String)?
+        
+    /// A condition the test is used to diagnose.
+    usedToDiagnose: (Listing<String>|String)?
+    
+}

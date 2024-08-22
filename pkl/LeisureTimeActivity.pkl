@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PhysicalActivityCategory.pkl"
+/// Any physical activity engaged in for recreational purposes. Examples may include ballroom
+/// dancing, roller skating, canoeing, fishing, etc.
+///
+/// See: <https://schema.org/LeisureTimeActivity>
+/// Model depth: 5
+open class LeisureTimeActivity extends PhysicalActivityCategory.PhysicalActivityCategory {
+    
+}

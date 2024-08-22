@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Class.pkl"
+/// The basic data types such as Integers, Strings, etc.
+///
+/// See: <https://schema.org/DataType>
+/// Model depth: 4
+open class DataType extends Class.Class {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Any branch of a field in which people typically develop specific expertise, usually
+/// after significant study, time, and effort.
+///
+/// See: <https://schema.org/Specialty>
+/// Model depth: 4
+open class Specialty extends Enumeration.Enumeration {
+    
+}

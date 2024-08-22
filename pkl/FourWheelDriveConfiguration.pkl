@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DriveWheelConfigurationValue.pkl"
+/// Four-wheel drive is a transmission layout where the engine primarily drives two wheels
+/// with a part-time four-wheel drive capability.
+///
+/// See: <https://schema.org/FourWheelDriveConfiguration>
+/// Model depth: 6
+open class FourWheelDriveConfiguration extends DriveWheelConfigurationValue.DriveWheelConfigurationValue {
+    
+}

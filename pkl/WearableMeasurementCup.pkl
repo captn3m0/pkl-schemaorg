@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableMeasurementTypeEnumeration.pkl"
+/// Measurement of the cup, for example of a bra.
+///
+/// See: <https://schema.org/WearableMeasurementCup>
+/// Model depth: 6
+open class WearableMeasurementCup extends WearableMeasurementTypeEnumeration.WearableMeasurementTypeEnumeration {
+    
+}

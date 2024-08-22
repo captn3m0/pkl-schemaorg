@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEnumeration.pkl"
+import "Specialty.pkl"
+/// Any specific branch of medical science or practice. Medical specialities include clinical
+/// specialties that pertain to particular organ systems and their respective disease
+/// states, as well as allied health specialties. Enumerated type.
+///
+/// See: <https://schema.org/MedicalSpecialty>
+/// Model depth: 5
+open class MedicalSpecialty extends MedicalEnumeration.MedicalEnumeration Specialty.Specialty {
+    
+}

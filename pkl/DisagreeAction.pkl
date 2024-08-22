@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReactAction.pkl"
+/// The act of expressing a difference of opinion with the object. An agent disagrees to/about
+/// an object (a proposition, topic or theme) with participants.
+///
+/// See: <https://schema.org/DisagreeAction>
+/// Model depth: 5
+open class DisagreeAction extends ReactAction.ReactAction {
+    
+}

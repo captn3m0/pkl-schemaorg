@@ -1,0 +1,28 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StructuredValue.pkl"
+/// A statistical distribution of values.
+///
+/// See: <https://schema.org/QuantitativeValueDistribution>
+/// Model depth: 4
+open class QuantitativeValueDistribution extends StructuredValue.StructuredValue {
+        
+    /// The median value.
+    median: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The 10th percentile value.
+    percentile10: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The 90th percentile value.
+    percentile90: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
+    duration: (Listing<String>|String)?
+        
+    /// The 75th percentile value.
+    percentile75: (Listing<Int|Float|String>|Int|Float|String)?
+        
+    /// The 25th percentile value.
+    percentile25: (Listing<Int|Float|String>|Int|Float|String)?
+    
+}

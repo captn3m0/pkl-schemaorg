@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// The act of forming one's opinion, reaction or sentiment.
+///
+/// See: <https://schema.org/AssessAction>
+/// Model depth: 3
+open class AssessAction extends Action.Action {
+    
+}

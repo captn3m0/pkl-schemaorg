@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// NonprofitType enumerates several kinds of official non-profit types of which a non-profit
+/// organization can be.
+///
+/// See: <https://schema.org/NonprofitType>
+/// Model depth: 4
+open class NonprofitType extends Enumeration.Enumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ImageObject.pkl"
+/// An image of a visual machine-readable code such as a barcode or QR code.
+///
+/// See: <https://schema.org/Barcode>
+/// Model depth: 5
+open class Barcode extends ImageObject.ImageObject {
+    
+}

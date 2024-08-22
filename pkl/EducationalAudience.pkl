@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Audience.pkl"
+/// An EducationalAudience.
+///
+/// See: <https://schema.org/EducationalAudience>
+/// Model depth: 4
+open class EducationalAudience extends Audience.Audience {
+        
+    /// An educationalRole of an EducationalAudience.
+    educationalRole: (Listing<String>|String)?
+    
+}

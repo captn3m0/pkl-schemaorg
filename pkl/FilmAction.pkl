@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreateAction.pkl"
+/// The act of capturing sound and moving images on film, video, or digitally.
+///
+/// See: <https://schema.org/FilmAction>
+/// Model depth: 4
+open class FilmAction extends CreateAction.CreateAction {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StatusEnumeration.pkl"
+/// A specific payment status. For example, PaymentDue, PaymentComplete, etc.
+///
+/// See: <https://schema.org/PaymentStatusType>
+/// Model depth: 5
+open class PaymentStatusType extends StatusEnumeration.StatusEnumeration {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "FinancialProduct.pkl"
+/// A service to convert funds from one currency to another currency.
+///
+/// See: <https://schema.org/CurrencyConversionService>
+/// Model depth: 5
+open class CurrencyConversionService extends FinancialProduct.FinancialProduct {
+    
+}

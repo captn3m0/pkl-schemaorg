@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEvidenceLevel.pkl"
+/// Data derived from multiple randomized clinical trials or meta-analyses.
+///
+/// See: <https://schema.org/EvidenceLevelA>
+/// Model depth: 6
+open class EvidenceLevelA extends MedicalEvidenceLevel.MedicalEvidenceLevel {
+    
+}

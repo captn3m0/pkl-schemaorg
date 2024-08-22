@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Permit.pkl"
+/// A permit issued by a government agency.
+///
+/// See: <https://schema.org/GovernmentPermit>
+/// Model depth: 4
+open class GovernmentPermit extends Permit.Permit {
+    
+}

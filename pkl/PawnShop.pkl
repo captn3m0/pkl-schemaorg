@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Store.pkl"
+/// A shop that will buy, or lend money against the security of, personal possessions.
+///
+/// See: <https://schema.org/PawnShop>
+/// Model depth: 5
+open class PawnShop extends Store.Store {
+    
+}

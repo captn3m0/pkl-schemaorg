@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass
+/// are entities like '3 kg' or '4 milligrams'.
+///
+/// See: <https://schema.org/Quantity>
+/// Model depth: 3
+open class Quantity extends Intangible.Intangible {
+    
+}

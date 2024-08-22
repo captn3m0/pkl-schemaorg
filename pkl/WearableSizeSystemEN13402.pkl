@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "WearableSizeSystemEnumeration.pkl"
+/// EN 13402 (joint European standard for size labelling of clothes).
+///
+/// See: <https://schema.org/WearableSizeSystemEN13402>
+/// Model depth: 6
+open class WearableSizeSystemEN13402 extends WearableSizeSystemEnumeration.WearableSizeSystemEnumeration {
+    
+}

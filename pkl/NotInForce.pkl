@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LegalForceStatus.pkl"
+/// Indicates that a legislation is currently not in force.
+///
+/// See: <https://schema.org/NotInForce>
+/// Model depth: 6
+open class NotInForce extends LegalForceStatus.LegalForceStatus {
+    
+}

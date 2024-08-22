@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalStudyStatus.pkl"
+/// Results are not available.
+///
+/// See: <https://schema.org/ResultsNotAvailable>
+/// Model depth: 6
+open class ResultsNotAvailable extends MedicalStudyStatus.MedicalStudyStatus {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyOfWater.pkl"
+/// A canal, like the Panama Canal.
+///
+/// See: <https://schema.org/Canal>
+/// Model depth: 5
+open class Canal extends BodyOfWater.BodyOfWater {
+    
+}

@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InteractAction.pkl"
+/// The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically
+/// to get updates polled from. Related actions: * [[BefriendAction]]: Unlike BefriendAction,
+/// FollowAction implies that the connection is *not* necessarily reciprocal. * [[SubscribeAction]]:
+/// Unlike SubscribeAction, FollowAction implies that the follower acts as an active agent
+/// constantly/actively polling for updates. * [[RegisterAction]]: Unlike RegisterAction,
+/// FollowAction implies that the agent is interested in continuing receiving updates
+/// from the object. * [[JoinAction]]: Unlike JoinAction, FollowAction implies that the
+/// agent is interested in getting updates from the object. * [[TrackAction]]: Unlike TrackAction,
+/// FollowAction refers to the polling of updates of all aspects of animate objects rather
+/// than the location of inanimate objects (e.g. you track a package, but you don't follow
+/// it).
+///
+/// See: <https://schema.org/FollowAction>
+/// Model depth: 4
+open class FollowAction extends InteractAction.InteractAction {
+        
+    /// A sub property of object. The person or organization being followed.
+    followee: (Listing<String>|String)?
+    
+}

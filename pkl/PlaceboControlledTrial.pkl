@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTrialDesign.pkl"
+/// A placebo-controlled trial design.
+///
+/// See: <https://schema.org/PlaceboControlledTrial>
+/// Model depth: 6
+open class PlaceboControlledTrial extends MedicalTrialDesign.MedicalTrialDesign {
+    
+}

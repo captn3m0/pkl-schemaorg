@@ -1,0 +1,28 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// A book.
+///
+/// See: <https://schema.org/Book>
+/// Model depth: 3
+open class Book extends CreativeWork.CreativeWork {
+        
+    /// The edition of the book.
+    bookEdition: (Listing<String>|String)?
+        
+    /// The illustrator of the book.
+    illustrator: (Listing<String>|String)?
+        
+    /// The number of pages in the book.
+    numberOfPages: (Listing<Int|String>|Int|String)?
+        
+    /// The ISBN of the book.
+    isbn: (Listing<String>|String)?
+        
+    /// The format of the book.
+    bookFormat: (Listing<String>|String)?
+        
+    /// Indicates whether the book is an abridged edition.
+    abridged: (Listing<Boolean|String>|Boolean|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BoardingPolicyType.pkl"
+/// The airline boards by zones of the plane.
+///
+/// See: <https://schema.org/ZoneBoardingPolicy>
+/// Model depth: 5
+open class ZoneBoardingPolicy extends BoardingPolicyType.BoardingPolicyType {
+    
+}

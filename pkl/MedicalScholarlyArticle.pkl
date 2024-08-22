@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ScholarlyArticle.pkl"
+/// A scholarly article in the medical domain.
+///
+/// See: <https://schema.org/MedicalScholarlyArticle>
+/// Model depth: 5
+open class MedicalScholarlyArticle extends ScholarlyArticle.ScholarlyArticle {
+        
+    /// The type of the medical article, taken from the US NLM MeSH publication type catalog.
+    /// See also [MeSH documentation](http://www.nlm.nih.gov/mesh/pubtypes.html).
+    publicationType: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit501c7: Non-profit type referring to Social and Recreational Clubs.
+///
+/// See: <https://schema.org/Nonprofit501c7>
+/// Model depth: 6
+open class Nonprofit501c7 extends USNonprofitType.USNonprofitType {
+    
+}

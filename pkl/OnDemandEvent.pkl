@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PublicationEvent.pkl"
+/// A publication event, e.g. catch-up TV or radio podcast, during which a program is available
+/// on-demand.
+///
+/// See: <https://schema.org/OnDemandEvent>
+/// Model depth: 4
+open class OnDemandEvent extends PublicationEvent.PublicationEvent {
+    
+}

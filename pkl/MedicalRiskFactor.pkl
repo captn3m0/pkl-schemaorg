@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalEntity.pkl"
+/// A risk factor is anything that increases a person's likelihood of developing or contracting
+/// a disease, medical condition, or complication.
+///
+/// See: <https://schema.org/MedicalRiskFactor>
+/// Model depth: 3
+open class MedicalRiskFactor extends MedicalEntity.MedicalEntity {
+        
+    /// The condition, complication, etc. influenced by this factor.
+    increasesRiskOf: (Listing<String>|String)?
+    
+}

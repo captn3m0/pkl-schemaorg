@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OnlineBusiness.pkl"
+/// An eCommerce site.
+///
+/// See: <https://schema.org/OnlineStore>
+/// Model depth: 4
+open class OnlineStore extends OnlineBusiness.OnlineBusiness {
+    
+}

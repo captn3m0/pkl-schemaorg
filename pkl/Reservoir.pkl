@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "BodyOfWater.pkl"
+/// A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.
+///
+/// See: <https://schema.org/Reservoir>
+/// Model depth: 5
+open class Reservoir extends BodyOfWater.BodyOfWater {
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalTherapy.pkl"
+/// A process of progressive physical care and rehabilitation aimed at improving a health
+/// condition.
+///
+/// See: <https://schema.org/PhysicalTherapy>
+/// Model depth: 6
+open class PhysicalTherapy extends MedicalTherapy.MedicalTherapy {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LodgingBusiness.pkl"
+/// A kind of lodging business that focuses on renting single properties for limited time.
+///
+/// See: <https://schema.org/VacationRental>
+/// Model depth: 5
+open class VacationRental extends LodgingBusiness.LodgingBusiness {
+    
+}

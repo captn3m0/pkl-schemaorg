@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MediaObject.pkl"
+/// An image file.
+///
+/// See: <https://schema.org/ImageObject>
+/// Model depth: 4
+open class ImageObject extends MediaObject.MediaObject {
+        
+    /// Indicates whether this image is representative of the content of the page.
+    representativeOfPage: (Listing<Boolean|String>|Boolean|String)?
+        
+    /// exif data for this object.
+    exifData: (Listing<String>|String)?
+        
+    /// The caption for this object. For downloadable machine formats (closed caption, subtitles
+    /// etc.) use MediaObject and indicate the [[encodingFormat]].
+    caption: (Listing<String>|String)?
+        
+    /// Represents textual captioning from a [[MediaObject]], e.g. text of a 'meme'.
+    embeddedTextCaption: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Treatments or related therapies for a Topic.
+///
+/// See: <https://schema.org/TreatmentsHealthAspect>
+/// Model depth: 5
+open class TreatmentsHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

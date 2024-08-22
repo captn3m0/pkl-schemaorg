@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PlanAction.pkl"
+/// The act of asserting that a future event/action is no longer going to happen. Related
+/// actions: * [[ConfirmAction]]: The antonym of CancelAction.
+///
+/// See: <https://schema.org/CancelAction>
+/// Model depth: 5
+open class CancelAction extends PlanAction.PlanAction {
+    
+}

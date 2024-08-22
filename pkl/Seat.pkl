@@ -1,0 +1,22 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Used to describe a seat, such as a reserved seat in an event reservation.
+///
+/// See: <https://schema.org/Seat>
+/// Model depth: 3
+open class Seat extends Intangible.Intangible {
+        
+    /// The section location of the reserved seat (e.g. Orchestra).
+    seatSection: (Listing<String>|String)?
+        
+    /// The row location of the reserved seat (e.g., B).
+    seatRow: (Listing<String>|String)?
+        
+    /// The type/class of the seat.
+    seatingType: (Listing<String>|String)?
+        
+    /// The location of the reserved seat (e.g., 27).
+    seatNumber: (Listing<String>|String)?
+    
+}

@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DigitalPlatformEnumeration.pkl"
+/// Represents the generic notion of the Web Platform. More specific codes include [[MobileWebPlatform]]
+/// and [[DesktopWebPlatform]], as an incomplete list.
+///
+/// See: <https://schema.org/GenericWebPlatform>
+/// Model depth: 5
+open class GenericWebPlatform extends DigitalPlatformEnumeration.DigitalPlatformEnumeration {
+    
+}

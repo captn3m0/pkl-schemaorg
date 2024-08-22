@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Indicates whether this game is multi-player, co-op or single-player.
+///
+/// See: <https://schema.org/GamePlayMode>
+/// Model depth: 4
+open class GamePlayMode extends Enumeration.Enumeration {
+    
+}

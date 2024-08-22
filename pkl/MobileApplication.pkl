@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "SoftwareApplication.pkl"
+/// A software application designed specifically to work well on a mobile device such as
+/// a telephone.
+///
+/// See: <https://schema.org/MobileApplication>
+/// Model depth: 4
+open class MobileApplication extends SoftwareApplication.SoftwareApplication {
+        
+    /// Specifies specific carrier(s) requirements for the application (e.g. an application
+    /// may only work on a specific carrier network).
+    carrierRequirements: (Listing<String>|String)?
+    
+}

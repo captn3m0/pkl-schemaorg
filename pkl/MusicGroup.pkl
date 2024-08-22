@@ -1,0 +1,29 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PerformingGroup.pkl"
+/// A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.
+///
+/// See: <https://schema.org/MusicGroup>
+/// Model depth: 4
+open class MusicGroup extends PerformingGroup.PerformingGroup {
+        
+    /// A music album.
+    album: (Listing<String>|String)?
+        
+    /// Genre of the creative work, broadcast channel or group.
+    genre: (Listing<URL|String>|URL|String)?
+        
+    /// A member of a music group&#x2014;for example, John, Paul, George, or Ringo.
+    musicGroupMember: (Listing<String>|String)?
+        
+    /// A collection of music albums.
+    albums: (Listing<String>|String)?
+        
+    /// A music recording (track)&#x2014;usually a single song.
+    tracks: (Listing<String>|String)?
+        
+    /// A music recording (track)&#x2014;usually a single song. If an ItemList is given, the
+    /// list should contain items of type MusicRecording.
+    track: (Listing<String>|String)?
+    
+}

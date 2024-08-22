@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// A brand is a name used by an organization or business person for labeling a product, product
+/// group, or similar.
+///
+/// See: <https://schema.org/Brand>
+/// Model depth: 3
+open class Brand extends Intangible.Intangible {
+        
+    /// A slogan or motto associated with the item.
+    slogan: (Listing<String>|String)?
+        
+    /// The overall rating, based on a collection of reviews or ratings, of the item.
+    aggregateRating: (Listing<String>|String)?
+        
+    /// A review of the item.
+    review: (Listing<String>|String)?
+        
+    /// An associated logo.
+    logo: (Listing<URL|String>|URL|String)?
+    
+}

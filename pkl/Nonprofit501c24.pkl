@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit501c24: Non-profit type referring to Section 4049 ERISA Trusts.
+///
+/// See: <https://schema.org/Nonprofit501c24>
+/// Model depth: 6
+open class Nonprofit501c24 extends USNonprofitType.USNonprofitType {
+    
+}

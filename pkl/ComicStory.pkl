@@ -1,0 +1,29 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "CreativeWork.pkl"
+/// The term "story" is any indivisible, re-printable unit of a comic, including the interior
+/// stories, covers, and backmatter. Most comics have at least two stories: a cover (ComicCoverArt)
+/// and an interior story.
+///
+/// See: <https://schema.org/ComicStory>
+/// Model depth: 3
+open class ComicStory extends CreativeWork.CreativeWork {
+        
+    /// The individual who adds lettering, including speech balloons and sound effects, to
+    /// artwork.
+    letterer: (Listing<String>|String)?
+        
+    /// The individual who traces over the pencil drawings in ink after pencils are complete.
+    inker: (Listing<String>|String)?
+        
+    /// The primary artist for a work in a medium other than pencils or digital line art--for example,
+    /// if the primary artwork is done in watercolors or digital paints.
+    artist: (Listing<String>|String)?
+        
+    /// The individual who adds color to inked drawings.
+    colorist: (Listing<String>|String)?
+        
+    /// The individual who draws the primary narrative artwork.
+    penciler: (Listing<String>|String)?
+    
+}

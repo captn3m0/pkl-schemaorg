@@ -1,0 +1,15 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// The action that takes in a math expression and directs users to a page potentially capable
+/// of solving/simplifying that expression.
+///
+/// See: <https://schema.org/SolveMathAction>
+/// Model depth: 3
+open class SolveMathAction extends Action.Action {
+        
+    /// For questions that are part of learning resources (e.g. Quiz), eduQuestionType indicates
+    /// the format of question being given. Example: "Multiple choice", "Open ended", "Flashcard".
+    eduQuestionType: (Listing<String>|String)?
+    
+}

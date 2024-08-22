@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Clip.pkl"
+/// A short radio program or a segment/part of a radio program.
+///
+/// See: <https://schema.org/RadioClip>
+/// Model depth: 4
+open class RadioClip extends Clip.Clip {
+    
+}

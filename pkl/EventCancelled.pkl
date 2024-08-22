@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EventStatusType.pkl"
+/// The event has been cancelled. If the event has multiple startDate values, all are assumed
+/// to be cancelled. Either startDate or previousStartDate may be used to specify the event's
+/// cancelled date(s).
+///
+/// See: <https://schema.org/EventCancelled>
+/// Model depth: 6
+open class EventCancelled extends EventStatusType.EventStatusType {
+    
+}

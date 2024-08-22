@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A government office&#x2014;for example, an IRS or DMV office.
+///
+/// See: <https://schema.org/GovernmentOffice>
+/// Model depth: 4
+open class GovernmentOffice extends LocalBusiness.LocalBusiness {
+    
+}

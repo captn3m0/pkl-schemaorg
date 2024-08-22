@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PriceComponentTypeEnumeration.pkl"
+/// Represents the subscription pricing component of the total price for an offered product.
+///
+/// See: <https://schema.org/Subscription>
+/// Model depth: 5
+open class Subscription extends PriceComponentTypeEnumeration.PriceComponentTypeEnumeration {
+    
+}

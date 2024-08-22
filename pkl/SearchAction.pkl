@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Action.pkl"
+/// The act of searching for an object. Related actions: * [[FindAction]]: SearchAction
+/// generally leads to a FindAction, but not necessarily.
+///
+/// See: <https://schema.org/SearchAction>
+/// Model depth: 3
+open class SearchAction extends Action.Action {
+        
+    /// A sub property of instrument. The query used on this action.
+    query: (Listing<String>|String)?
+    
+}

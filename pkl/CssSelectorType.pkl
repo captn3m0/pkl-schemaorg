@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Text.pkl"
+/// Text representing a CSS selector.
+///
+/// See: <https://schema.org/CssSelectorType>
+/// Model depth: 6
+open class CssSelectorType extends Text.Text {
+    
+}

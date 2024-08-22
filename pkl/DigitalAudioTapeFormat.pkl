@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MusicReleaseFormatType.pkl"
+/// DigitalAudioTapeFormat.
+///
+/// See: <https://schema.org/DigitalAudioTapeFormat>
+/// Model depth: 5
+open class DigitalAudioTapeFormat extends MusicReleaseFormatType.MusicReleaseFormatType {
+    
+}

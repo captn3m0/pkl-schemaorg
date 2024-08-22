@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "LocalBusiness.pkl"
+/// A sports location, such as a playing field.
+///
+/// See: <https://schema.org/SportsActivityLocation>
+/// Model depth: 4
+open class SportsActivityLocation extends LocalBusiness.LocalBusiness {
+    
+}

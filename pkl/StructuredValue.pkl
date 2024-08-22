@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Structured values are used when the value of a property has a more complex structure than
+/// simply being a textual value or a reference to another thing.
+///
+/// See: <https://schema.org/StructuredValue>
+/// Model depth: 3
+open class StructuredValue extends Intangible.Intangible {
+    
+}

@@ -1,0 +1,13 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "InteractAction.pkl"
+/// The act of un-registering from a service. Related actions: * [[RegisterAction]]: antonym
+/// of UnRegisterAction. * [[LeaveAction]]: Unlike LeaveAction, UnRegisterAction implies
+/// that you are unregistering from a service you were previously registered, rather than
+/// leaving a team/group of people.
+///
+/// See: <https://schema.org/UnRegisterAction>
+/// Model depth: 4
+open class UnRegisterAction extends InteractAction.InteractAction {
+    
+}

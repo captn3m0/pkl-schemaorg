@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalRiskEstimator.pkl"
+/// A simple system that adds up the number of risk factors to yield a score that is associated
+/// with prognosis, e.g. CHAD score, TIMI risk score.
+///
+/// See: <https://schema.org/MedicalRiskScore>
+/// Model depth: 4
+open class MedicalRiskScore extends MedicalRiskEstimator.MedicalRiskEstimator {
+        
+    /// The algorithm or rules to follow to compute the score.
+    algorithm: (Listing<String>|String)?
+    
+}

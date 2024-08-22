@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "PaymentStatusType.pkl"
+/// The payment is due, but still within an acceptable time to be received.
+///
+/// See: <https://schema.org/PaymentDue>
+/// Model depth: 6
+open class PaymentDue extends PaymentStatusType.PaymentStatusType {
+    
+}

@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Intangible.pkl"
+/// Intended audience for an item, i.e. the group for whom the item was created.
+///
+/// See: <https://schema.org/Audience>
+/// Model depth: 3
+open class Audience extends Intangible.Intangible {
+        
+    /// The target group associated with a given audience (e.g. veterans, car owners, musicians,
+    /// etc.).
+    audienceType: (Listing<String>|String)?
+        
+    /// The geographic area associated with the audience.
+    geographicArea: (Listing<String>|String)?
+    
+}

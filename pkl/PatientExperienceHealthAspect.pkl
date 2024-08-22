@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "HealthAspectEnumeration.pkl"
+/// Content about the real life experience of patients or people that have lived a similar
+/// experience about the topic. May be forums, topics, Q-and-A and related material.
+///
+/// See: <https://schema.org/PatientExperienceHealthAspect>
+/// Model depth: 5
+open class PatientExperienceHealthAspect extends HealthAspectEnumeration.HealthAspectEnumeration {
+    
+}

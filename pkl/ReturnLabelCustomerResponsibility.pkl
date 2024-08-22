@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnLabelSourceEnumeration.pkl"
+/// Indicated that creating a return label is the responsibility of the customer.
+///
+/// See: <https://schema.org/ReturnLabelCustomerResponsibility>
+/// Model depth: 5
+open class ReturnLabelCustomerResponsibility extends ReturnLabelSourceEnumeration.ReturnLabelSourceEnumeration {
+    
+}

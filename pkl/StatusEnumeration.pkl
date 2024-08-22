@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Enumeration.pkl"
+/// Lists or enumerations dealing with status types.
+///
+/// See: <https://schema.org/StatusEnumeration>
+/// Model depth: 4
+open class StatusEnumeration extends Enumeration.Enumeration {
+    
+}

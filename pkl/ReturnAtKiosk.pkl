@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReturnMethodEnumeration.pkl"
+/// Specifies that product returns must be made at a kiosk.
+///
+/// See: <https://schema.org/ReturnAtKiosk>
+/// Model depth: 5
+open class ReturnAtKiosk extends ReturnMethodEnumeration.ReturnMethodEnumeration {
+    
+}

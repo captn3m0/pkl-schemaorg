@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GovernmentBenefitsType.pkl"
+/// HealthCare: this is a benefit for health care.
+///
+/// See: <https://schema.org/HealthCare>
+/// Model depth: 5
+open class HealthCare extends GovernmentBenefitsType.GovernmentBenefitsType {
+    
+}

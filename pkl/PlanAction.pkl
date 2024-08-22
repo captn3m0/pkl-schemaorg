@@ -1,0 +1,14 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "OrganizeAction.pkl"
+/// The act of planning the execution of an event/task/action/reservation/plan to a future
+/// date.
+///
+/// See: <https://schema.org/PlanAction>
+/// Model depth: 4
+open class PlanAction extends OrganizeAction.OrganizeAction {
+        
+    /// The time the object is scheduled to.
+    scheduledTime: (Listing<String|String>|String|String)?
+    
+}

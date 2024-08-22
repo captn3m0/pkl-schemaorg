@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "Landform.pkl"
+/// A mountain, like Mount Whitney or Mount Everest.
+///
+/// See: <https://schema.org/Mountain>
+/// Model depth: 4
+open class Mountain extends Landform.Landform {
+    
+}

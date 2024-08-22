@@ -1,0 +1,12 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+import "MedicalBusiness.pkl"
+/// Podiatry is the care of the human foot, especially the diagnosis and treatment of foot
+/// disorders.
+///
+/// See: <https://schema.org/Podiatric>
+/// Model depth: 5
+open class Podiatric extends MedicalSpecialty.MedicalSpecialty MedicalBusiness.MedicalBusiness {
+    
+}

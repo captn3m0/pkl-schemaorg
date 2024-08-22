@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "GenderType.pkl"
+/// The female gender.
+///
+/// See: <https://schema.org/Female>
+/// Model depth: 5
+open class Female extends GenderType.GenderType {
+    
+}

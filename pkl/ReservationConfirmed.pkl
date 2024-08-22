@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ReservationStatusType.pkl"
+/// The status of a confirmed reservation.
+///
+/// See: <https://schema.org/ReservationConfirmed>
+/// Model depth: 6
+open class ReservationConfirmed extends ReservationStatusType.ReservationStatusType {
+    
+}

@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "UpdateAction.pkl"
+/// The act of editing a recipient by replacing an old object with a new object.
+///
+/// See: <https://schema.org/ReplaceAction>
+/// Model depth: 4
+open class ReplaceAction extends UpdateAction.UpdateAction {
+        
+    /// A sub property of object. The object that replaces.
+    replacer: (Listing<String>|String)?
+        
+    /// A sub property of object. The object that is being replaced.
+    replacee: (Listing<String>|String)?
+    
+}

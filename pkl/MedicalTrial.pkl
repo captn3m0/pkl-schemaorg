@@ -1,0 +1,16 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalStudy.pkl"
+/// A medical trial is a type of medical study that uses a scientific process to compare the
+/// safety and efficacy of medical therapies or medical procedures. In general, medical
+/// trials are controlled and subjects are allocated at random to the different treatment
+/// and/or control groups.
+///
+/// See: <https://schema.org/MedicalTrial>
+/// Model depth: 4
+open class MedicalTrial extends MedicalStudy.MedicalStudy {
+        
+    /// Specifics about the trial design (enumerated).
+    trialDesign: (Listing<String>|String)?
+    
+}

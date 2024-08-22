@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "DriveWheelConfigurationValue.pkl"
+/// Real-wheel drive is a transmission layout where the engine drives the rear wheels.
+///
+/// See: <https://schema.org/RearWheelDriveConfiguration>
+/// Model depth: 6
+open class RearWheelDriveConfiguration extends DriveWheelConfigurationValue.DriveWheelConfigurationValue {
+    
+}

@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "USNonprofitType.pkl"
+/// Nonprofit527: Non-profit type referring to political organizations.
+///
+/// See: <https://schema.org/Nonprofit527>
+/// Model depth: 6
+open class Nonprofit527 extends USNonprofitType.USNonprofitType {
+    
+}

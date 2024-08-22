@@ -1,0 +1,17 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "AudioObject.pkl"
+import "Book.pkl"
+/// An audiobook.
+///
+/// See: <https://schema.org/Audiobook>
+/// Model depth: 4
+open class Audiobook extends AudioObject.AudioObject Book.Book {
+        
+    /// The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).
+    duration: (Listing<String>|String)?
+        
+    /// A person who reads (performs) the audiobook.
+    readBy: (Listing<String>|String)?
+    
+}

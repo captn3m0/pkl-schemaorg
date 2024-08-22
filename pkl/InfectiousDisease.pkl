@@ -1,0 +1,23 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalCondition.pkl"
+/// An infectious disease is a clinically evident human disease resulting from the presence
+/// of pathogenic microbial agents, like pathogenic viruses, pathogenic bacteria, fungi,
+/// protozoa, multicellular parasites, and prions. To be considered an infectious disease,
+/// such pathogens are known to be able to cause this disease.
+///
+/// See: <https://schema.org/InfectiousDisease>
+/// Model depth: 4
+open class InfectiousDisease extends MedicalCondition.MedicalCondition {
+        
+    /// How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes
+    /// aegypti', etc.
+    transmissionMethod: (Listing<String>|String)?
+        
+    /// The class of infectious agent (bacteria, prion, etc.) that causes the disease.
+    infectiousAgentClass: (Listing<String>|String)?
+        
+    /// The actual infectious agent, such as a specific bacterium.
+    infectiousAgent: (Listing<String>|String)?
+    
+}

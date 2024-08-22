@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalSpecialty.pkl"
+/// The practice or art and science of preparing and dispensing drugs and medicines.
+///
+/// See: <https://schema.org/PharmacySpecialty>
+/// Model depth: 6
+open class PharmacySpecialty extends MedicalSpecialty.MedicalSpecialty {
+    
+}

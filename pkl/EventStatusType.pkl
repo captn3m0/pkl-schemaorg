@@ -1,0 +1,11 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "StatusEnumeration.pkl"
+/// EventStatusType is an enumeration type whose instances represent several states that
+/// an Event may be in.
+///
+/// See: <https://schema.org/EventStatusType>
+/// Model depth: 5
+open class EventStatusType extends StatusEnumeration.StatusEnumeration {
+    
+}

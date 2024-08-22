@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "EventAttendanceModeEnumeration.pkl"
+/// OnlineEventAttendanceMode - an event that is primarily conducted online.
+///
+/// See: <https://schema.org/OnlineEventAttendanceMode>
+/// Model depth: 5
+open class OnlineEventAttendanceMode extends EventAttendanceModeEnumeration.EventAttendanceModeEnumeration {
+    
+}

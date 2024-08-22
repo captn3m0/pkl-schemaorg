@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "MedicalDevicePurpose.pkl"
+/// A medical device used for therapeutic purposes.
+///
+/// See: <https://schema.org/Therapeutic>
+/// Model depth: 6
+open class Therapeutic extends MedicalDevicePurpose.MedicalDevicePurpose {
+    
+}

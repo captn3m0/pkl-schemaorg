@@ -1,0 +1,10 @@
+module org.schema.experimental
+import "package://pkg.pkl-lang.org/pkl-pantry/pkl.experimental.uri@1.0.3#/URI.pkl" as URL
+import "ConsumeAction.pkl"
+/// The act of installing an application.
+///
+/// See: <https://schema.org/InstallAction>
+/// Model depth: 4
+open class InstallAction extends ConsumeAction.ConsumeAction {
+    
+}
