@@ -1,0 +1,9 @@
+venv
+.idea
+dist
+src/circ_import
+*.pyc
+.pytest_cache
+schemaorg-current-https.jsonld
+kitchensink.pkl
+pydantic_schemaorg
